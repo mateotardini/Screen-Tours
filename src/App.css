@@ -112,11 +112,7 @@ p {
 
 .fontTrueLies {
   font-family: "TrueLies" !important;
-  background: linear-gradient(90deg, #295086 21.35%, rgb(255 0 147 / 74%) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
-  color: transparent;
   letter-spacing: 4px;
 }
 
@@ -300,14 +296,14 @@ button:hover {
 .retrowaveItem3 {
   position: absolute;
   width: 30vw;
-  transform: translate(-80%, 0%);
+  transform: translate(-80%, 40%);
   filter: drop-shadow(6px 6px 2px #ffffff) invert(27%) sepia(82%) saturate(420%) hue-rotate(173deg) brightness(94%) contrast(96%);
 }
 
 .retrowaveItem4 {
   position: absolute;
   width: 25vw;
-  transform: translate(-116%, -31%);
+  transform: translate(-72%, 10%);
   z-index: -2;
   filter: none;
   opacity: 0.25;
@@ -338,16 +334,16 @@ button:hover {
 
 .textContainer {
   text-align: left;
-  flex: 0 0 36%;
+  width: 36%;
   padding: 8%;
 }
 
 .imageContainer {
-  flex: 0 0 50%;
+  width: 50%;
   background-image: url("../public/Background2.jpg");
   background-size: cover;
   background-position: center;
-  height: 60vh;
+  height: 70vh;
   min-height: 100%;
   border-radius: 45px 0 0 45px;
 }

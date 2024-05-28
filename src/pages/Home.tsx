@@ -46,17 +46,19 @@ function Home() {
             <WaveSeparator topColor="#090d29" bottomColor="#f8f8f8"></WaveSeparator>
 
             <section className="sectionPaddingLeft rowSpaceB colorBlack">
+
+                <img
+                    className="retrowaveItem4"
+                    src="/Retrowave7.png"
+                    alt="Screen Tours Logo">
+                </img>
+                <img
+                    className="retrowaveItem3"
+                    src="/Mill2.png"
+                    alt="Screen Tours Logo">
+                </img>
+                
                 <div className="textContainer">
-                    <img
-                        className="retrowaveItem4"
-                        src="/Retrowave7.png"
-                        alt="Screen Tours Logo">
-                    </img>
-                    <img
-                        className="retrowaveItem3"
-                        src="/Mill2.png"
-                        alt="Screen Tours Logo">
-                    </img>
                     <h1 className="fontMontserrat">
                         Viajar es invertir en felicidad. Descubre, disfruta y comparte
                     </h1>
