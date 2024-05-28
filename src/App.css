@@ -36,3 +36,414 @@
     transform: rotate(360deg);
   }
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: "TrueLies";
+  src: url("./fonts/True\ Lies.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  /*--primary-color: #6e2048;*/
+  --primary-color: #295086;
+  --secondary-color: #ff0093;
+  --third-color: #68ced2;
+  --white-color: #f8f8f8;
+  --black-color: #393939;
+}
+
+body {
+  width: 100vw;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Montserrat";
+  background-color: var(--white-color) !important;
+}
+
+section {
+  min-height: 60vh;
+}
+
+.contenedor-principal {
+  background-color: var(--white-color);
+  min-height: 100vh;
+  margin-left: 20vw;
+  width: 80vw;
+  overflow-x: hidden;
+}
+
+.imagen-principal {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}
+
+/* ////////// */
+/*Fonts Section*/
+/* ////////// */
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.5vw;
+}
+
+h2 {
+  font-size: 1.563vw;
+}
+
+h3 {
+  font-size: 1.25vw;
+}
+
+h4 {
+  font-size: 1.042vw;
+}
+
+p {
+  font-size: 0.833vw;
+  line-height: 1.5vw;
+}
+
+.fontTrueLies {
+  font-family: "TrueLies" !important;
+  background: linear-gradient(90deg, #295086 21.35%, rgb(255 0 147 / 74%) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 4px;
+}
+
+.fontMontserrat {
+  font-family: "Montserrat";
+  font-weight: 600;
+  background: linear-gradient(90deg, #295086 21.35%, rgb(163 237 225) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 4px;
+}
+
+.colorBlack {
+  color: var(--black-color);
+}
+/* ////////// */
+/*END Fonts Section*/
+/* ////////// */
+
+.sectionPadding {
+  text-align: center;
+  padding: 2.5vw 10vw 2.5vw 10vw;
+}
+
+.sectionPaddingLeft {
+  text-align: center;
+  padding: 2.5vw 0vw 2.5vw 10vw;
+}
+
+.sectionBorderRadius {
+  background-color: #ffffff;
+  padding: 0;
+  border-radius: 45px;
+  margin: 2.5vw auto 2.5vw auto;
+  width: 64vw;
+}
+
+.sectionBorderRadius button {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.rowSpaceB {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+}
+
+.principal-home-image {
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.principal-home-title {
+  position: absolute;
+  top: 17%;
+  left: 5%;
+  color: white;
+  font-size: 52px;
+  width: 15%;
+}
+
+.second-home-title {
+  position: absolute;
+  top: 45%;
+  right: 5%;
+  color: white;
+  font-size: 52px;
+}
+
+/* ////////// */
+/*Button Section*/
+/* ////////// */
+button {
+  cursor: pointer;
+  font-family: "TrueLies", sans-serif !important;
+  font-size: 16px;
+  background-color: var(--secondary-color);
+  border-radius: 100px;
+  border: none;
+  height: 3vw;
+  width: 12.8vw;
+  transition: 0.75s;
+  box-shadow: -2px 3px 10px rgb(0 0 0 / 32%);
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: var(--primary-color);
+}
+
+.button-borderline {
+  background-color: transparent;
+  color: var(--black-color);
+  font-weight: 300;
+  border: 2px solid var(--primary-color);
+  min-width: 187.5px;
+  height: 43px;
+  margin-top: 5vh;
+  cursor: pointer;
+  position: relative;
+  transition: 0.5s;
+  font-size: calc(10px + 0.39vw);
+}
+
+.button-borderline:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.button-borderline.inverse {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.button-borderline.inverse:hover {
+  background-color: transparent;
+  color: var(--black-color);
+}
+
+/* ////////// */
+/*Hero Section*/
+/* ////////// */
+
+.heroSection {
+  position: relative;
+  width: 100%;
+  height: 50vw;
+  overflow: hidden; /* Ensure the video doesn't overflow the container */
+  box-shadow: 0 15px 25px rgb(0 0 0 / 10%);
+  /*background: linear-gradient(90deg, #295086b0 21.35%, rgb(255 0 147 / 74%) 100%);*/
+}
+
+.backgroundVideo {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the video covers the entire section */
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Place the video behind other elements */
+}
+
+.logoTittle {
+  position: relative;
+  transform: translate(0%, 125%);
+  width: 33vw;
+}
+
+.retrowaveItem {
+  position: absolute;
+  transform: translate(-34%, 24%);
+  width: 101vw;
+}
+
+.retrowaveItem2 {
+  position: absolute;
+  transform: translate(-21%, 5%);
+  width: 50vw;
+}
+
+.retrowaveItem3 {
+  position: absolute;
+  width: 30vw;
+  transform: translate(-80%, 0%);
+  filter: drop-shadow(6px 6px 2px #ffffff) invert(27%) sepia(82%) saturate(420%) hue-rotate(173deg) brightness(94%) contrast(96%);
+}
+
+.retrowaveItem4 {
+  position: absolute;
+  width: 25vw;
+  transform: translate(-116%, -31%);
+  z-index: -2;
+  filter: none;
+  opacity: 0.25;
+}
+
+.overlayText {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, 33%);
+  text-align: center;
+  width: 33vw;
+}
+
+.overlay-text h2,
+.overlay-text h1,
+.overlay-text h3 {
+  margin: 0.25em;
+}
+
+.overlay-text button {
+  margin-top: 20px;
+}
+
+/* ////////// */
+/*END Hero Section*/
+/* ////////// */
+
+.textContainer {
+  text-align: left;
+  flex: 0 0 36%;
+  padding: 8%;
+}
+
+.imageContainer {
+  flex: 0 0 50%;
+  background-image: url("../public/Background2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  min-height: 100%;
+  border-radius: 45px 0 0 45px;
+}
+
+.filterSection {
+  z-index: 1;
+  text-align: start;
+  width: -moz-fit-content;
+  width: 17em;
+  padding: 0 2em;
+}
+
+.filterSection p {
+  text-align: start;
+}
+
+.toogleFilter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.toogleFilter p {
+  margin: 0;
+}
+
+.toogleFilter label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.toogleFilter input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--white-color);
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.25s ease-out;
+}
+
+.toogleFilter input[type="checkbox"]:hover {
+  background-color: var(--white-color);
+}
+
+.toogleFilter input[type="checkbox"]:checked {
+  background-color: var(--white-color);
+}
+
+.toogleFilter input[type="checkbox"] + span {
+  font-size: 14px;
+  color: var(--white-color);
+  transition: color 0.3s ease;
+}
+
+.toogleFilter input[type="checkbox"]:checked + span {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .contenedor-principal {
+    width: 100%;
+    margin: 0;
+  }
+
+  .hero-section {
+    height: 60vw;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}

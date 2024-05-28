@@ -1,0 +1,76 @@
+.imageButton {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  height: 33.646vw;
+  width: 22vw;
+  border-radius: 30px;
+  background-color: black;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+  margin: 0.5vw;
+  padding: 0;
+}
+
+.imageButton:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.76);
+}
+
+.imageButton img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  transition: 0.6s ease;
+}
+
+.imageButton:hover img {
+  transform: scale(1.1);
+}
+
+.imageButton p,
+.imageButton h2 {
+  margin: 0;
+}
+
+.captionBox {
+  border-radius: 30px 30px 0 0;
+  padding: 1vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 93%;
+  height: 50%;
+  background-color: var(--white-color);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.captionBox img {
+  width: 1vw;
+}
+
+.captionText {
+  color: var(--black-color);
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+
+.durationBox {
+  display: flex;
+  flex-direction: row;
+  background-color: #e1e1e1;
+  border-radius: 45px;
+  height: fit-content;
+  padding: 0.15vw 1vw;
+  width: 90%;
+}
+
+.icon{
+  font-size: 28px;
+  color: var(--third-color);
+}
