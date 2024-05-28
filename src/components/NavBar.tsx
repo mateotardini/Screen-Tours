@@ -18,42 +18,42 @@ function NavBar() {
       </div>
       <ul className={`${styles.flex} ${menuOpen ? styles.showMenu : ''}`}>
         <li className={styles.animatedItem} style={{ animationDelay: '0s' }}>
-          <img src="icons/tour.png" alt="Logo Screen Tours" />
-          <Link to="/AboutUs">Inicio</Link>
+          <img src="icons/home.png" alt="Logo Screen Tours" />
+          <Link to="/">Inicio</Link>
         </li>
         <li className={styles.animatedItem} style={{ animationDelay: '0.5s' }}>
-          <img src="icons/tour.png" alt="Logo Screen Tours" />
-          <Link to="/Soluciones">Nuestro Equipo</Link>
+          <img src="icons/team.png" alt="Logo Screen Tours" />
+          <Link to="/OurTeam">Nuestro Equipo</Link>
         </li>
         <li className={styles.animatedItem} style={{ animationDelay: '1.0s' }}>
-          <img src="icons/tour.png" alt="Logo Screen Tours" />
-          <Link to="/Soluciones">Excursiones</Link>
+          <img src="icons/compass.png" alt="Logo Screen Tours" />
+          <Link to="/Tours">Excursiones</Link>
         </li>
         <li className={styles.animatedItem} style={{ animationDelay: '1.5s' }}>
           <img src="icons/tour.png" alt="Logo Screen Tours" />
-          <Link to="/Soluciones">Tours</Link>
+          <Link to="/Tours">Tours</Link>
         </li>
-        <img className={styles.logo} src="/Logo.png" alt="Logo Screen Tours" />
+        <img className={styles.logo} src="/Logo Blanco.png" alt="Logo Screen Tours" />
 
         <li className={styles.animatedItem} style={{ animationDelay: '2.0s' }}>
-          <img src="icons/tour.png" alt="Logo Screen Tours" />
-          <Link to="/Soluciones">Free Tours</Link>
+          <img src="icons/free.png" alt="Logo Screen Tours" />
+          <Link to="/Tours">Free Tours</Link>
         </li>
         <li className={styles.animatedItem} style={{ animationDelay: '2.5s' }}>
-          <img src="icons/tour.png" alt="Logo Screen Tours" />
-          <Link to="/Soluciones">Circuitos</Link>
+          <img src="icons/singpost.png" alt="Logo Screen Tours" />
+          <Link to="/Tours">Circuitos</Link>
         </li>
         <li className={styles.animatedItem} style={{ animationDelay: '3.0s' }}>
-          <img src="icons/tour.png" alt="Logo Screen Tours" />
-          <Link to="/Soluciones">Tickets</Link>
+          <img src="icons/ticket.png" alt="Logo Screen Tours" />
+          <Link to="/Tours">Tickets</Link>
         </li>
         <li className={styles.animatedItem} style={{ animationDelay: '3.5s' }}>
-          <img src="icons/tour.png" alt="Logo Screen Tours" />
-          <Link to="/Ingenieria">Vlogs</Link>
+          <img src="icons/camera.png" alt="Logo Screen Tours" />
+          <Link to="/Tours">Vlogs</Link>
         </li>
         <li className={styles.animatedItem} style={{ animationDelay: '4.0s' }}>
-          <img src="icons/tour.png" alt="Logo Screen Tours" />
-          <Link to="/Diseño">Contacto</Link>
+          <img src="icons/contact.png" alt="Logo Screen Tours" />
+          <Link to="/Contact">Contacto</Link>
         </li>
       </ul>
     </div>

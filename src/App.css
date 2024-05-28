@@ -51,6 +51,7 @@
   --primary-color: #295086;
   --secondary-color: #ff0093;
   --third-color: #68ced2;
+  --fourth-color: #090d29;
   --white-color: #f8f8f8;
   --black-color: #393939;
 }
@@ -124,7 +125,6 @@ p {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
-  letter-spacing: 4px;
 }
 
 .colorBlack {

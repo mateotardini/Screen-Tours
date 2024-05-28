@@ -83,7 +83,7 @@ function Home() {
                         lugar="Ámsterdam"
                         precio={50}
                         tipoDeTour="Tour"
-                        linkImagen=""
+                        linkImagen="/Background3.jpg"
                         link="">
                     </TourButton>
                     <TourButton
@@ -92,7 +92,7 @@ function Home() {
                         lugar="Ámsterdam"
                         precio={50}
                         tipoDeTour="Excursión"
-                        linkImagen=""
+                        linkImagen="/Background2.jpg"
                         link="">
                     </TourButton>
                     <TourButton
@@ -101,7 +101,7 @@ function Home() {
                         lugar="Ámsterdam"
                         precio={20}
                         tipoDeTour="Tour"
-                        linkImagen=""
+                        linkImagen="/Background.jpg"
                         link="">
                     </TourButton>
                 </div>

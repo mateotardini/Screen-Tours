@@ -1,20 +1,27 @@
 .footer {
   background-color: transparent;
-  color: #ffffff;
+  color: var(--white-color);
   text-align: start;
   height: fit-content;
 }
 
+.footer * li{
+  list-style: none;
+}
+
 .footer .imageBackground {
-  background-image: url("../../public/Recurso\ 2.png");
+  background-image: url("../../public/Recurso\ 3.png");
   height: 35vh;
-  filter: invert(27%) sepia(82%) saturate(420%) hue-rotate(173deg)
-    brightness(94%) contrast(96%);
+  filter: invert(7%) sepia(34%) saturate(2125%) hue-rotate(205deg) brightness(89%) contrast(104%);
 }
 
 .footer > .container {
-  background-color: #85c4eb;
+  background-color: var(--fourth-color);
   padding: 30px 0 60px 0;
+}
+
+.footer  .column{
+
 }
 
 .footer .logo {
@@ -35,8 +42,7 @@
 }
 
 .footer ul.links li {
-  margin-bottom: 10px;
-  list-style: none;
+  margin-bottom: 1.25vh;
 }
 
 .footer ul.links li a {
@@ -48,6 +54,17 @@
   text-decoration: none;
 }
 
+.icon{
+  color: var(--secondary-color);
+  margin-right: 1vw;
+}
+
+.bigIcon{
+  color: var(--secondary-color);
+  margin-right: 0.5vw;
+  font-size: 30px;
+}
+
 .footer .links a:hover:after {
   content: "";
   position: absolute;
@@ -55,7 +72,7 @@
   height: 3px;
   bottom: -5px;
   left: 0;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   animation: underline 0.2s ease-out forwards;
 }
 

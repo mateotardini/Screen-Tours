@@ -11,13 +11,14 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  background: white;
+  background: var(--fourth-color);
   justify-content: center;
   box-shadow: -1px 20px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 
 .container a {
-  color: var(--primary-color);
+  color: var(--white-color);
   text-decoration: none;
   font-size: 16px;
 }
@@ -38,8 +39,9 @@
 }
 
 .container li > img{
-  width: 24px;
-  filter: invert(27%) sepia(82%) saturate(420%) hue-rotate(173deg) brightness(94%) contrast(96%);
+  width: 1.25vw;
+  filter: invert(18%) sepia(69%) saturate(4486%) hue-rotate(314deg) brightness(101%) contrast(120%);
+  margin-bottom: 1vh;
 }
 
 
@@ -47,10 +49,10 @@
   content: "";
   position: absolute;
   left: 0;
-  bottom: -12px;
+  bottom: -1.05vh;
   width: 0;
   height: 4px;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   transition: width 0.3s ease-in-out;
 }
 

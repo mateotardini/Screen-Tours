@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaMapMarkerAlt } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaClock  } from 'react-icons/fa';
 import styles from "../css/TourButton.module.css";
 
 interface TourButtonProps {
@@ -20,7 +20,7 @@ const TourButton: React.FC<TourButtonProps> = ({ nombre, lugar, precio, duracion
         <div className={styles.captionBox}>
           <div className={styles.durationBox}>
             <p><FaMapMarkerAlt />  {duracion}</p>
-            <p><FaMapMarkerAlt />  {tipoDeTour}</p>
+            <p><FaClock  />  {tipoDeTour}</p>
           </div>
 
           <h2 className={`${styles.buttonText} fontMontserrat`}>{nombre}</h2>
@@ -36,7 +36,7 @@ const TourButton: React.FC<TourButtonProps> = ({ nombre, lugar, precio, duracion
 
           <button><a href={link}>Reservar Ahora</a></button>
         </div>
-        <img src="/Background.jpg" alt='Screen Tours Tours' />
+        <img src={linkImagen} alt='Screen Tours Tours' />
       </Link>
     </div>
   );
