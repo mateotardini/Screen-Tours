@@ -1,8 +1,11 @@
+import React from 'react';
+
 import NavBar from "../components/NavBar.tsx"
 import Footer from "../components/Footer.tsx"
 import TourButton from "../components/TourButton.tsx";
 import ImageButton from "../components/ImageButton.tsx";
 import WaveSeparator from '../components/WaveSeparator.tsx';
+import RetrowaveItem from '../components/RetrowaveItem.tsx';
 
 function Home() {
     return (
@@ -11,21 +14,29 @@ function Home() {
 
             <section className="heroSection">
                 <video className="backgroundVideo" autoPlay loop muted>
-                    <source src="/Video1.mp4" type="video/mp4"></source>
+                    <source src="/videos/Tulipans.mp4" type="video/mp4"></source>
                     Your browser does not support the video tag.
                 </video>
 
-                <img
-                    className="retrowaveItem2"
+                <RetrowaveItem
                     src="/Retrowave7.png"
-                    alt="Screen Tours Logo">
-                </img>
+                    alt="Screen Tours Logo"
+                    width="50vw"
+                    translateX="-21%"
+                    translateY="5%"
+                    filter="none"
+                    opacity={1}
+                />
 
-                <img
-                    className="retrowaveItem"
+                <RetrowaveItem
                     src="/Recurso 1.png"
-                    alt="Screen Tours Logo">
-                </img>
+                    alt="Screen Tours Logo"
+                    width="101vw"
+                    translateX="-34%"
+                    translateY="24%"
+                    filter="none"
+                    opacity={1}
+                />
 
                 <img
                     className="logoTittle"
@@ -45,19 +56,27 @@ function Home() {
 
             <WaveSeparator topColor="#090d29" bottomColor="#f8f8f8"></WaveSeparator>
 
-            <section className="sectionPaddingLeft rowSpaceB colorBlack">
-
-                <img
-                    className="retrowaveItem4"
+            <section className="sectionPaddingLeft spaceBetween colorBlack">
+                <RetrowaveItem
                     src="/Retrowave7.png"
-                    alt="Screen Tours Logo">
-                </img>
-                <img
-                    className="retrowaveItem3"
+                    alt="Screen Tours Logo"
+                    width="30vw"
+                    translateX="-80%"
+                    translateY="13%"
+                    filter="none"
+                    opacity={0.25}
+                />
+
+                <RetrowaveItem
                     src="/Mill2.png"
-                    alt="Screen Tours Logo">
-                </img>
-                
+                    alt="Screen Tours Logo"
+                    width="30vw"
+                    translateX="-80%"
+                    translateY="40%"
+                    filter="drop-shadow(6px 6px 2px #ffffff) invert(27%) sepia(82%) saturate(420%) hue-rotate(173deg) brightness(94%) contrast(96%)"
+                    opacity={1}
+                />
+
                 <div className="textContainer">
                     <h1 className="fontMontserrat">
                         Viajar es invertir en felicidad. Descubre, disfruta y comparte
@@ -73,12 +92,11 @@ function Home() {
                 </div>
             </section>
 
-
             <section className="sectionPadding colorBlack">
                 <h1 className="fontMontserrat">¿Looking for tour in Amsterdam?</h1>
                 <div className="row">
                     <TourButton
-                        nombre="Tour del Rijksmuseum"
+                        nombre="Tour Histórico de Ámsterdam"
                         duracion="X Horas"
                         lugar="Ámsterdam"
                         precio={50}
@@ -87,21 +105,21 @@ function Home() {
                         link="">
                     </TourButton>
                     <TourButton
-                        nombre="Tour del Rijksmuseum"
+                        nombre="Amsterdam through Rembrandt"
                         duracion="X Horas"
                         lugar="Ámsterdam"
                         precio={50}
                         tipoDeTour="Excursión"
-                        linkImagen="/Background2.jpg"
+                        linkImagen="/Rembrant.jpg"
                         link="">
                     </TourButton>
                     <TourButton
-                        nombre="Tour del Barrio Rojo"
+                        nombre="Mokum, el Ámsterdam Judío"
                         duracion="X Horas"
                         lugar="Ámsterdam"
                         precio={20}
                         tipoDeTour="Tour"
-                        linkImagen="/Background.jpg"
+                        linkImagen="/Mokum.jpg"
                         link="">
                     </TourButton>
                 </div>
@@ -111,7 +129,7 @@ function Home() {
                 <ImageButton></ImageButton>
             </section>
 
-            <section className="sectionBorderRadius rowSpaceB colorBlack">
+            <section className="sectionBorderRadius spaceBetween colorBlack">
                 <div className="imageContainer">
                 </div>
                 <div className="textContainer">
