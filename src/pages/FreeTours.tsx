@@ -7,7 +7,7 @@ import RetrowaveItem from '../components/RetrowaveItem.tsx';
 
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
 
-function Tours() {
+function FreeTours() {
     return (
         <main>
             <NavBar />
@@ -19,16 +19,7 @@ function Tours() {
                         Your browser does not support the video tag.
                     </video>
                 </div>
-                <h1 className="outTeamTextOverlay">Tours</h1>
-                <RetrowaveItem
-                    src="/Retrowave6.png"
-                    alt="Screen Tours Logo"
-                    width="30vw"
-                    translateX="-50%"
-                    translateY="12%"
-                    filter="none"
-                    opacity={0.85}
-                />
+                <h1 className="outTeamTextOverlay">Free Tours</h1>
             </section>
 
 
@@ -121,4 +112,4 @@ function Tours() {
         </main >
     );
 }
-export default Tours;
+export default FreeTours;

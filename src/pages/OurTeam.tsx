@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "../components/NavBar.tsx"
 import Footer from "../components/Footer.tsx"
 
+import RetrowaveItem from '../components/RetrowaveItem.tsx';
 import WaveSeparator from '../components/WaveSeparator.tsx';
 import ImageTeam from "../components/ImageTeam.tsx"
 
@@ -12,7 +13,24 @@ function OurTeam() {
         <main>
             <NavBar></NavBar>
 
-            <WaveSeparator topColor="#140f32" bottomColor="#f8f8f8"></WaveSeparator>
+            <section style={{ minHeight: "unset",height: "43vh", position: "relative", overflow: "hidden" }}>
+                <div className="videoBackground">
+                    <video autoPlay muted loop playsInline>
+                        <source src="/videos/Skyline2.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <h1 className="outTeamTextOverlay">Nuestro Equipo</h1>
+                <RetrowaveItem
+                    src="/Retrowave5.png"
+                    alt="Screen Tours Logo"
+                    width="30vw"
+                    translateX="-50%"
+                    translateY="12%"
+                    filter="none"
+                    opacity={0.85}
+                />
+            </section>
 
             <section className="sectionPaddingRight spaceBetween colorBlack">
                 <div className="imageContainerLeft">
