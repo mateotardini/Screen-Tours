@@ -2,10 +2,7 @@ import React from "react";
 import NavBar from "../components/NavBar.tsx"
 import Footer from "../components/Footer.tsx"
 import TourButton from "../components/TourButton.tsx";
-import WaveSeparator from '../components/WaveSeparator.tsx';
 import RetrowaveItem from '../components/RetrowaveItem.tsx';
-
-import { FaRegArrowAltCircleRight } from "react-icons/fa";
 
 function Excursion() {
     return (

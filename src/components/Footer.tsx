@@ -5,8 +5,6 @@ import styles from "../css/Footer.module.css";
 /*Iconos*/
 import { FaFacebookF, FaInstagram, FaGoogle,FaTripadvisor,FaWhatsapp  } from 'react-icons/fa';
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock } from 'react-icons/fa';
-/*Componentes*/
-import Linea from "./Linea.tsx";
 
 function Footer() {
   return (

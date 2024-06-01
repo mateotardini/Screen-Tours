@@ -3,7 +3,6 @@ import NavBar from "../components/NavBar.tsx"
 import Footer from "../components/Footer.tsx"
 
 import RetrowaveItem from '../components/RetrowaveItem.tsx';
-import WaveSeparator from '../components/WaveSeparator.tsx';
 import ImageTeam from "../components/ImageTeam.tsx"
 
 import { FaRegArrowAltCircleRight } from "react-icons/fa";

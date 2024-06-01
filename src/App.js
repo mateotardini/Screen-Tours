@@ -7,7 +7,6 @@ import FreeTours from './pages/FreeTours.tsx';
 import Tickets from './pages/Tickets.tsx';
 import OurTeam from './pages/OurTeam.tsx';
 import Contact from './pages/Contact.tsx';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
