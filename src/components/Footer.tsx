@@ -31,9 +31,9 @@ function Footer() {
             <ul className={styles.links}>
               <li><FaMapMarkerAlt className={styles.icon}/>Amsterdam, Paises Bajos</li>
               <li><FaClock  className={styles.icon}/>09:00h - 17:00h</li>
-              <li><FaPhoneAlt className={styles.icon}/><a href="https://wa.me/5491163733844">+54 9 11 6373-3844 </a></li>
-              <li><FaWhatsapp className={styles.icon}/><a href="https://wa.me/5491163733844">+54 9 11 6373-3844 </a></li>
-              <li><FaEnvelope className={styles.icon}/><a href="mailto:info@nnwines.com">info@screentours.com</a></li>
+              <li><FaPhoneAlt className={styles.icon}/><a href="https://wa.me/5491163733844" target='_blank'>+54 9 11 6373-3844 </a></li>
+              <li><FaWhatsapp className={styles.icon}/><a href="https://wa.me/5491163733844" target='_blank'>+54 9 11 6373-3844 </a></li>
+              <li><FaEnvelope className={styles.icon}/><a href="mailto:screentours.uptodate@gmail.com" target='_blank'>screentours.uptodate@gmail.com</a></li>
             </ul>
           </div>
 

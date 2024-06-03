@@ -1,0 +1,12 @@
+.icon {
+  color: var(--secondary-color);
+  margin-right: 1vw;
+}
+
+ul{
+    padding: 0;
+}
+
+.links li{
+    list-style: none;    
+}

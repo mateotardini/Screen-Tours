@@ -22,37 +22,37 @@ function NavBar() {
           <img src="icons/home.png" alt="Logo Screen Tours" />
           <Link to="/">Inicio</Link>
         </li>
-        <li className={styles.animatedItem} style={{ animationDelay: '0.5s' }}>
+        <li className={styles.animatedItem} style={{ animationDelay: '0.25s' }}>
           <img src="icons/team.png" alt="Logo Screen Tours" />
           <Link to="/OurTeam">Nuestro Equipo</Link>
         </li>
-        <li className={styles.animatedItem} style={{ animationDelay: '1.0s' }}>
+        <li className={styles.animatedItem} style={{ animationDelay: '0.50s' }}>
           <img src="icons/compass.png" alt="Logo Screen Tours" />
           <Link to="/Excursion">Excursiones</Link>
         </li>
-        <li className={styles.animatedItem} style={{ animationDelay: '1.5s' }}>
+        <li className={styles.animatedItem} style={{ animationDelay: '0.75s' }}>
           <img src="icons/tour.png" alt="Logo Screen Tours" />
           <Link to="/Tours">Tours</Link>
         </li>
         <img className={styles.logo} src="/Logo Blanco.png" alt="Logo Screen Tours" />
 
-        <li className={styles.animatedItem} style={{ animationDelay: '2.0s' }}>
+        <li className={styles.animatedItem} style={{ animationDelay: '1.0s' }}>
           <img src="icons/free.png" alt="Logo Screen Tours" />
           <Link to="/FreeTours">Free Tours</Link>
         </li>
-        <li className={styles.animatedItem} style={{ animationDelay: '2.5s' }}>
+        <li className={styles.animatedItem} style={{ animationDelay: '1.25s' }}>
           <img src="icons/singpost.png" alt="Logo Screen Tours" />
           <Link to="/Tours">Circuitos</Link>
         </li>
-        <li className={styles.animatedItem} style={{ animationDelay: '3.0s' }}>
+        <li className={styles.animatedItem} style={{ animationDelay: '1.5s' }}>
           <img src="icons/ticket.png" alt="Logo Screen Tours" />
           <Link to="/Tickets">Tickets</Link>
         </li>
-        <li className={styles.animatedItem} style={{ animationDelay: '3.5s' }}>
+        <li className={styles.animatedItem} style={{ animationDelay: '1.75s' }}>
           <img src="icons/camera.png" alt="Logo Screen Tours" />
           <Link to="/Tours">Vlogs</Link>
         </li>
-        <li className={styles.animatedItem} style={{ animationDelay: '4.0s' }}>
+        <li className={styles.animatedItem} style={{ animationDelay: '2.0s' }}>
           <img src="icons/contact.png" alt="Logo Screen Tours" />
           <Link to="/Contact">Contacto</Link>
         </li>
