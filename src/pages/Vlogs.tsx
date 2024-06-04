@@ -11,7 +11,7 @@ function Vlogs() {
             <section style={{ minHeight: "unset", height: "43vh", position: "relative", overflow: "hidden" }}>
                 <div className="videoBackground">
                     <video autoPlay muted loop playsInline>
-                        <source src="/videos/Skyline2.mp4" type="video/mp4" />
+                        <source src="/videos/Tour.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
                 </div>
@@ -27,35 +27,52 @@ function Vlogs() {
                 />
             </section>
 
-            <section className="sectionPaddingLeft spaceBetween colorBlack">
+            <section className="sectionPaddingLeft spaceBetween colorBlack" style={{ paddingTop: "0", paddingBottom: "0"}}>
                 <div className="textContainer">
                     <h1 className="fontMontserrat">
-                        Viajar es invertir en felicidad. Descubre, disfruta y comparte
+                        Tour Virtual - Kinkerbuurt
                     </h1>
                     <p>
-                        Screen Tours es una empresa de turismo receptivo en Los Países Bajos, especializada en el viajero hispanohablante.
-                        Con un amplio equipo de guías turísticos profesionales encargado de organizar tours, circuitos y excursiones guiadas en Ámsterdam,
-                        Bruselas y Bélgica, exclusivamente en español.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam commodo viverra metus, mollis porta arcu tristique quis. Nam sodales eros eu sem tempor finibus. Fusce ultrices mauris ac dolor mollis feugiat. Aliquam sollicitudin id enim quis auctor. Mauris ut arcu nunc. Vestibulum sit amet tortor at eros ornare fringilla sed in libero.
+                        Sed orci nunc, congue eu facilisis in, porttitor at justo. Cras vestibulum viverra justo, at finibus enim fringilla vitae. Integer ornare ex id pretium rutrum.
                     </p>
                 </div>
 
-                <div className="imageContainer">
+                <div className="videoContainerLeft">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EtxCpMzu1GY?si=-GNmAv4Td1qRzgvK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </section>
 
-            <section className="sectionPaddingRight spaceBetween colorBlack">
-                <div className="imageContainer">
+            <section className="sectionPaddingRight spaceBetween colorBlack" style={{ paddingTop: "0", paddingBottom: "0"}}>
+                <div className="videoContainer">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EtxCpMzu1GY?si=-GNmAv4Td1qRzgvK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
 
                 <div className="textContainer">
                     <h1 className="fontMontserrat">
-                        Viajar es invertir en felicidad. Descubre, disfruta y comparte
+                        Visita guiada por el Barrio Rojo
                     </h1>
                     <p>
-                        Screen Tours es una empresa de turismo receptivo en Los Países Bajos, especializada en el viajero hispanohablante.
-                        Con un amplio equipo de guías turísticos profesionales encargado de organizar tours, circuitos y excursiones guiadas en Ámsterdam,
-                        Bruselas y Bélgica, exclusivamente en español.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam commodo viverra metus, mollis porta arcu tristique quis. Nam sodales eros eu sem tempor finibus.
+                        Fusce ultrices mauris ac dolor mollis feugiat. Aliquam sollicitudin id enim quis auctor. Mauris ut arcu nunc. Vestibulum sit amet tortor at eros ornare fringilla sed in libero.
+                        Sed orci nunc, congue eu facilisis in, porttitor at justo. Cras vestibulum viverra justo, at finibus enim fringilla vitae. Integer ornare ex id pretium rutrum.
                     </p>
+                </div>
+            </section>
+
+            <section className="sectionPaddingLeft spaceBetween colorBlack" style={{ paddingTop: "0", paddingBottom: "0"}}>
+                <div className="textContainer">
+                    <h1 className="fontMontserrat">
+                        Tour Virtual - Kinkerbuurt
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam commodo viverra metus, mollis porta arcu tristique quis. Nam sodales eros eu sem tempor finibus. Fusce ultrices mauris ac dolor mollis feugiat. Aliquam sollicitudin id enim quis auctor. Mauris ut arcu nunc. Vestibulum sit amet tortor at eros ornare fringilla sed in libero.
+                        Sed orci nunc, congue eu facilisis in, porttitor at justo. Cras vestibulum viverra justo, at finibus enim fringilla vitae. Integer ornare ex id pretium rutrum.
+                    </p>
+                </div>
+
+                <div className="videoContainerLeft">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EtxCpMzu1GY?si=-GNmAv4Td1qRzgvK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </section>
 

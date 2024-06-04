@@ -9,10 +9,10 @@ function Excursion() {
         <main>
             <NavBar />
 
-            <section style={{ minHeight: "unset",height: "43vh", position: "relative", overflow: "hidden" }}>
+            <section style={{ minHeight: "unset", height: "43vh", position: "relative", overflow: "hidden" }}>
                 <div className="videoBackground">
                     <video autoPlay muted loop playsInline>
-                        <source src="/videos/Skyline2.mp4" type="video/mp4" />
+                        <source src="/videos/Tulipans.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
                 </div>
@@ -43,12 +43,12 @@ function Excursion() {
 
                 <div className="textContainer">
                     <h1 className="fontMontserrat">
-                        Viajar es invertir en felicidad. Descubre, disfruta y comparte
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
                     </h1>
                     <p>
-                        Screen Tours es una empresa de turismo receptivo en Los Países Bajos, especializada en el viajero hispanohablante.
-                        Con un amplio equipo de guías turísticos profesionales encargado de organizar tours, circuitos y excursiones guiadas en Ámsterdam,
-                        Bruselas y Bélgica, exclusivamente en español.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam commodo viverra metus, mollis porta arcu tristique quis.
+                        Nam sodales eros eu sem tempor finibus. Fusce ultrices mauris ac dolor mollis feugiat.
+                        Aliquam sollicitudin id enim quis auctor. Mauris ut arcu nunc. Vestibulum sit amet tortor at eros ornare fringilla sed in libero.
                     </p>
                 </div>
             </section>

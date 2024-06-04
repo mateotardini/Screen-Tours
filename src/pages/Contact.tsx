@@ -6,13 +6,22 @@ import ContactForm from '../components/ContactForm.tsx';
 /*CSS*/
 import styles from "../css/Contact.module.css";
 /*Iconos*/
-import { FaFacebookF, FaInstagram, FaGoogle, FaTripadvisor, FaWhatsapp } from 'react-icons/fa';
+import { FaWhatsapp } from 'react-icons/fa';
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock } from 'react-icons/fa';
 
 function Contact() {
     return (
         <main>
             <NavBar />
+            <section style={{ minHeight: "unset",height: "43vh", position: "relative", overflow: "hidden" }}>
+                <div className="videoBackground">
+                    <video autoPlay muted loop playsInline>
+                        <source src="/videos/Tulipans.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <h1 className="outTeamTextOverlay">Contacto</h1>
+            </section>
 
             <section className="sectionPaddingLeft rowSpaceB colorBlack" style={{ paddingTop: "0" }}>
                 <RetrowaveItem
@@ -36,9 +45,9 @@ function Contact() {
                         <ul className={styles.links}>
                             <li><FaMapMarkerAlt className={styles.icon} />Amsterdam, Paises Bajos</li>
                             <li><FaClock className={styles.icon} />09:00h - 17:00h</li>
-                            <li><FaPhoneAlt className={styles.icon} /><a href="https://wa.me/5491163733844" target="_blank">+54 9 11 6373-3844 </a></li>
-                            <li><FaWhatsapp className={styles.icon} /><a href="https://wa.me/5491163733844" target="_blank">+54 9 11 6373-3844 </a></li>
-                            <li><FaEnvelope className={styles.icon} /><a href="mailto:screentours.uptodate@gmail.com" target="_blank">screentours.uptodate@gmail.com</a></li>
+                            <li><FaPhoneAlt className={styles.icon} /><a href="https://wa.me/5491163733844" target="_blank" rel="noreferrer" >+54 9 11 6373-3844 </a></li>
+                            <li><FaWhatsapp className={styles.icon} /><a href="https://wa.me/5491163733844" target="_blank" rel="noreferrer" >+54 9 11 6373-3844 </a></li>
+                            <li><FaEnvelope className={styles.icon} /><a href="mailto:screentours.uptodate@gmail.com" target="_blank" rel="noreferrer" >screentours.uptodate@gmail.com</a></li>
                         </ul>
                     </div>
                 </div>

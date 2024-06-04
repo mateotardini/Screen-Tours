@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import NavBar from "../components/NavBar.tsx"
 import Footer from "../components/Footer.tsx"
@@ -14,7 +15,7 @@ function Home() {
 
             <section className="heroSection">
                 <video className="backgroundVideo" autoPlay loop muted>
-                    <source src="/videos/Tulipans.mp4" type="video/mp4"></source>
+                    <source src="/videos/Skyline3.mp4" type="video/mp4"></source>
                     Your browser does not support the video tag.
                 </video>
 
@@ -139,7 +140,7 @@ function Home() {
                     <p>
                         Descarga nuestra guía y descubre los 20 lugares que no te puedes perder en tu primera visita a Ámsterdam
                     </p>
-                    <button>Explorar</button>
+                    <button><Link to="/Vlogs">Ver Vlogs</Link></button>
                 </div>
             </section>
 
