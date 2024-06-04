@@ -16,7 +16,7 @@
   background-color: rgb(0, 0, 0);
 }
 
-.imageButton .retrowaveImage{
+.imageButton .retrowaveImage {
   position: absolute;
   width: 50%;
   transform: translate(50%, 200%);
@@ -73,9 +73,10 @@
 }
 
 .imageButton:hover .buttonText {
-  transform: translate(-50%, -150%);
+  transform: translate(-50%, calc(50% - var(--testimonio-height)));
 }
 
 .imageButton:hover .testimonio {
   transform: translateY(0);
+  transition: transform 0.6s ease;
 }

@@ -42,22 +42,22 @@ function Footer() {
               <li><Link to="/">Home</Link></li>
               <li><Link to="/OurTeam">Nuestro Equipo</Link></li>
               <li><Link to="/Tours">Tours</Link></li>
-              <li><Link to="/Tours">Excursiones</Link></li>
-              <li><Link to="/Tours">Free Tours</Link></li>
+              <li><Link to="/Excrusion">Excursiones</Link></li>
+              <li><Link to="/FreeTours">Free Tours</Link></li>
             </ul>
           </div>
 
           <div className={styles.column}>
             <ul className={styles.links}>
               <li><Link to="/Tours">Circuitos</Link></li>
-              <li><Link to="/Tours">Tickets</Link></li>
-              <li><Link to="/Tours">Vlogs</Link></li>
+              <li><Link to="/Tickets">Tickets</Link></li>
+              <li><Link to="/Vlogs">Vlogs</Link></li>
               <li><Link to="/Contact">Contacto</Link></li>
             </ul>
           </div>
 
           <div className={styles.column}>
-            <button>Conocé A Nuestros Guias</button>
+            <button><Link to="/OurTeam">Conocé A Nuestros Guias</Link></button>
           </div>
         </div>
       </div>

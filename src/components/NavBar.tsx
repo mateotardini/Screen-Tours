@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import styles from"../css/NavBar.module.css";
+import styles from "../css/NavBar.module.css";
 
 function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,42 +19,60 @@ function NavBar() {
       </div>
       <ul className={`${styles.flex} ${menuOpen ? styles.showMenu : ''}`}>
         <li className={styles.animatedItem} style={{ animationDelay: '0s' }}>
-          <img src="icons/home.png" alt="Logo Screen Tours" />
-          <Link to="/">Inicio</Link>
+          <Link to="/">
+            <img className={styles.icon} src="icons/home.png" alt="Logo Screen Tours" />
+            Inicio
+          </Link>
         </li>
         <li className={styles.animatedItem} style={{ animationDelay: '0.25s' }}>
-          <img src="icons/team.png" alt="Logo Screen Tours" />
-          <Link to="/OurTeam">Nuestro Equipo</Link>
+          <Link to="/OurTeam">
+            <img className={styles.icon} src="icons/team.png" alt="Logo Screen Tours" />
+            Nuestro Equipo
+          </Link>
         </li>
         <li className={styles.animatedItem} style={{ animationDelay: '0.50s' }}>
-          <img src="icons/compass.png" alt="Logo Screen Tours" />
-          <Link to="/Excursion">Excursiones</Link>
+          <Link to="/Excursion">
+            <img className={styles.icon} src="icons/compass.png" alt="Logo Screen Tours" />
+            Excursiones
+          </Link>
         </li>
         <li className={styles.animatedItem} style={{ animationDelay: '0.75s' }}>
-          <img src="icons/tour.png" alt="Logo Screen Tours" />
-          <Link to="/Tours">Tours</Link>
+          <Link to="/Tours">
+            <img className={styles.icon} src="icons/tour.png" alt="Logo Screen Tours" />
+            Tours
+          </Link>
         </li>
         <img className={styles.logo} src="/Logo Blanco.png" alt="Logo Screen Tours" />
 
         <li className={styles.animatedItem} style={{ animationDelay: '1.0s' }}>
-          <img src="icons/free.png" alt="Logo Screen Tours" />
-          <Link to="/FreeTours">Free Tours</Link>
+          <Link to="/FreeTours">
+            <img className={styles.icon} src="icons/free.png" alt="Logo Screen Tours" />
+            Free Tours
+          </Link>
         </li>
         <li className={styles.animatedItem} style={{ animationDelay: '1.25s' }}>
-          <img src="icons/singpost.png" alt="Logo Screen Tours" />
-          <Link to="/Tours">Circuitos</Link>
+          <Link to="/Tours">
+            <img className={styles.icon} src="icons/singpost.png" alt="Logo Screen Tours" />
+            Circuitos
+          </Link>
         </li>
         <li className={styles.animatedItem} style={{ animationDelay: '1.5s' }}>
-          <img src="icons/ticket.png" alt="Logo Screen Tours" />
-          <Link to="/Tickets">Tickets</Link>
+          <Link to="/Tickets">
+            <img className={styles.icon} src="icons/ticket.png" alt="Logo Screen Tours" />
+            Tickets
+          </Link>
         </li>
         <li className={styles.animatedItem} style={{ animationDelay: '1.75s' }}>
-          <img src="icons/camera.png" alt="Logo Screen Tours" />
-          <Link to="/Tours">Vlogs</Link>
+          <Link to="/Vlogs">
+            <img className={styles.icon} src="icons/camera.png" alt="Logo Screen Tours" />
+            Vlogs
+          </Link>
         </li>
         <li className={styles.animatedItem} style={{ animationDelay: '2.0s' }}>
-          <img src="icons/contact.png" alt="Logo Screen Tours" />
-          <Link to="/Contact">Contacto</Link>
+          <Link to="/Contact">
+            <img className={styles.icon} src="icons/contact.png" alt="Logo Screen Tours" />
+            Contacto
+          </Link>
         </li>
       </ul>
     </div>

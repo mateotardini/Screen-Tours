@@ -7,6 +7,7 @@ import FreeTours from './pages/FreeTours.tsx';
 import Tickets from './pages/Tickets.tsx';
 import OurTeam from './pages/OurTeam.tsx';
 import Contact from './pages/Contact.tsx';
+import Vlogs from './pages/Vlogs.tsx';
 import './App.css';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/Tours" element={<Tours />} />
         <Route path="/FreeTours" element={<FreeTours />} />
         <Route path="/Tickets" element={<Tickets />} />
+        <Route path="/Vlogs" element={<Vlogs />} />
         <Route path="/Contact" element={<Contact />} />
       </Routes>
     </div>

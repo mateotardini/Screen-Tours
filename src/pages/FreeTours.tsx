@@ -59,7 +59,7 @@ function FreeTours() {
                         nombre="Tour Histórico de Ámsterdam"
                         duracion="X Horas"
                         lugar="Ámsterdam"
-                        precio={50}
+                        precio={0}
                         tipoDeTour="Tour"
                         linkImagen="/Background3.jpg"
                         link="">
@@ -68,7 +68,7 @@ function FreeTours() {
                         nombre="Amsterdam through Rembrandt"
                         duracion="X Horas"
                         lugar="Ámsterdam"
-                        precio={50}
+                        precio={0}
                         tipoDeTour="Excursión"
                         linkImagen="/Rembrant.jpg"
                         link="">
@@ -77,7 +77,7 @@ function FreeTours() {
                         nombre="Mokum, el Ámsterdam Judío"
                         duracion="X Horas"
                         lugar="Ámsterdam"
-                        precio={20}
+                        precio={0}
                         tipoDeTour="Tour"
                         linkImagen="/Mokum.jpg"
                         link="">
@@ -88,7 +88,7 @@ function FreeTours() {
                         nombre="Second World War, The Liberation of Amsterdam"
                         duracion="X Horas"
                         lugar="Ámsterdam"
-                        precio={50}
+                        precio={0}
                         tipoDeTour="Tour"
                         linkImagen="/Background3.jpg"
                         link="">
@@ -97,7 +97,7 @@ function FreeTours() {
                         nombre="The Dutch Scaped"
                         duracion="X Horas"
                         lugar="Ámsterdam"
-                        precio={50}
+                        precio={0}
                         tipoDeTour="Excursión"
                         linkImagen="/Background2.jpg"
                         link="">
