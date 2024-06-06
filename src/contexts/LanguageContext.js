@@ -12,12 +12,16 @@ const translations = {
       firstText: "Camaleon Tours is a receptive tourism company in the Netherlands. With a large team of professional tour guides in charge of organizing tours, circuits and guided day trips in Amsterdam, Brussels and Belgium, both in English and Spanish.",
     },
     navbar: {
-      home: "Home",
-      ourTeam: "Our Team",
-      contact: "Contact"
+      home: "Home"
     },
-    museos: {
+    outTeam:{
+      subtittle: "Our Team"
+    },
+    museums: {
       subtittle: "Museums"
+    },
+    contact: {
+      subtittle: "Contact"
     }
   },
   es: {
@@ -29,12 +33,16 @@ const translations = {
       firstText: "Screen Tours es una empresa de turismo receptivo en Los Países Bajos, especializada en el viajero hispanohablante. Con un amplio equipo de guías turísticos profesionales encargado de organizar tours, circuitos y excursiones guiadas en Ámsterdam, Bruselas y Bélgica, exclusivamente en español.",
     },
     navbar: {
-      home: "Inicio",
-      about: "Nuestro Equipo",
-      contact: "Contacto"
+      home: "Inicio"
     },
-    museos: {
+    outTeam:{
+      subtittle: "Nuestro Equipo"
+    },
+    Museums: {
       subtittle: "Museos"
+    },
+    contact: {
+      subtittle: "Contacto"
     }
   }
 };

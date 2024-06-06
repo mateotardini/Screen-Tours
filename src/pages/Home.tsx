@@ -25,22 +25,26 @@ function Home() {
 
                 <RetrowaveItem
                     src="/Retrowave7.png"
-                    alt="Screen Tours Logo"
+                    alt="Screen Tours Sun Item"
                     width="50vw"
-                    translateX="-21%"
-                    translateY="5%"
+                    translateX="-50%"
+                    translateY="-43%"
                     filter="none"
                     opacity={1}
+                    responsiveWidth="90vw"
+                    responsiveTranslateY="-44%"
                 />
 
                 <RetrowaveItem
                     src="/Recurso 1.png"
                     alt="Screen Tours Logo"
                     width="101vw"
-                    translateX="-34%"
-                    translateY="24%"
+                    translateX="-50%"
+                    translateY="-38%"
                     filter="none"
                     opacity={1}
+                    responsiveWidth="250vw"
+                    responsiveTranslateY="-34%"
                 />
 
                 <img
@@ -66,8 +70,8 @@ function Home() {
                     src="/Retrowave7.png"
                     alt="Screen Tours Logo"
                     width="30vw"
-                    translateX="-80%"
-                    translateY="13%"
+                    translateX="-211%"
+                    translateY="129%"
                     filter="none"
                     opacity={0.25}
                 />
@@ -76,8 +80,8 @@ function Home() {
                     src="/Mill2.png"
                     alt="Screen Tours Logo"
                     width="30vw"
-                    translateX="-80%"
-                    translateY="40%"
+                    translateX="-211%"
+                    translateY="200%"
                     filter="drop-shadow(6px 6px 2px #ffffff) invert(27%) sepia(82%) saturate(420%) hue-rotate(173deg) brightness(94%) contrast(96%)"
                     opacity={1}
                 />

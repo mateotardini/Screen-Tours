@@ -80,3 +80,16 @@
   transform: translateY(0);
   transition: transform 0.6s ease;
 }
+
+
+@media (max-width: 768px) {
+  .imageButton{
+    height: 70vh;
+    width: -webkit-fill-available;
+    margin: 20px 0;
+  }
+
+  .imageButton:hover .buttonText {
+    transform: translate(-50%, calc(0% - var(--testimonio-height)));
+  }
+}

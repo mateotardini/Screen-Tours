@@ -17,6 +17,17 @@ function Daytrips() {
                     </video>
                 </div>
                 <h1 className="outTeamTextOverlay">Daytrips</h1>
+                <RetrowaveItem
+                    src="/Retrowave5.png"
+                    alt="Screen Tours Logo"
+                    width="30vw"
+                    translateX="-50%"
+                    translateY="-25%"
+                    filter="none"
+                    opacity={0.85}
+                    responsiveWidth="30vh"
+                    responsiveTranslateY="-35%"
+                />
             </section>
 
 

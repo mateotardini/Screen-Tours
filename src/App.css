@@ -322,9 +322,9 @@ button:hover {
 
 .overlayText {
   position: absolute;
-  top: 47%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, 33%);
+  transform: translate(-50%, 18%);
   text-align: center;
   width: 33vw;
 }
@@ -456,93 +456,9 @@ button:hover {
   color: white;
 }
 
-@media (max-width: 768px) {
-  .contenedor-principal {
-    width: 100%;
-    margin: 0;
-  }
 
-  .hero-section {
-    height: 60vw;
-  }
 
-  section {
-    min-height: 55vh;
-  }
 
-  button {
-    width: 100%;
-    min-height: 55px;
-    font-size: 16px;
-  }
-
-  h1 {
-    font-size: 36px;
-  }
-
-  h2 {
-    font-size: 24px;
-  }
-
-  p {
-    font-size: 16px;
-    line-height: unset;
-  }
-
-  .sectionPadding {
-    padding: 5%;
-  }
-
-  .sectionPadding > .row{
-    flex-direction: column;
-  } 
-
-  .sectionPaddingLeft {
-    padding: 10%;
-    padding-right: 0;
-    flex-direction: column;
-  }
-
-  .sectionPaddingRight {
-    padding: 10%;
-    padding-left: 0;
-    flex-direction: column;
-  }
-
-  .textContainer {
-    width: 92%;
-    padding: 0;
-  }
-
-  .textContainer p{
-    line-height: 25px;
-  }
-
-  .imageContainer {
-    width: 100%;
-    height: 33vh;
-  }
-
-  .sectionBorderRadius {
-    margin: auto;
-    margin-top: 5vh;
-    width: 90vw;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .sectionBorderRadius .imageContainer {
-    border-radius: 45px 45px 0px 0px;
-  }
-
-  .sectionBorderRadius .textContainer {
-    padding: 5%;
-  }
-
-  .sectionBorderRadius .textContainer h1 {
-    margin: 0;
-  }
-}
 
 html,
 body {
@@ -599,4 +515,124 @@ a {
   background-clip: unset;
   color: #f8f8f8;
   text-shadow: 3px 3px 4px #000000;
+}
+
+
+
+@media (max-width: 768px) {
+  .contenedor-principal {
+    width: 100%;
+    margin: 0;
+  }
+
+  .hero-section {
+    height: 60vw;
+  }
+
+  section {
+    min-height: 55vh;
+  }
+
+  button {
+    width: 100%;
+    min-height: 55px;
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: unset;
+  }
+
+  .sectionPadding {
+    padding: 5%;
+  }
+
+  .sectionPadding>.row {
+    flex-direction: column;
+  }
+
+  .sectionPaddingLeft {
+    padding: 10%;
+    padding-right: 0;
+    flex-direction: column;
+  }
+
+  .sectionPaddingRight {
+    padding: 10%;
+    padding-right: 0;
+    flex-direction: column-reverse;
+  }
+
+  .textContainer {
+    width: 92%;
+    padding: 0;
+  }
+
+  .textContainer p {
+    line-height: 25px;
+  }
+
+  .imageContainer {
+    width: 100%;
+    height: 33vh;
+  }
+
+  .imageContainerLeft {
+    width: 100%;
+    height: 33vh;
+  }
+
+  .sectionBorderRadius {
+    margin: auto;
+    margin-top: 5vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sectionBorderRadius .imageContainer {
+    border-radius: 45px 45px 0px 0px;
+  }
+
+  .sectionBorderRadius .textContainer {
+    padding: 5%;
+  }
+
+  .sectionBorderRadius .textContainer h1 {
+    margin: 0;
+  }
+
+
+  .heroSection{
+    min-height: 60vh;
+    max-height: 75vh;
+  }
+
+  .logoTittle{
+    transform: translate(0%, 170%);
+    width: 35vh;
+  }
+
+  .overlayText {
+    width: 80vw;
+    transform: translate(-50%, 5%);
+  }
+
+  .overlayText h2{
+    font-size: 22px;
+  }
+
+  .outTeamTextOverlay {
+    font-size: 36px;
+    transform: translate(50%, 0%);
+  }
 }

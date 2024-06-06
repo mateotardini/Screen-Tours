@@ -8,22 +8,44 @@ interface RetrowaveItemProps {
     translateY: string;
     filter: string;
     opacity: number;
+    responsiveWidth?: string;
+    responsiveTranslateX?: string;
+    responsiveTranslateY?: string;
+    responsiveFilter?: string;
+    responsiveOpacity?: number;
 }
 
-const RetrowaveItem: React.FC<RetrowaveItemProps> = ({ src, alt, width, translateX, translateY, filter, opacity }) => {
+const RetrowaveItem: React.FC<RetrowaveItemProps> = ({
+    src,
+    alt,
+    width,
+    translateX,
+    translateY,
+    filter,
+    opacity,
+    responsiveWidth,
+    responsiveTranslateX,
+    responsiveTranslateY,
+    responsiveFilter,
+    responsiveOpacity
+}) => {
+    const isResponsive = window.innerWidth <= 768;
+
     return (
         <img
             src={src}
             alt={alt}
             style={{
                 position: "absolute",
-                width: width,
-                transform: `translate(${translateX}, ${translateY})`,
-                filter: filter,
-                opacity: opacity
+                top: "50%",
+                left:"50%",
+                width: isResponsive && responsiveWidth ? responsiveWidth : width,
+                transform: `translate(${isResponsive && responsiveTranslateX ? responsiveTranslateX : translateX}, ${isResponsive && responsiveTranslateY ? responsiveTranslateY : translateY})`,
+                filter: isResponsive && responsiveFilter ? responsiveFilter : filter,
+                opacity: isResponsive && responsiveOpacity !== undefined ? responsiveOpacity : opacity
             }}
         />
     );
-}
+};
 
 export default RetrowaveItem;
