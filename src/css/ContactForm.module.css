@@ -7,12 +7,16 @@
     margin-top: 15px;
     border: none;
     font-family: 'Montserrat';
+    border: var(--secondary-color) solid 1px;
 }
 
 form{
     display: flex;
     flex-direction: column;
     max-width: 40em;
+    padding: 8%;
+    padding-left: 0;
+    margin: auto 0;
 }
 
 form > button{

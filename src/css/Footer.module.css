@@ -21,7 +21,7 @@
   background-image: url("../../public/Recurso\ 3.png");
   height: 35vh;
   background-size: cover;
-  background-position: center;
+  background-position: initial;
   filter: invert(7%) sepia(34%) saturate(2125%) hue-rotate(205deg) brightness(89%) contrast(104%);
 }
 
