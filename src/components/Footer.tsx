@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 /*CSS*/
 import styles from "../css/Footer.module.css";
 /*Iconos*/
-import { FaFacebookF, FaInstagram, FaGoogle,FaTripadvisor,FaWhatsapp  } from 'react-icons/fa';
+import { FaTiktok , FaInstagram, FaGoogle,FaTripadvisor,FaWhatsapp  } from 'react-icons/fa';
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock } from 'react-icons/fa';
 
 function Footer() {
@@ -13,7 +13,7 @@ function Footer() {
       </div>
 
       <div className={styles.container}>
-        <div className="row" style={{ alignItems: "flex-start", justifyContent: "space-between", padding: "0 18%" }}>
+        <div className={styles.row}>
           <div className="col-md-3 col-sm-6 col-xs-12">
             <img className={styles.logo}
               src="/Logo Blanco.png"
@@ -22,7 +22,7 @@ function Footer() {
             <ul className="row">
               <li><a href="https://www.instagram.com/screentours/"><FaGoogle   className={styles.bigIcon}/></a></li>
               <li><a href="https://www.instagram.com/screentours/"><FaTripadvisor   className={styles.bigIcon}/></a></li>
-              <li><a href="https://www.instagram.com/screentours/"><FaFacebookF  className={styles.bigIcon}/></a></li>
+              <li><a href="https://www.instagram.com/screentours/"><FaTiktok   className={styles.bigIcon}/></a></li>
               <li><a href="https://www.instagram.com/screentours/"><FaInstagram  className={styles.bigIcon}/></a></li>      
             </ul>
           </div>
@@ -42,7 +42,7 @@ function Footer() {
               <li><Link to="/">Home</Link></li>
               <li><Link to="/OurTeam">Nuestro Equipo</Link></li>
               <li><Link to="/Tours">Tours</Link></li>
-              <li><Link to="/Excrusion">Excursiones</Link></li>
+              <li><Link to="/Daytrips">Daytrips</Link></li>
               <li><Link to="/FreeTours">Free Tours</Link></li>
             </ul>
           </div>
@@ -50,7 +50,7 @@ function Footer() {
           <div className={styles.column}>
             <ul className={styles.links}>
               <li><Link to="/Tours">Circuitos</Link></li>
-              <li><Link to="/Tickets">Tickets</Link></li>
+              <li><Link to="/Museos">Museos</Link></li>
               <li><Link to="/Vlogs">Vlogs</Link></li>
               <li><Link to="/Contact">Contacto</Link></li>
             </ul>

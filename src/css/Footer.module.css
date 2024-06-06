@@ -5,24 +5,31 @@
   height: fit-content;
 }
 
-.footer * li{
+.footer .row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0px 18%;
+}
+
+.footer * li {
   list-style: none;
 }
 
 .footer .imageBackground {
   background-image: url("../../public/Recurso\ 3.png");
   height: 35vh;
+  background-size: cover;
+  background-position: center;
   filter: invert(7%) sepia(34%) saturate(2125%) hue-rotate(205deg) brightness(89%) contrast(104%);
 }
 
-.footer > .container {
+.footer>.container {
   background-color: var(--fourth-color);
   padding: 30px 0 60px 0;
 }
 
-.footer  .column{
-
-}
 
 .footer .logo {
   height: 7vh;
@@ -54,12 +61,12 @@
   text-decoration: none;
 }
 
-.icon{
+.icon {
   color: var(--secondary-color);
   margin-right: 1vw;
 }
 
-.bigIcon{
+.bigIcon {
   color: var(--secondary-color);
   margin-right: 0.5vw;
   font-size: 30px;
@@ -124,4 +131,20 @@
   text-align: center;
   color: #fff;
   font-size: 14px;
+}
+
+
+@media (max-width: 768px) {
+  .footer .row{
+    flex-direction: column;
+    padding: 0 10%;
+  }
+
+  .footer .logo{
+    height: 25vw;
+  }
+
+  .footer ul.links{
+    margin: 5% 0;
+  }
 }

@@ -4,7 +4,7 @@ import Footer from "../components/Footer.tsx"
 import TourButton from "../components/TourButton.tsx";
 import RetrowaveItem from '../components/RetrowaveItem.tsx';
 
-function Excursion() {
+function Daytrips() {
     return (
         <main>
             <NavBar />
@@ -16,7 +16,7 @@ function Excursion() {
                         Your browser does not support the video tag.
                     </video>
                 </div>
-                <h1 className="outTeamTextOverlay">Excursiones</h1>
+                <h1 className="outTeamTextOverlay">Daytrips</h1>
             </section>
 
 
@@ -109,4 +109,4 @@ function Excursion() {
         </main >
     );
 }
-export default Excursion;
+export default Daytrips;

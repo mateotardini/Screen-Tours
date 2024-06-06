@@ -23,13 +23,13 @@ function Contact() {
                 <h1 className="outTeamTextOverlay">Contacto</h1>
             </section>
 
-            <section className="sectionPaddingLeft rowSpaceB colorBlack" style={{ paddingTop: "0" }}>
+            <section className="sectionPaddingLeft row colorBlack" style={{ paddingTop: "0", justifyContent: "flex-start" }}>
                 <RetrowaveItem
                     src="/Retrowave7.png"
                     alt="Screen Tours Logo"
                     width="20vw"
-                    translateX="8%"
-                    translateY="37%"
+                    translateX="-73%"
+                    translateY="13%"
                     filter="none"
                     opacity={0.5}
                 />
@@ -51,8 +51,9 @@ function Contact() {
                         </ul>
                     </div>
                 </div>
-
-                <ContactForm></ContactForm>
+                <div className="textContainer">
+                    <ContactForm></ContactForm>
+                </div>
             </section>
 
             <iframe
@@ -60,7 +61,7 @@ function Contact() {
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d77979.66565661412!2d4.8215604995263925!3d52.354741843979895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c63fb5949a7755%3A0x6600fd4cb7c0af8d!2sAmsterdam%2C%20Netherlands!5e0!3m2!1sen!2sar!4v1717436473704!5m2!1sen!2sar"
                 width="100%"
                 height="400vh"
-                style={{ border: 0, position: "absolute", border: "0px", top: "50%", left: "50%", transform: "translate(-50%, 28%)" }}
+                style={{ border: 0, position: "relative", border: "0px", top: "50%", left: "50%", transform: "translate(-50%, 28%)" }}
                 loading="lazy"
             ></iframe>
 

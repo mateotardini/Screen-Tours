@@ -107,8 +107,8 @@ function OurTeam() {
                     <p>
                         Descarga nuestra guía y descubre los 20 lugares que no te puedes perder en tu primera visita a Ámsterdam
                     </p>
-                    <button>Guía-Conductor Bilingüe</button>
-                    <button>Conductor de autobús</button>
+                    <button>Guía Bilingüe</button>
+                    <button>Guía Habla-hispana</button>
                 </div>
             </section>
 

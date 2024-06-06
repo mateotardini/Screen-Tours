@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+
+import { LanguageContext } from '../contexts/LanguageContext.js';
 
 import NavBar from "../components/NavBar.tsx"
 import Footer from "../components/Footer.tsx"
@@ -9,6 +11,8 @@ import WaveSeparator from '../components/WaveSeparator.tsx';
 import RetrowaveItem from '../components/RetrowaveItem.tsx';
 
 function Home() {
+    const { language, translations } = useContext(LanguageContext);
+
     return (
         <main>
             <NavBar></NavBar>
@@ -47,11 +51,11 @@ function Home() {
 
                 <div className="overlayText">
                     <h2 className="fontMontserrat">
-                        Welcome to Amsterdam.
+                        Welcome to Netherlands.
                         <br />
-                        Let us show you around
+                        {translations[language].home.subtittle}
                     </h2>
-                    <button>Are you in?</button>
+                    <button>{translations[language].home.welcomeButton}</button>
                 </div>
             </section>
 
@@ -80,12 +84,10 @@ function Home() {
 
                 <div className="textContainer">
                     <h1 className="fontMontserrat">
-                        Viajar es invertir en felicidad. Descubre, disfruta y comparte
+                        {translations[language].home.firstTittle}
                     </h1>
                     <p>
-                        Screen Tours es una empresa de turismo receptivo en Los Países Bajos, especializada en el viajero hispanohablante.
-                        Con un amplio equipo de guías turísticos profesionales encargado de organizar tours, circuitos y excursiones guiadas en Ámsterdam,
-                        Bruselas y Bélgica, exclusivamente en español.
+                        {translations[language].home.firstText}
                     </p>
                 </div>
 

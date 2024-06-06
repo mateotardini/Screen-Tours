@@ -68,9 +68,33 @@
   height: fit-content;
   padding: 0.15vw 1vw;
   width: 90%;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .icon{
   font-size: 28px;
   color: var(--third-color);
+}
+
+@media (max-width: 768px) {
+  .imageButton {
+    width: 90vw;
+    height: 80vh;
+  }
+
+  .captionBox {
+    padding: 7%;
+    width: 78vw;
+    height: 45%;
+  }
+
+  .imageButton img {
+    height: 55%;
+  }
+
+  .durationBox{
+    width: inherit;
+    padding: 5px;
+  }
 }

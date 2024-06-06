@@ -1,10 +1,14 @@
 import { Routes, Route } from 'react-router-dom';
+/*Contextos*/
+import { LanguageProvider } from './contexts/LanguageContext.js';
+/*Componentes*/
+import ScrollToTop from './components/ScrollToTop.tsx';
 /*Paginas*/
 import Home from './pages/Home.tsx';
-import Excursion from './pages/Excursion.tsx';
+import Daytrips from './pages/Daytrips.tsx';
 import Tours from './pages/Tours.tsx';
 import FreeTours from './pages/FreeTours.tsx';
-import Tickets from './pages/Tickets.tsx';
+import Museos from './pages/Museos.tsx';
 import OurTeam from './pages/OurTeam.tsx';
 import Contact from './pages/Contact.tsx';
 import Vlogs from './pages/Vlogs.tsx';
@@ -13,16 +17,19 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/OurTeam" element={<OurTeam />} />
-        <Route path="/Excursion" element={<Excursion />} />
-        <Route path="/Tours" element={<Tours />} />
-        <Route path="/FreeTours" element={<FreeTours />} />
-        <Route path="/Tickets" element={<Tickets />} />
-        <Route path="/Vlogs" element={<Vlogs />} />
-        <Route path="/Contact" element={<Contact />} />
-      </Routes>
+      <LanguageProvider>
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/OurTeam" element={<OurTeam />} />
+          <Route path="/Daytrips" element={<Daytrips />} />
+          <Route path="/Tours" element={<Tours />} />
+          <Route path="/FreeTours" element={<FreeTours />} />
+          <Route path="/Museos" element={<Museos />} />
+          <Route path="/Vlogs" element={<Vlogs />} />
+          <Route path="/Contact" element={<Contact />} />
+        </Routes>
+      </LanguageProvider>
     </div>
   );
 }

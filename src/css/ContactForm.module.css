@@ -1,0 +1,20 @@
+.input, .textArea{
+    background-color: transparent;
+    font-size: 16px;
+    color: var(--primary-color);
+    border-radius: 45px;
+    padding: 10px 35px;
+    margin-top: 15px;
+    border: none;
+    font-family: 'Montserrat';
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 40em;
+}
+
+form > button{
+    width: 50% !important;
+}

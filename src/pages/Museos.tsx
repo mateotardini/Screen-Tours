@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useContext } from 'react';
+
+import { LanguageContext } from '../contexts/LanguageContext.js';
+
 import NavBar from "../components/NavBar.tsx"
 import Footer from "../components/Footer.tsx"
 import TourButton from "../components/TourButton.tsx";
 import RetrowaveItem from '../components/RetrowaveItem.tsx';
 
-function Tickets() {
+function Museos() {
+    const { language, translations } = useContext(LanguageContext);
+
     return (
         <main>
             <NavBar />
@@ -16,7 +21,7 @@ function Tickets() {
                         Your browser does not support the video tag.
                     </video>
                 </div>
-                <h1 className="outTeamTextOverlay">Tickets</h1>
+                <h1 className="outTeamTextOverlay">{translations[language].museos.subtittle}</h1>
             </section>
 
 
@@ -109,4 +114,4 @@ function Tickets() {
         </main >
     );
 }
-export default Tickets;
+export default Museos;

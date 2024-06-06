@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useContext } from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+
+import { LanguageContext } from '../contexts/LanguageContext.js';
+
 import styles from "../css/NavBar.module.css";
 
 function NavBar() {
+  const { language, changeLanguage, translations } = useContext(LanguageContext);
+
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -31,9 +36,9 @@ function NavBar() {
           </Link>
         </li>
         <li className={styles.animatedItem} style={{ animationDelay: '0.50s' }}>
-          <Link to="/Excursion">
+          <Link to="/Daytrips">
             <img className={styles.icon} src="icons/compass.png" alt="Logo Screen Tours" />
-            Excursiones
+            Daytrips
           </Link>
         </li>
         <li className={styles.animatedItem} style={{ animationDelay: '0.75s' }}>
@@ -50,16 +55,11 @@ function NavBar() {
             Free Tours
           </Link>
         </li>
-        <li className={styles.animatedItem} style={{ animationDelay: '1.25s' }}>
-          <Link to="/Tours">
-            <img className={styles.icon} src="icons/singpost.png" alt="Logo Screen Tours" />
-            Circuitos
-          </Link>
-        </li>
+
         <li className={styles.animatedItem} style={{ animationDelay: '1.5s' }}>
-          <Link to="/Tickets">
+          <Link to="/Museos">
             <img className={styles.icon} src="icons/ticket.png" alt="Logo Screen Tours" />
-            Tickets
+            Museos
           </Link>
         </li>
         <li className={styles.animatedItem} style={{ animationDelay: '1.75s' }}>
@@ -74,6 +74,10 @@ function NavBar() {
             Contacto
           </Link>
         </li>
+        <div className={styles.lenguajes}>
+          <button onClick={() => changeLanguage('en')}><img className={styles.icon} src="icons/free.png" alt="Logo Screen Tours" /> En</button>
+          <button onClick={() => changeLanguage('es')}><img className={styles.icon} src="icons/free.png" alt="Logo Screen Tours" /> Esp</button>
+        </div>
       </ul>
     </div>
   );

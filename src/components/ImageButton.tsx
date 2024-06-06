@@ -5,7 +5,7 @@ import styles from "../css/ImageButton.module.css";
 
 function ImageButton() {
   return (
-    <div className='row'>
+    <div className={styles.row}>
       <Link to="/Tours" className={styles.imageButton}>
         <h2 className={`${styles.buttonText} fontTrueLies`}>TOURS</h2>
         <img src="/Background.jpg" alt='Screen Tours Tours' />

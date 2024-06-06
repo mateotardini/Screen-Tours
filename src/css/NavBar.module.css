@@ -41,6 +41,18 @@
   align-items: center;
 }
 
+.lenguajes{
+  position: fixed;
+  left: 90vw;
+}
+
+.lenguajes button{
+  width: fit-content;
+  background-color: transparent;
+  font-size: 0.833vw;
+  font-family: "Montserrat" !important;
+}
+
 .icon{
   width: 1.25vw;
   filter: invert(18%) sepia(69%) saturate(4486%) hue-rotate(314deg) brightness(101%) contrast(120%);
