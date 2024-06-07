@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaMapMarkerAlt, FaClock } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaClock, FaLanguage } from 'react-icons/fa';
+import { LuLanguages } from "react-icons/lu";
+import { IoIosArrowForward } from "react-icons/io";
+
 import styles from "../css/TourButton.module.css";
 
 interface TourButtonProps {
@@ -11,28 +14,25 @@ interface TourButtonProps {
   tipoDeTour: string;
   linkImagen: string;
   link: string;
+  linkAPI: string;
 }
 
-const TourButton: React.FC<TourButtonProps> = ({ nombre, lugar, precio, duracion, tipoDeTour, linkImagen, link }) => {
+const TourButton: React.FC<TourButtonProps> = ({ nombre, lugar, precio, duracion, tipoDeTour, linkImagen, link, linkAPI }) => {
   return (
     <div className={styles.buttonContainer}>
       <Link to={link} className={styles.imageButton}>
         <div className={styles.captionBox}>
           <div className={styles.durationBox}>
-            <div className='row'>
-              <p><FaClock />  <strong></strong>{duracion}</p>
-
-              <p><FaClock />  <strong>{tipoDeTour}</strong></p>
-            </div>
-
-            
+            <p><FaClock /> <strong></strong>{duracion}</p>
+            <p><FaClock /> <strong>{tipoDeTour}</strong></p>
+            <p><LuLanguages /> <strong>ESP/EN</strong></p>
           </div>
 
-          <h2 className={`${styles.buttonText} fontMontserrat`}>{nombre}</h2>
+          <h3 className={`${styles.buttonText} fontMontserrat`}>{nombre}</h3>
 
-          <div className='row'>
-            <FaMapMarkerAlt className={styles.icon} /> <p className={styles.captionText}>{lugar}</p>
-            <a>Saber Más</a>
+          <div className={styles.infoBox}>
+            <p className={styles.captionText}><FaMapMarkerAlt className={styles.icon} /> {lugar}</p>
+            <Link to={link}> <strong>Saber Más</strong> <IoIosArrowForward className={styles.icon2} /></Link>
           </div>
 
           <div className='row'>
@@ -40,11 +40,10 @@ const TourButton: React.FC<TourButtonProps> = ({ nombre, lugar, precio, duracion
               <p>Desde</p>
               <h2>{precio}€</h2>
             </div>
-
           </div>
 
 
-          <button><a href={link}>Reservar Ahora</a></button>
+          <button><a href={linkAPI}>Reservar Ahora</a></button>
         </div>
         <img src={linkImagen} alt='Screen Tours Tours' />
       </Link>

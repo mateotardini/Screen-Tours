@@ -65,7 +65,7 @@ function Home() {
 
             <WaveSeparator topColor="#090d29" bottomColor="#f8f8f8"></WaveSeparator>
 
-            <section className="sectionPaddingLeft spaceBetween colorBlack">
+            <section className="sectionPaddingLeft spaceBetween colorBlack" style={{alignItems: "center"}}>
                 <RetrowaveItem
                     src="/vectors/Retrowave7.png"
                     alt="Screen Tours Logo"
@@ -95,8 +95,8 @@ function Home() {
                     </p>
                 </div>
 
-                <div className="imageContainer" style={{ overflow: "hidden"}}>
-                    <video autoPlay loop muted  style={{ height: "-webkit-fill-available"}}>
+                <div className="imageContainer" style={{ overflow: "hidden" }}>
+                    <video autoPlay loop muted style={{ height: "-webkit-fill-available" }}>
                         <source src="/videos/SCREENTOURS.mp4" type="video/mp4"></source>
                         Your browser does not support the video tag.
                     </video>
@@ -104,34 +104,37 @@ function Home() {
             </section>
 
             <section className="sectionPadding colorBlack">
-                <h1 className="fontMontserrat">¿Looking for tour in Amsterdam?</h1>
+                <h1 className="fontMontserrat">{translations[language].home.secondTittle}</h1>
                 <div className="row">
                     <TourButton
-                        nombre="Tour Histórico de Ámsterdam"
-                        duracion="X Horas"
+                        nombre="ScreenTour Mokum, El Ámsterdam Judío"
+                        duracion="4 Hrs"
                         lugar="Ámsterdam"
-                        precio={50}
-                        tipoDeTour="Tour"
-                        linkImagen="/images/Background3.jpg"
-                        link="">
-                    </TourButton>
-                    <TourButton
-                        nombre="Amsterdam through Rembrandt"
-                        duracion="X Horas"
-                        lugar="Ámsterdam"
-                        precio={50}
-                        tipoDeTour="Excursión"
-                        linkImagen="/images/Rembrant.jpg"
-                        link="">
-                    </TourButton>
-                    <TourButton
-                        nombre="Mokum, el Ámsterdam Judío"
-                        duracion="X Horas"
-                        lugar="Ámsterdam"
-                        precio={20}
+                        precio={30}
                         tipoDeTour="Tour"
                         linkImagen="/images/Mokum.jpg"
-                        link="">
+                        link=""
+                        linkAPI="">
+                    </TourButton>
+                    <TourButton
+                        nombre="ScreenFreeTour Histórico de Ámsterdam"
+                        duracion="2 Hrs 30 Mins"
+                        lugar="Ámsterdam"
+                        precio="Free "
+                        tipoDeTour="FreeTour"
+                        linkImagen="/images/Background3.jpg"
+                        link=""
+                        linkAPI="">
+                    </TourButton>
+                    <TourButton
+                        nombre="ScreenTour Amsterdam through Rembrandt"
+                        duracion="3 Hrs 30 Mins"
+                        lugar="Ámsterdam"
+                        precio={35}
+                        tipoDeTour="Tour"
+                        linkImagen="/images/Rembrant.jpg"
+                        link=""
+                        linkAPI="">
                     </TourButton>
                 </div>
             </section>
@@ -145,12 +148,12 @@ function Home() {
                 </div>
                 <div className="textContainer">
                     <h1 className="fontMontserrat">
-                        ¡VEN CON LOS DEBERES HECHOS!
+                        ¡Llega bien preparado para tu aventura!
                     </h1>
                     <p>
-                        Descarga nuestra guía y descubre los 20 lugares que no te puedes perder en tu primera visita a Ámsterdam
+                        Visita nuestras guías y descubre los tours imprescindibles para conectar aún mas con la rica historia de los Países Bajos.
                     </p>
-                    <button><Link to="/Vlogs">Ver Vlogs</Link></button>
+                    <button><Link to="/Tours">Ver Tours</Link></button>
                 </div>
             </section>
 

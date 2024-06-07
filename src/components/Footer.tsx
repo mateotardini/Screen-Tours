@@ -16,7 +16,7 @@ function Footer() {
         <div className={styles.row}>
           <div className="col-md-3 col-sm-6 col-xs-12">
             <img className={styles.logo}
-              src="/Logo Blanco.png"
+              src="/vectors/Logo Blanco.png"
               alt='Screen Tours Logo'
             />
             <ul className="row">
@@ -29,11 +29,11 @@ function Footer() {
 
           <div className={styles.column}>
             <ul className={styles.links}>
-              <li><FaMapMarkerAlt className={styles.icon}/>Amsterdam, Paises Bajos</li>
+              <li><FaMapMarkerAlt className={styles.icon}/>Meerhuzenstraat 10E 1078 TH, Amsterdam, Netherlands </li>
               <li><FaClock  className={styles.icon}/>09:00h - 17:00h</li>
-              <li><FaPhoneAlt className={styles.icon}/><a href="https://wa.me/5491163733844" target='_blank'>+54 9 11 6373-3844 </a></li>
-              <li><FaWhatsapp className={styles.icon}/><a href="https://wa.me/5491163733844" target='_blank'>+54 9 11 6373-3844 </a></li>
-              <li><FaEnvelope className={styles.icon}/><a href="mailto:screentours.uptodate@gmail.com" target='_blank'>screentours.uptodate@gmail.com</a></li>
+              <li><FaPhoneAlt className={styles.icon}/><a href="https://wa.me/5491163733844" target='_blank'>+31 629 123 242</a></li>
+              <li><FaWhatsapp className={styles.icon}/><a href="https://wa.me/5491163733844" target='_blank'>+31 629 123 242</a></li>
+              <li><FaEnvelope className={styles.icon}/><a href="mailto:screentours.uptodate@gmail.com" target='_blank'>ScreenToursEurope@gmail.com</a></li>
             </ul>
           </div>
 

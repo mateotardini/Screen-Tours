@@ -72,8 +72,43 @@
   align-items: center;
 }
 
+.durationBox p:first-of-type {
+  width: 40%;
+}
+
+.durationBox p{
+  width: 30%;
+  text-align: start;
+}
+
+.infoBox{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.infoBox p{
+  padding: 0;
+}
+
+.infoBox a{
+  border-bottom: var(--secondary-color) solid 2px;
+}
+
 .icon{
   font-size: 28px;
+  color: var(--third-color);
+}
+
+.icon2{
+  font-size: 28px;
+  color: var(--secondary-color);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.infoBox a:hover .icon2 {
+  transform: translateX(5px);
   color: var(--third-color);
 }
 
@@ -86,7 +121,7 @@
   .captionBox {
     padding: 7%;
     width: 78vw;
-    height: 45%;
+    height: 50%;
   }
 
   .imageButton img {
@@ -96,5 +131,9 @@
   .durationBox{
     width: inherit;
     padding: 5px;
+  }
+
+  .infoBox{
+    width: inherit
   }
 }

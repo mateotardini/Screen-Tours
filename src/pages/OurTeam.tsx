@@ -5,8 +5,6 @@ import Footer from "../components/Footer.tsx"
 import RetrowaveItem from '../components/RetrowaveItem.tsx';
 import ImageTeam from "../components/ImageTeam.tsx"
 
-import { FaRegArrowAltCircleRight } from "react-icons/fa";
-
 function OurTeam() {
     return (
         <main>
@@ -46,7 +44,7 @@ function OurTeam() {
                         destinos a través de nuestros tours y excursiones con un equipo de guías turísticos que te mostrarán
                         las particularidades de esta ciudad con la mayor profesionalidad, puntualidad y amabilidad.
                     </p>
-                    <button>Conoce nuestras <strong>excursiones en español</strong> <FaRegArrowAltCircleRight /></button>
+                    <button>Conoce nuestras <strong>excursiones en español</strong></button>
                 </div>
 
             </section>

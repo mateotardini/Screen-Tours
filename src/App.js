@@ -5,13 +5,15 @@ import { LanguageProvider } from './contexts/LanguageContext.js';
 import ScrollToTop from './components/ScrollToTop.tsx';
 /*Paginas*/
 import Home from './pages/Home.tsx';
-import Daytrips from './pages/Daytrips.tsx';
+import OurTeam from './pages/OurTeam.tsx';
 import Tours from './pages/Tours.tsx';
+import Daytrips from './pages/Daytrips.tsx';
 import FreeTours from './pages/FreeTours.tsx';
 import Museos from './pages/Museos.tsx';
-import OurTeam from './pages/OurTeam.tsx';
-import Contact from './pages/Contact.tsx';
 import Vlogs from './pages/Vlogs.tsx';
+import Contact from './pages/Contact.tsx';
+import TourDetail from './pages/TourDetail.tsx';
+
 import './App.css';
 
 function App() {
@@ -28,6 +30,7 @@ function App() {
           <Route path="/Museos" element={<Museos />} />
           <Route path="/Vlogs" element={<Vlogs />} />
           <Route path="/Contact" element={<Contact />} />
+          <Route path="/Tours/:id" element={<TourDetail />} />
         </Routes>
       </LanguageProvider>
     </div>
