@@ -16,13 +16,13 @@ function Contact() {
             <section style={{ minHeight: "unset", height: "43vh", position: "relative", overflow: "hidden" }}>
                 <div className="videoBackground">
                     <video autoPlay muted loop playsInline>
-                        <source src="/videos/Tulipans.mp4" type="video/mp4" />
+                        <source src="/videos/Bikes.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
                 </div>
                 <h1 className="outTeamTextOverlay">Contacto</h1>
                 <RetrowaveItem
-                    src="/Retrowave5.png"
+                    src="/vectors/Retrowave5.png"
                     alt="Screen Tours Logo"
                     width="30vw"
                     translateX="-50%"
@@ -36,7 +36,7 @@ function Contact() {
 
             <section className="sectionPaddingLeft row colorBlack" style={{ paddingTop: "0", justifyContent: "flex-start",  marginBottom:"-8%" }}>
                 <RetrowaveItem
-                    src="/Retrowave7.png"
+                    src="/vectors/Retrowave7.png"
                     alt="Screen Tours Logo"
                     width="20vw"
                     translateX="170%"
@@ -46,7 +46,7 @@ function Contact() {
                 />
 
                 <RetrowaveItem
-                    src="/Mill2.png"
+                    src="/vectors/Mill2.png"
                     alt="Screen Tours Logo"
                     width="23vw"
                     translateX="138%"

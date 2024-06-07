@@ -18,10 +18,11 @@
 }
 
 .footer .imageBackground {
-  background-image: url("../../public/Recurso\ 3.png");
+  background-image: url("../../public/vectors/Recurso\ 3.png");
   height: 35vh;
   background-size: cover;
   background-position: initial;
+  background-position-x: center;
   filter: invert(7%) sepia(34%) saturate(2125%) hue-rotate(205deg) brightness(89%) contrast(104%);
 }
 

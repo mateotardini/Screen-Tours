@@ -32,7 +32,7 @@ const TourButton: React.FC<TourButtonProps> = ({ nombre, lugar, precio, duracion
 
           <div className='row'>
             <FaMapMarkerAlt className={styles.icon} /> <p className={styles.captionText}>{lugar}</p>
-            <a>Saber Más |</a>
+            <a>Saber Más</a>
           </div>
 
           <div className='row'>

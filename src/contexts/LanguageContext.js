@@ -38,7 +38,7 @@ const translations = {
     outTeam:{
       subtittle: "Nuestro Equipo"
     },
-    Museums: {
+    museums: {
       subtittle: "Museos"
     },
     contact: {

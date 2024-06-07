@@ -21,7 +21,7 @@ function OurTeam() {
                 </div>
                 <h1 className="outTeamTextOverlay">Nuestro Equipo</h1>
                 <RetrowaveItem
-                    src="/Retrowave5.png"
+                    src="/vectors/Retrowave5.png"
                     alt="Screen Tours Logo"
                     width="30vw"
                     translateX="-50%"
@@ -34,7 +34,7 @@ function OurTeam() {
             </section>
 
             <section className="sectionPaddingRight spaceBetween colorBlack">
-                <div className="imageContainerLeft">
+                <div className="imageContainerLeft" style={{backgroundImage: "url('../images/Team.jpg')"}}>
                 </div>
 
                 <div className="textContainer">
@@ -51,7 +51,7 @@ function OurTeam() {
 
             </section>
 
-            <section className="sectionPadding">
+            <section className="sectionPadding ourTeam">
                 <div className="spaceBetween">
                     <ImageTeam
                         nombre="Guy"
@@ -99,8 +99,8 @@ function OurTeam() {
                 </div>
             </section>
 
-            <section className="sectionBorderRadius spaceBetween colorBlack">
-                <div className="imageContainer">
+            <section className="sectionBorderRadius colorBlack">
+                <div className="imageContainer" style={{backgroundImage: "url('../images/Team.jpg')"}}>
                 </div>
                 <div className="textContainer">
                     <h1 className="fontMontserrat">

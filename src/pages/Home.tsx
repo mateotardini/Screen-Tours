@@ -24,7 +24,7 @@ function Home() {
                 </video>
 
                 <RetrowaveItem
-                    src="/Retrowave7.png"
+                    src="/vectors/Retrowave7.png"
                     alt="Screen Tours Sun Item"
                     width="50vw"
                     translateX="-50%"
@@ -36,7 +36,7 @@ function Home() {
                 />
 
                 <RetrowaveItem
-                    src="/Recurso 1.png"
+                    src="/vectors/Recurso 1.png"
                     alt="Screen Tours Logo"
                     width="101vw"
                     translateX="-50%"
@@ -49,7 +49,7 @@ function Home() {
 
                 <img
                     className="logoTittle"
-                    src="/Logo.png"
+                    src="/vectors/Logo.png"
                     alt="Screen Tours Logo">
                 </img>
 
@@ -67,7 +67,7 @@ function Home() {
 
             <section className="sectionPaddingLeft spaceBetween colorBlack">
                 <RetrowaveItem
-                    src="/Retrowave7.png"
+                    src="/vectors/Retrowave7.png"
                     alt="Screen Tours Logo"
                     width="30vw"
                     translateX="-211%"
@@ -77,7 +77,7 @@ function Home() {
                 />
 
                 <RetrowaveItem
-                    src="/Mill2.png"
+                    src="/vectors/Mill2.png"
                     alt="Screen Tours Logo"
                     width="30vw"
                     translateX="-211%"
@@ -95,7 +95,11 @@ function Home() {
                     </p>
                 </div>
 
-                <div className="imageContainer">
+                <div className="imageContainer" style={{ overflow: "hidden"}}>
+                    <video autoPlay loop muted  style={{ height: "-webkit-fill-available"}}>
+                        <source src="/videos/SCREENTOURS.mp4" type="video/mp4"></source>
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
             </section>
 
@@ -108,7 +112,7 @@ function Home() {
                         lugar="Ámsterdam"
                         precio={50}
                         tipoDeTour="Tour"
-                        linkImagen="/Background3.jpg"
+                        linkImagen="/images/Background3.jpg"
                         link="">
                     </TourButton>
                     <TourButton
@@ -117,7 +121,7 @@ function Home() {
                         lugar="Ámsterdam"
                         precio={50}
                         tipoDeTour="Excursión"
-                        linkImagen="/Rembrant.jpg"
+                        linkImagen="/images/Rembrant.jpg"
                         link="">
                     </TourButton>
                     <TourButton
@@ -126,7 +130,7 @@ function Home() {
                         lugar="Ámsterdam"
                         precio={20}
                         tipoDeTour="Tour"
-                        linkImagen="/Mokum.jpg"
+                        linkImagen="/images/Mokum.jpg"
                         link="">
                     </TourButton>
                 </div>
@@ -136,8 +140,8 @@ function Home() {
                 <ImageButton></ImageButton>
             </section>
 
-            <section className="sectionBorderRadius spaceBetween colorBlack">
-                <div className="imageContainer">
+            <section className="sectionBorderRadius colorBlack">
+                <div className="imageContainer" style={{ backgroundImage: "url('../images/Bike.jpg')" }}>
                 </div>
                 <div className="textContainer">
                     <h1 className="fontMontserrat">

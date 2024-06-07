@@ -12,13 +12,13 @@ function Daytrips() {
             <section style={{ minHeight: "unset", height: "43vh", position: "relative", overflow: "hidden" }}>
                 <div className="videoBackground">
                     <video autoPlay muted loop playsInline>
-                        <source src="/videos/Tulipans.mp4" type="video/mp4" />
+                        <source src="/videos/Mills.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
                 </div>
                 <h1 className="outTeamTextOverlay">Daytrips</h1>
                 <RetrowaveItem
-                    src="/Retrowave5.png"
+                    src="/vectors/Retrowave5.png"
                     alt="Screen Tours Logo"
                     width="30vw"
                     translateX="-50%"
@@ -33,21 +33,21 @@ function Daytrips() {
 
             <section className="sectionPaddingLeft rowSpaceB colorBlack" style={{ paddingTop: "0" }}>
                 <RetrowaveItem
-                    src="/Retrowave7.png"
+                    src="/vectors/Retrowave7.png"
                     alt="Screen Tours Logo"
                     width="30vw"
-                    translateX="-8%"
-                    translateY="13%"
+                    translateX="15%"
+                    translateY="3%"
                     filter="none"
                     opacity={0.25}
                 />
 
                 <RetrowaveItem
-                    src="/Mill2.png"
+                    src="/vectors/Mill2.png"
                     alt="Screen Tours Logo"
                     width="30vw"
-                    translateX="-14%"
-                    translateY="40%"
+                    translateX="8%"
+                    translateY="28%"
                     filter="drop-shadow(6px 6px 2px #ffffff) invert(27%) sepia(82%) saturate(420%) hue-rotate(173deg) brightness(94%) contrast(96%)"
                     opacity={1}
                 />
@@ -72,7 +72,7 @@ function Daytrips() {
                         lugar="Ámsterdam"
                         precio={50}
                         tipoDeTour="Tour"
-                        linkImagen="/Background3.jpg"
+                        linkImagen="/images/Background3.jpg"
                         link="">
                     </TourButton>
                     <TourButton
@@ -81,7 +81,7 @@ function Daytrips() {
                         lugar="Ámsterdam"
                         precio={50}
                         tipoDeTour="Excursión"
-                        linkImagen="/Rembrant.jpg"
+                        linkImagen="/images/Rembrant.jpg"
                         link="">
                     </TourButton>
                     <TourButton
@@ -90,7 +90,7 @@ function Daytrips() {
                         lugar="Ámsterdam"
                         precio={20}
                         tipoDeTour="Tour"
-                        linkImagen="/Mokum.jpg"
+                        linkImagen="/images/Mokum.jpg"
                         link="">
                     </TourButton>
                 </div>
@@ -101,7 +101,7 @@ function Daytrips() {
                         lugar="Ámsterdam"
                         precio={50}
                         tipoDeTour="Tour"
-                        linkImagen="/Background3.jpg"
+                        linkImagen="/images/Background3.jpg"
                         link="">
                     </TourButton>
                     <TourButton
@@ -110,7 +110,7 @@ function Daytrips() {
                         lugar="Ámsterdam"
                         precio={50}
                         tipoDeTour="Excursión"
-                        linkImagen="/Background2.jpg"
+                        linkImagen="/images/Background2.jpg"
                         link="">
                     </TourButton>
                 </div>

@@ -17,7 +17,7 @@ function NavBar() {
 
   return (
     <div className={`${styles.container} ${menuOpen ? styles.open : ''}`}>
-      <img className={`${styles.logo} ${styles.invisible}`} src="/Logo Blanco.png" alt="Logo Screen Tours" />
+      <img className={`${styles.logo} ${styles.invisible}`} src="/vectors/Logo Blanco.png" alt="Logo Screen Tours" />
       <div className={`${styles.menuIcon} ${menuOpen ? styles.open : ''}`} onClick={toggleMenu}>
         <div className={styles.bar}></div>
         <div className={styles.bar}></div>
@@ -48,7 +48,7 @@ function NavBar() {
             Tours
           </Link>
         </li>
-        <img className={`${styles.logo} ${menuOpen ? styles.open : ''}`} src="/Logo Blanco.png" alt="Logo Screen Tours" />
+        <img className={`${styles.logo} ${menuOpen ? styles.open : ''}`} src="/vectors/Logo Blanco.png" alt="Logo Screen Tours" />
 
         <li className={styles.animatedItem} style={{ animationDelay: '1.0s' }}>
           <Link to="/FreeTours">
@@ -76,8 +76,8 @@ function NavBar() {
           </Link>
         </li>
         <div className={styles.lenguajes}>
-          <button onClick={() => changeLanguage('en')}><img className={styles.icon} src="icons/free.png" alt="Logo Screen Tours" /> En</button>
-          <button onClick={() => changeLanguage('es')}><img className={styles.icon} src="icons/free.png" alt="Logo Screen Tours" /> Esp</button>
+          <button onClick={() => changeLanguage('en')}>En</button>
+          <button onClick={() => changeLanguage('es')}>Esp</button>
         </div>
       </ul>
     </div>
