@@ -8,6 +8,7 @@ interface RetrowaveItemProps {
     translateY: string;
     filter: string;
     opacity: number;
+    zIndex: number;
     responsiveWidth?: string;
     responsiveTranslateX?: string;
     responsiveTranslateY?: string;
@@ -23,6 +24,7 @@ const RetrowaveItem: React.FC<RetrowaveItemProps> = ({
     translateY,
     filter,
     opacity,
+    zIndex,
     responsiveWidth,
     responsiveTranslateX,
     responsiveTranslateY,
@@ -42,7 +44,8 @@ const RetrowaveItem: React.FC<RetrowaveItemProps> = ({
                 width: isResponsive && responsiveWidth ? responsiveWidth : width,
                 transform: `translate(${isResponsive && responsiveTranslateX ? responsiveTranslateX : translateX}, ${isResponsive && responsiveTranslateY ? responsiveTranslateY : translateY})`,
                 filter: isResponsive && responsiveFilter ? responsiveFilter : filter,
-                opacity: isResponsive && responsiveOpacity !== undefined ? responsiveOpacity : opacity
+                opacity: isResponsive && responsiveOpacity !== undefined ? responsiveOpacity : opacity,
+                zIndex: zIndex
             }}
         />
     );

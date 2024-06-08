@@ -40,24 +40,31 @@ function TourDetail() {
 
             <section id="introduccion" className="sectionPaddingLeft spaceBetween colorBlack">
                 <div className="textContainer">
-                    <h1 className="fontMontserrat">{tour.nombre}</h1>
+                    <h1 className="fontMontserrat">
+                        {tour.titulo}
+                        <h3 className="fontMontserrat">{tour.subtitulo}</h3>
+                    </h1>
+
                     <p dangerouslySetInnerHTML={{ __html: instroduccion }}></p>
                 </div>
-                <div className="imageContainer" style={{ backgroundImage: "url('../images/Mokum.jpg')" }}>
+                <div
+                    className="imageContainer"
+                    style={{ backgroundImage: "url('../images/Mokun/CopyrightKeeHummel.jpg')" }}
+                >
                 </div>
             </section>
 
             <DetailsBox
                 duracion="4 horas"
                 tipoDeTour="Tour"
-                puntoEncuentro="Museo Casa de Rembrandt, Jodenbreestraat 4, 1011 NK Amsterdam"
+                puntoEncuentro={tour.puntoEncuentro}
                 idioma="Guía ES/EN"
                 lugares="Museo Rembrandt, Waterlooplein, Museo Judío, Sinagoga Portuguesa, Monumento Nombres Holocausto, Hortus Amsterdam, Museo del Holocausto, Escultura de Anna Frank, Merwedeplein, Anne Frank Huis, Westerkerk, Homomonument"
                 cancelacion="Cancelación gratuita 48hrs."
             />
 
             <section className="sectionPaddingRight spaceBetween colorBlack" style={{ paddingTop: "0", paddingBottom: "0" }}>
-                <div className="imageContainerLeft" style={{ backgroundImage: "url('../images/Team.jpg')" }}>
+                <div className="imageContainerLeft" style={{ backgroundImage: "url('../images/Mokun/WesterkerkAnneFrank.jpg')" }}>
                 </div>
 
                 <div className="textContainer">

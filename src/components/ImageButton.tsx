@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+/*Context*/
+import { LanguageContext } from '../contexts/LanguageContext.js';
 /*CSS*/
 import styles from "../css/ImageButton.module.css";
 
 function ImageButton() {
+  const { language, translations } = useContext(LanguageContext);
+
   return (
     <div className={styles.row}>
-      <h1 className={`${styles.overlayText} fontTrueLies`}>¿Que Viviras?</h1>
+      <h1 className={`${styles.overlayText} fontTrueLies`}>{translations[language].home.thirdTittle}</h1>
       <Link to="/Tours" className={styles.imageButton}>
         {/*<h2 className={`${styles.buttonText} fontTrueLies`}>TOURS</h2>*/}
         <h2 className={styles.buttonTextBottom}>

@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-
+/*Context*/
 import { LanguageContext } from '../contexts/LanguageContext.js';
-
+/*Components*/
 import NavBar from "../components/NavBar.tsx"
 import Footer from "../components/Footer.tsx"
 import TourButton from "../components/TourButton.tsx";
@@ -113,17 +113,17 @@ function Home() {
                         precio={30}
                         tipoDeTour="Tour"
                         linkImagen="/images/Mokum.jpg"
-                        link=""
+                        link="/Mokum, el Ámsterdam Judío"
                         linkAPI="">
                     </TourButton>
                     <TourButton
                         nombre="ScreenFreeTour Histórico de Ámsterdam"
-                        duracion="2 Hrs 30 Mins"
+                        duracion="4 Hrs"
                         lugar="Ámsterdam"
                         precio="Free "
                         tipoDeTour="FreeTour"
                         linkImagen="/images/Background3.jpg"
-                        link=""
+                        link="/ScreenFreeTour Histórico de Ámsterdam"
                         linkAPI="">
                     </TourButton>
                     <TourButton

@@ -73,7 +73,7 @@ function Tours() {
                         precio={30}
                         tipoDeTour="Tour"
                         linkImagen="/images/Mokum.jpg"
-                        link=""
+                        link="/Mokum, el Ámsterdam Judío"
                         linkAPI="">
                     </TourButton>
                     <TourButton
@@ -83,7 +83,7 @@ function Tours() {
                         precio="Free "
                         tipoDeTour="FreeTour"
                         linkImagen="/images/Background3.jpg"
-                        link=""
+                        link="/ScreenFreeTour Histórico de Ámsterdam"
                         linkAPI="">
                     </TourButton>
                     <TourButton
