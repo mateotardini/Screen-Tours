@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 /*CSS*/
 import styles from "../css/Footer.module.css";
 /*Iconos*/
-import { FaTiktok , FaInstagram, FaGoogle,FaTripadvisor,FaWhatsapp  } from 'react-icons/fa';
+import { FaTiktok, FaInstagram, FaGoogle, FaTripadvisor, FaWhatsapp } from 'react-icons/fa';
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock } from 'react-icons/fa';
 
 function Footer() {
@@ -20,20 +20,26 @@ function Footer() {
               alt='Screen Tours Logo'
             />
             <ul className="row">
-              <li><a href="https://www.instagram.com/screentours/"><FaGoogle   className={styles.bigIcon}/></a></li>
-              <li><a href="https://www.instagram.com/screentours/"><FaTripadvisor   className={styles.bigIcon}/></a></li>
-              <li><a href="https://www.instagram.com/screentours/"><FaTiktok   className={styles.bigIcon}/></a></li>
-              <li><a href="https://www.instagram.com/screentours/"><FaInstagram  className={styles.bigIcon}/></a></li>      
+              <li><a href="https://www.instagram.com/screentours/"><FaGoogle className={styles.bigIcon} /></a></li>
+              <li><a href="https://www.instagram.com/screentours/"><FaTripadvisor className={styles.bigIcon} /></a></li>
+              <li><a href="https://www.instagram.com/screentours/"><FaTiktok className={styles.bigIcon} /></a></li>
+              <li><a href="https://www.instagram.com/screentours/"><FaInstagram className={styles.bigIcon} /></a></li>
             </ul>
           </div>
 
           <div className={styles.column}>
             <ul className={styles.links}>
-              <li><FaMapMarkerAlt className={styles.icon}/>Meerhuzenstraat 10E 1078 TH, Amsterdam, Netherlands </li>
-              <li><FaClock  className={styles.icon}/>09:00h - 17:00h</li>
-              <li><FaPhoneAlt className={styles.icon}/><a href="https://wa.me/5491163733844" target='_blank'>+31 629 123 242</a></li>
-              <li><FaWhatsapp className={styles.icon}/><a href="https://wa.me/5491163733844" target='_blank'>+31 629 123 242</a></li>
-              <li><FaEnvelope className={styles.icon}/><a href="mailto:screentours.uptodate@gmail.com" target='_blank'>ScreenToursEurope@gmail.com</a></li>
+              <li><FaMapMarkerAlt className={styles.icon} />Meerhuzenstraat 10E 1078 TH, Amsterdam, Netherlands </li>
+              <li><FaClock className={styles.icon} />09:00h - 17:00h</li>
+              <li><FaPhoneAlt className={styles.icon} />
+                <a href="https://wa.me/5491163733844" target='_blank' rel="noopener noreferrer">+31 629 123 242</a>
+              </li>
+              <li><FaWhatsapp className={styles.icon} />
+                <a href="https://wa.me/5491163733844" target='_blank' rel="noopener noreferrer">+31 629 123 242</a>
+              </li>
+              <li><FaEnvelope className={styles.icon} />
+                <a href="mailto:screentours.uptodate@gmail.com" target='_blank' rel="noopener noreferrer">ScreenToursEurope@gmail.com</a>
+              </li>
             </ul>
           </div>
 

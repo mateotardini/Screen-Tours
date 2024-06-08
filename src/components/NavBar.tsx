@@ -27,13 +27,13 @@ function NavBar() {
         <li className={styles.animatedItem} style={{ animationDelay: '0s' }}>
           <Link to="/">
             <img className={styles.icon} src="icons/home.png" alt="Logo Screen Tours" />
-            Inicio
+            {translations[language].navbar.home}
           </Link>
         </li>
         <li className={styles.animatedItem} style={{ animationDelay: '0.25s' }}>
           <Link to="/OurTeam">
             <img className={styles.icon} src="icons/team.png" alt="Logo Screen Tours" />
-            Nuestro Equipo
+            {translations[language].outTeam.subtittle}
           </Link>
         </li>
         <li className={styles.animatedItem} style={{ animationDelay: '0.50s' }}>
@@ -60,7 +60,7 @@ function NavBar() {
         <li className={styles.animatedItem} style={{ animationDelay: '1.5s' }}>
           <Link to="/Museos">
             <img className={styles.icon} src="icons/ticket.png" alt="Logo Screen Tours" />
-            Museos
+            {translations[language].museums.subtittle}
           </Link>
         </li>
         <li className={styles.animatedItem} style={{ animationDelay: '1.75s' }}>
@@ -72,7 +72,7 @@ function NavBar() {
         <li className={styles.animatedItem} style={{ animationDelay: '2.0s' }}>
           <Link to="/Contact">
             <img className={styles.icon} src="icons/contact.png" alt="Logo Screen Tours" />
-            Contacto
+            {translations[language].contact.subtittle}
           </Link>
         </li>
         <div className={styles.lenguajes}>

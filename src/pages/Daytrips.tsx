@@ -31,7 +31,7 @@ function Daytrips() {
             </section>
 
 
-            <section className="sectionPaddingLeft rowSpaceB colorBlack" style={{ paddingTop: "0" }}>
+            <section className="sectionPaddingLeft spaceBetween colorBlack" style={{ paddingTop: "0" }}>
                 <RetrowaveItem
                     src="/vectors/Retrowave7.png"
                     alt="Screen Tours Logo"

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaMapMarkerAlt, FaClock, FaLanguage } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaClock } from 'react-icons/fa';
 import { LuLanguages } from "react-icons/lu";
 import { IoIosArrowForward } from "react-icons/io";
 

@@ -1,77 +1,69 @@
 import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import DOMPurify from 'dompurify';
+
+import styles from "../css/ToursDetails.module.css";
+
+/*Componentes*/
 import NavBar from "../components/NavBar.tsx";
 import Footer from "../components/Footer.tsx";
-import RetrowaveItem from '../components/RetrowaveItem.tsx';
+import DetailsBox from '../components/DetailsBox.tsx';
+/*Data*/
 import toursData from '../tours.json'; // Importa el archivo JSON de datos de tours
-import { useParams } from "react-router-dom";
+
 
 function TourDetail() {
     const [tour, setTour] = useState(null);
     const { id } = useParams();
-    
-console.log(id);
 
     useEffect(() => {
-        // Busca el tour con el ID proporcionado
         const foundTour = toursData.find(tour => tour.id === id);
-        
-        // Actualiza el estado del tour encontrado
+
         if (foundTour) {
             setTour(foundTour);
         }
     }, [id]);
 
+    if (!tour) {
+        return <div>Cargando...</div>;
+    }
+
+    const instroduccion = DOMPurify.sanitize(tour.introduccion);
+    const queVeras = DOMPurify.sanitize(tour.queVeras);
+    const places = tour.queVeras.split('\n');
+    const queHaras = DOMPurify.sanitize(tour.queHaras);
+    const enDetalle = DOMPurify.sanitize(tour.enDetalle);
+
     return (
         <main>
             <NavBar />
 
-            <section style={{ minHeight: "unset", height: "43vh", position: "relative", overflow: "hidden" }}>
-                <div className="videoBackground">
-                    <video autoPlay muted loop playsInline>
-                        <source src="/videos/Skyline2.mp4" type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
+            <section id="introduccion" className="sectionPaddingLeft spaceBetween colorBlack">
+                <div className="textContainer">
+                    <h1 className="fontMontserrat">{tour.nombre}</h1>
+                    <p dangerouslySetInnerHTML={{ __html: instroduccion }}></p>
                 </div>
-                <h1 className="outTeamTextOverlay">{tour.nombre}</h1>
-                <RetrowaveItem
-                    src="/vectors/Retrowave5.png"
-                    alt="Screen Tours Logo"
-                    width="30vw"
-                    translateX="-50%"
-                    translateY="-25%"
-                    filter="none"
-                    opacity={0.85}
-                    responsiveWidth="30vh"
-                    responsiveTranslateY="-35%"
-                />
+                <div className="imageContainer" style={{ backgroundImage: "url('../images/Mokum.jpg')" }}>
+                </div>
             </section>
 
-            <section className="sectionPaddingLeft rowSpaceB colorBlack" style={{ paddingTop: "0" }}>
-                <div>
-                    <RetrowaveItem
-                        src="/vectors/Retrowave7.png"
-                        alt="Screen Tours Logo"
-                        width="30vw"
-                        translateX="15%"
-                        translateY="3%"
-                        filter="none"
-                        opacity={0.25}
-                    />
+            <DetailsBox
+                duracion="4 horas"
+                tipoDeTour="Tour"
+                puntoEncuentro="Museo Casa de Rembrandt, Jodenbreestraat 4, 1011 NK Amsterdam"
+                idioma="Guía ES/EN"
+                lugares="Museo Rembrandt, Waterlooplein, Museo Judío, Sinagoga Portuguesa, Monumento Nombres Holocausto, Hortus Amsterdam, Museo del Holocausto, Escultura de Anna Frank, Merwedeplein, Anne Frank Huis, Westerkerk, Homomonument"
+                cancelacion="Cancelación gratuita 48hrs."
+            />
 
-                    <RetrowaveItem
-                        src="/vectors/Mill2.png"
-                        alt="Screen Tours Logo"
-                        width="30vw"
-                        translateX="8%"
-                        translateY="28%"
-                        filter="drop-shadow(6px 6px 2px #ffffff) invert(27%) sepia(82%) saturate(420%) hue-rotate(173deg) brightness(94%) contrast(96%)"
-                        opacity={1}
-                    />
-
-                    <div className="textContainer">
-                        <h1 className="fontMontserrat">Introducción</h1>
-                        <p>{tour.introduccion}</p>
-                    </div>
+            <section id="queHaras" className="sectionPaddingTour spaceBetween colorBlack">
+                <div className="textContainer">
+                    <h1 className="fontMontserrat">¿Que haras?</h1>
+                    <p dangerouslySetInnerHTML={{ __html: queHaras }}></p>
+                </div>
+                <div className="textContainer">
+                    <h1 className="fontMontserrat">Detalle</h1>
+                    <p dangerouslySetInnerHTML={{ __html: enDetalle }}></p>
                 </div>
             </section>
 

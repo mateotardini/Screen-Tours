@@ -46,7 +46,6 @@ function OurTeam() {
                     </p>
                     <button>Conoce nuestras <strong>excursiones en español</strong></button>
                 </div>
-
             </section>
 
             <section className="sectionPadding ourTeam">

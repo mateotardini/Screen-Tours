@@ -108,6 +108,7 @@ h4 {
 }
 
 p {
+  white-space: pre-line;
   font-size: 0.833vw;
   line-height: 1.5vw;
 }
@@ -665,4 +666,9 @@ a {
   .ourTeam .spaceBetween{
     flex-direction: column;
   }
+}
+
+
+.sectionPaddingTour{
+  padding: 0vw 10vw 0vw 10vw;
 }

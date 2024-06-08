@@ -97,12 +97,12 @@
 }
 
 .icon{
-  font-size: 28px;
+  font-size: 1.458vw;
   color: var(--third-color);
 }
 
 .icon2{
-  font-size: 28px;
+  font-size: 1.458vw;
   color: var(--secondary-color);
   transition: transform 0.3s ease, color 0.3s ease;
 }
