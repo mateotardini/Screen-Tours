@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import DOMPurify from 'dompurify';
-
+/*CSS*/
 import styles from "../css/ToursDetails.module.css";
-
 /*Componentes*/
 import NavBar from "../components/NavBar.tsx";
 import Footer from "../components/Footer.tsx";
 import DetailsBox from '../components/DetailsBox.tsx';
+import WarningsBox from '../components/WarningsBox.tsx';
 /*Data*/
 import toursData from '../tours.json'; // Importa el archivo JSON de datos de tours
 
@@ -56,14 +56,30 @@ function TourDetail() {
                 cancelacion="Cancelación gratuita 48hrs."
             />
 
-            <section id="queHaras" className="sectionPaddingTour spaceBetween colorBlack">
+            <section className="sectionPaddingRight spaceBetween colorBlack" style={{ paddingTop: "0", paddingBottom: "0" }}>
+                <div className="imageContainerLeft" style={{ backgroundImage: "url('../images/Team.jpg')" }}>
+                </div>
+
                 <div className="textContainer">
                     <h1 className="fontMontserrat">¿Que haras?</h1>
                     <p dangerouslySetInnerHTML={{ __html: queHaras }}></p>
                 </div>
+            </section>
+
+            <WarningsBox
+                queIncluye={tour.incluye}
+                queLlevar={tour.queLlevar}
+                noPermitido={tour.noPermitido}
+                noIncluye={tour.noIncluye}
+                importante={tour.importante}
+            />
+
+            <section id="detalle" className="sectionPaddingLeft spaceBetween colorBlack" style={{ paddingTop: "0", paddingBottom: "0" }}>
                 <div className="textContainer">
                     <h1 className="fontMontserrat">Detalle</h1>
                     <p dangerouslySetInnerHTML={{ __html: enDetalle }}></p>
+                </div>
+                <div className="imageContainer" style={{ backgroundImage: "url('../images/Mokum.jpg')" }}>
                 </div>
             </section>
 

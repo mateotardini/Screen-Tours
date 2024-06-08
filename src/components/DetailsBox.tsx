@@ -24,8 +24,8 @@ const DetailsBox: React.FC<DetailsBoxProps> = ({ duracion, tipoDeTour, puntoEncu
         <p><LuLanguages className={styles.icon}/><strong>Idiomas: </strong>{idioma}</p>
         <p><LuLanguages className={styles.icon}/><strong>{cancelacion}</strong></p>
       </div>
-      <p><FaMapMarkerAlt className={styles.icon}/><strong>Punto de Encuentro: </strong>{puntoEncuentro}</p>
-      <p><FaMapMarkerAlt className={styles.icon}/><strong>¿Que veras?: </strong>{lugares}</p>
+      <p className={styles.noMargin}><FaMapMarkerAlt className={styles.icon}/><strong>Punto de Encuentro: </strong>{puntoEncuentro}</p>
+      <p className={styles.noMargin}><FaMapMarkerAlt className={styles.icon}/><strong>¿Que veras?: </strong>{lugares}</p>
     </div>
   );
 }

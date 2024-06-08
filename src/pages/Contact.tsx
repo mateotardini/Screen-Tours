@@ -65,11 +65,11 @@ function Contact() {
                     </p>
                     <div className={styles.column}>
                         <ul className={styles.links}>
-                            <li><FaMapMarkerAlt className={styles.icon} /> <strong>Amsterdam, Paises Bajos</strong></li>
+                            <li><FaMapMarkerAlt className={styles.icon} /> <strong>Meerhuzenstraat 10E 1078 TH, Amsterdam, Netherlands</strong></li>
                             <li><FaClock className={styles.icon} /><strong>09:00h - 17:00h</strong></li>
-                            <li><FaPhoneAlt className={styles.icon} /><a href="https://wa.me/5491163733844" target="_blank" rel="noreferrer" ><strong>+54 9 11 6373-3844</strong> </a></li>
-                            <li><FaWhatsapp className={styles.icon} /><a href="https://wa.me/5491163733844" target="_blank" rel="noreferrer" ><strong>+54 9 11 6373-3844</strong> </a></li>
-                            <li><FaEnvelope className={styles.icon} /><a href="mailto:screentours.uptodate@gmail.com" target="_blank" rel="noreferrer" ><strong>screentours.uptodate@gmail.com</strong></a></li>
+                            <li><FaPhoneAlt className={styles.icon} /><a href="https://wa.me/5491163733844" target="_blank" rel="noreferrer" ><strong>+31 629 123 242</strong> </a></li>
+                            <li><FaWhatsapp className={styles.icon} /><a href="https://wa.me/5491163733844" target="_blank" rel="noreferrer" ><strong>+31 629 123 242</strong> </a></li>
+                            <li><FaEnvelope className={styles.icon} /><a href="mailto:screentours.uptodate@gmail.com" target="_blank" rel="noreferrer" ><strong>ScreenToursEurope@gmail.com</strong></a></li>
                         </ul>
                     </div>
                 </div>

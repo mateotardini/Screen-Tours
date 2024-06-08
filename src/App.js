@@ -30,7 +30,7 @@ function App() {
           <Route path="/Museos" element={<Museos />} />
           <Route path="/Vlogs" element={<Vlogs />} />
           <Route path="/Contact" element={<Contact />} />
-          <Route path="/Tours/:id" element={<TourDetail />} />
+          <Route path="/:id" element={<TourDetail />} />
         </Routes>
       </LanguageProvider>
     </div>

@@ -123,7 +123,7 @@ p {
   font-family: "Montserrat";
   font-weight: 600;
   /*background: linear-gradient(90deg, #295086 21.35%, rgb(163 237 225) 100%);*/
-  background: linear-gradient(90deg, #667fcd 21.35%, rgb(20 15 50) 100%);
+  background: linear-gradient(90deg, #667fcd 21.35%, rgb(255 0 147) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -180,6 +180,7 @@ p {
   display: flex;
   align-items: start;
   justify-content: space-between;
+  align-items: center;
 }
 
 .grid {
@@ -351,6 +352,10 @@ button:hover {
   text-align: left;
   width: 34%;
   padding: 8%;
+}
+
+.textContainer br{
+  line-height: 10px;
 }
 
 .textContainer h1{
