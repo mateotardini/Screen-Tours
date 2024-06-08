@@ -38,6 +38,9 @@ const DetailsBox: React.FC<DetailsBoxProps> = ({ duracion, tipoDeTour, puntoEncu
         filter="none"
         opacity={1}
         zIndex={-1}
+        responsiveWidth="70vw"
+        responsiveTranslateX="-50%"
+        responsiveTranslateY="185%"
       />
     </div>
   );

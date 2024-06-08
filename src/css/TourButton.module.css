@@ -116,6 +116,7 @@
   .imageButton {
     width: 90vw;
     height: 80vh;
+    margin: 2vh 0;
   }
 
   .captionBox {

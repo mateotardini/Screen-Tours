@@ -27,7 +27,6 @@
     margin-top: 1.5vh;
 }
 
-
 .durationBox {
     display: flex;
     flex-direction: row;
@@ -50,4 +49,19 @@
     margin-right: 6px;
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    .container{
+        flex-direction: column;
+        width: 90%;
+        margin: 20vh auto 10vh auto
+    }
+
+    .durationBox{
+        flex-direction: column;
+        border-radius: 30px;
+    }
+
+    .icon{
+        font-size: 24px;
+    }
+}

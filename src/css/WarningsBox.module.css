@@ -57,5 +57,6 @@
   @media (max-width: 768px) {
     .container {
       width: 90%;
+      margin: 15vh auto 10vh auto;
     }
   }

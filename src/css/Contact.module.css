@@ -31,3 +31,13 @@ ul {
   height: 100%;
   border: 0;
 }
+
+@media (max-width: 768px) {
+  .invisibleMobile{
+    display: none;
+  }
+
+  .textContainer{
+    margin-top: 2vh;
+  }
+}
