@@ -220,6 +220,7 @@ p {
 button {
   cursor: pointer;
   font-family: "TrueLies", sans-serif !important;
+  color: var(--white-color);
   font-size: 0.833vw;
   letter-spacing: 3.5px;
   background-color: var(--secondary-color);

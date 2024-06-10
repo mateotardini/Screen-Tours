@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import styles from "../css/WarningsBox.module.css";
 
 interface WarningsBoxProps {
@@ -11,45 +11,73 @@ interface WarningsBoxProps {
 
 const WarningsBox: React.FC<WarningsBoxProps> = ({ queIncluye, queLlevar, noPermitido, noIncluye, importante }) => {
   const [activeTab, setActiveTab] = useState('queIncluye');
+  const [isMobile, setIsMobile] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  const tabs = [
+    { key: 'queIncluye', label: '¿Qué Incluye?', content: queIncluye },
+    { key: 'queLlevar', label: '¿Qué Llevar?', content: queLlevar },
+    { key: 'noPermitido', label: 'No Permitido', content: noPermitido },
+    { key: 'noIncluye', label: 'No Incluye', content: noIncluye },
+    { key: 'importante', label: 'Importante', content: importante }
+  ];
 
   const renderContent = () => {
-    switch (activeTab) {
-      case 'queIncluye':
-        return queIncluye;
-      case 'queLlevar':
-        return queLlevar;
-      case 'noPermitido':
-        return noPermitido;
-      case 'noIncluye':
-        return noIncluye;
-      case 'importante':
-        return importante;
-      default:
-        return queIncluye;
-    }
+    const activeTabContent = tabs.find(tab => tab.key === activeTab)?.content;
+    return activeTabContent || queIncluye; // Default to 'queIncluye' content if not found
   };
+
+  const handleResize = () => {
+    setIsMobile(window.innerWidth <= 768);
+  };
+
+  useEffect(() => {
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isMobile && containerRef.current) {
+      containerRef.current.scrollTo({
+        left: containerRef.current.clientWidth * tabs.findIndex(tab => tab.key === activeTab),
+        behavior: 'smooth'
+      });
+    }
+  }, [activeTab, isMobile]);
 
   return (
     <div className={styles.container}>
       <div className={styles.tabs}>
-        <button className={activeTab === 'queIncluye' ? styles.activeTab : ''} onClick={() => setActiveTab('queIncluye')}>
-          ¿Qué Incluye?
-        </button>
-        <button className={activeTab === 'queLlevar' ? styles.activeTab : ''} onClick={() => setActiveTab('queLlevar')}>
-          ¿Qué Llevar?
-        </button>
-        <button className={activeTab === 'noPermitido' ? styles.activeTab : ''} onClick={() => setActiveTab('noPermitido')}>
-          No Permitido
-        </button>
-        <button className={activeTab === 'noIncluye' ? styles.activeTab : ''} onClick={() => setActiveTab('noIncluye')}>
-          No Incluye
-        </button>
-        <button className={activeTab === 'importante' ? styles.activeTab : ''} onClick={() => setActiveTab('importante')}>
-          Importante
-        </button>
+        {tabs.map(tab => (
+          <button
+            key={tab.key}
+            className={activeTab === tab.key ? styles.activeTab : ''}
+            onClick={() => setActiveTab(tab.key)}
+          >
+            {tab.label}
+          </button>
+        ))}
       </div>
-      <div className={styles.content}>
-        <p>{renderContent()}</p>
+      <div ref={containerRef} className={isMobile ? styles.slides : styles.content}>
+        {isMobile ? (
+          tabs.map(tab => (
+            <div key={tab.key} className={styles.slide}>
+              <button
+                key={tab.key}
+                className={activeTab === tab.key ? styles.activeTab : ''}
+                onClick={() => setActiveTab(tab.key)}
+              >
+                {tab.label}
+              </button>
+              <p>{tab.content}</p>
+            </div>
+          ))
+        ) : (
+          <p>{renderContent()}</p>
+        )}
       </div>
     </div>
   );

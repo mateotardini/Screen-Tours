@@ -104,4 +104,20 @@
     margin: 0;
     margin-top: -5px;
   }
+
+  .buttonTextBottom{
+    top: 65%;
+  }
+
+  .buttonTextBottom h4{
+    margin-top: 1vh;
+    font-size: 16px;
+  }
+
+  .overlayText{
+    position: unset;
+    transform: translate(0%, 0%);
+    font-size: 36px;
+    margin: 6vh auto 3vh auto;
+  }
 }

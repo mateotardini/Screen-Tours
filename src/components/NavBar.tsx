@@ -18,6 +18,12 @@ function NavBar() {
   return (
     <div className={`${styles.container} ${menuOpen ? styles.open : ''}`}>
       <img className={`${styles.logo} ${styles.invisible}`} src="/vectors/Logo Blanco.png" alt="Logo Screen Tours" />
+
+      <div className={styles.lenguajesResponsive} >
+        <button onClick={() => changeLanguage('en')}>En</button>
+        <button onClick={() => changeLanguage('es')}>Esp</button>
+      </div>
+
       <div className={`${styles.menuIcon} ${menuOpen ? styles.open : ''}`} onClick={toggleMenu}>
         <div className={styles.bar}></div>
         <div className={styles.bar}></div>
@@ -30,46 +36,47 @@ function NavBar() {
             {translations[language].navbar.home}
           </Link>
         </li>
-        <li className={styles.animatedItem} style={{ animationDelay: '0.25s' }}>
+        <li className={styles.animatedItem} style={{ animationDelay: '0.15s' }}>
           <Link to="/OurTeam">
             <img className={styles.icon} src="icons/team.png" alt="Logo Screen Tours" />
             {translations[language].outTeam.subtittle}
           </Link>
         </li>
-        <li className={styles.animatedItem} style={{ animationDelay: '0.50s' }}>
+        {/*<li className={styles.animatedItem} style={{ animationDelay: '0.50s' }}>
           <Link to="/Daytrips">
             <img className={styles.icon} src="icons/compass.png" alt="Logo Screen Tours" />
             Daytrips
           </Link>
-        </li>
-        <li className={styles.animatedItem} style={{ animationDelay: '0.75s' }}>
+        </li>*/}
+
+        <img className={`${styles.logo} ${menuOpen ? styles.open : ''}`} src="/vectors/Logo Blanco.png" alt="Logo Screen Tours" />
+        <li className={styles.animatedItem} style={{ animationDelay: '0.3s' }}>
           <Link to="/Tours">
             <img className={styles.icon} src="icons/tour.png" alt="Logo Screen Tours" />
             Tours
           </Link>
         </li>
-        <img className={`${styles.logo} ${menuOpen ? styles.open : ''}`} src="/vectors/Logo Blanco.png" alt="Logo Screen Tours" />
 
-        <li className={styles.animatedItem} style={{ animationDelay: '1.0s' }}>
+        {/*<li className={styles.animatedItem} style={{ animationDelay: '1.0s' }}>
           <Link to="/FreeTours">
             <img className={styles.icon} src="icons/free.png" alt="Logo Screen Tours" />
             Free Tours
           </Link>
-        </li>
+        </li>*/}
 
-        <li className={styles.animatedItem} style={{ animationDelay: '1.5s' }}>
+        {/*<li className={styles.animatedItem} style={{ animationDelay: '1.5s' }}>
           <Link to="/Museos">
             <img className={styles.icon} src="icons/ticket.png" alt="Logo Screen Tours" />
             {translations[language].museums.subtittle}
           </Link>
-        </li>
-        <li className={styles.animatedItem} style={{ animationDelay: '1.75s' }}>
+        </li>*/}
+        {/*<li className={styles.animatedItem} style={{ animationDelay: '1.75s' }}>
           <Link to="/Vlogs">
             <img className={styles.icon} src="icons/camera.png" alt="Logo Screen Tours" />
             Vlogs
           </Link>
-        </li>
-        <li className={styles.animatedItem} style={{ animationDelay: '2.0s' }}>
+        </li>*/}
+        <li className={styles.animatedItem} style={{ animationDelay: '0.45s' }}>
           <Link to="/Contact">
             <img className={styles.icon} src="icons/contact.png" alt="Logo Screen Tours" />
             {translations[language].contact.subtittle}
