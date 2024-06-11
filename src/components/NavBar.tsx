@@ -36,10 +36,11 @@ function NavBar() {
             {translations[language].navbar.home}
           </Link>
         </li>
-        <li className={styles.animatedItem} style={{ animationDelay: '0.15s' }}>
-          <Link to="/OurTeam">
-            <img className={styles.icon} src="icons/team.png" alt="Logo Screen Tours" />
-            {translations[language].outTeam.subtittle}
+
+        <li className={styles.animatedItem} style={{ animationDelay: '0.3s' }}>
+          <Link to="/Tours">
+            <img className={styles.icon} src="icons/tour.png" alt="Logo Screen Tours" />
+            Tours
           </Link>
         </li>
         {/*<li className={styles.animatedItem} style={{ animationDelay: '0.50s' }}>
@@ -50,12 +51,6 @@ function NavBar() {
         </li>*/}
 
         <img className={`${styles.logo} ${menuOpen ? styles.open : ''}`} src="/vectors/Logo Blanco.png" alt="Logo Screen Tours" />
-        <li className={styles.animatedItem} style={{ animationDelay: '0.3s' }}>
-          <Link to="/Tours">
-            <img className={styles.icon} src="icons/tour.png" alt="Logo Screen Tours" />
-            Tours
-          </Link>
-        </li>
 
         {/*<li className={styles.animatedItem} style={{ animationDelay: '1.0s' }}>
           <Link to="/FreeTours">
@@ -80,6 +75,13 @@ function NavBar() {
           <Link to="/Contact">
             <img className={styles.icon} src="icons/contact.png" alt="Logo Screen Tours" />
             {translations[language].contact.subtittle}
+          </Link>
+        </li>
+
+        <li className={styles.animatedItem} style={{ animationDelay: '0.15s' }}>
+          <Link to="/OurTeam">
+            <img className={styles.icon} src="icons/team.png" alt="Logo Screen Tours" />
+            {translations[language].outTeam.subtittle}
           </Link>
         </li>
         <div className={styles.lenguajes}>

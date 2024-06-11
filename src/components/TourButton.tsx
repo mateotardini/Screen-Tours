@@ -1,8 +1,12 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { Link } from 'react-router-dom';
+/*Icons*/
 import { FaMapMarkerAlt, FaClock } from 'react-icons/fa';
 import { LuLanguages } from "react-icons/lu";
 import { IoIosArrowForward } from "react-icons/io";
+import { IoInformationCircle } from "react-icons/io5";
+/*Context*/
+import { LanguageContext } from '../contexts/LanguageContext.js';
 
 import styles from "../css/TourButton.module.css";
 
@@ -18,13 +22,15 @@ interface TourButtonProps {
 }
 
 const TourButton: React.FC<TourButtonProps> = ({ nombre, lugar, precio, duracion, tipoDeTour, linkImagen, link, linkAPI }) => {
+  const { language, translations } = useContext(LanguageContext);
+
   return (
     <div className={styles.buttonContainer}>
       <Link to={link} className={styles.imageButton}>
         <div className={styles.captionBox}>
           <div className={styles.durationBox}>
             <p><FaClock /> <strong></strong>{duracion}</p>
-            <p><FaClock /> <strong>{tipoDeTour}</strong></p>
+            <p><IoInformationCircle /> <strong>{tipoDeTour}</strong></p>
             <p><LuLanguages /> <strong>ESP/EN</strong></p>
           </div>
 
@@ -32,18 +38,18 @@ const TourButton: React.FC<TourButtonProps> = ({ nombre, lugar, precio, duracion
 
           <div className={styles.infoBox}>
             <p className={styles.captionText}><FaMapMarkerAlt className={styles.icon} /> {lugar}</p>
-            <Link to={link}> <strong>Saber Más</strong> <IoIosArrowForward className={styles.icon2} /></Link>
+            <Link to={link}> <strong>{translations[language].tour.more}</strong> <IoIosArrowForward className={styles.icon2} /></Link>
           </div>
 
           <div className='row'>
             <div className='column'>
-              <p>Desde</p>
+              <p>{translations[language].tour.from}</p>
               <h2>{precio}€</h2>
             </div>
           </div>
 
 
-          <button><a href={linkAPI}>Reservar Ahora</a></button>
+          <button><a href={linkAPI}>{translations[language].tour.book}</a></button>
         </div>
         <img src={linkImagen} alt='Screen Tours Tours' />
       </Link>

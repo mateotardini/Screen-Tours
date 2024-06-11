@@ -23,7 +23,7 @@
 }
 
 .container a {
-  color: var(--white-color);
+  color: var(--white-color) !important;
   text-decoration: none;
   font-size: 0.833vw;
   display: flex;
@@ -129,7 +129,7 @@
   }
 
   .container a{
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .logo{
@@ -152,8 +152,8 @@
 
   .flex.showMenu {
     display: grid;
-    grid-template-columns: auto auto auto;
-    height: 50vh;
+    grid-template-columns: auto auto;
+    height: 40vh;
     border-radius: 0 0 30px 30px;
     box-shadow: 0px 9px 19px rgb(0 0 0 / 54%);
   }
@@ -177,12 +177,16 @@
   }
 
   .icon {
-    width: 5vw;
+    width: 24px;
     margin-bottom: 1vh;
   }
 
   .lenguajes {
     display: none;
+  }
+
+  .lenguajesResponsive{
+    display: inline;
   }
 
   .lenguajesResponsive button{

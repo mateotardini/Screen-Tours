@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useRef } from 'react';
 import { Link } from 'react-router-dom';
 /*Context*/
 import { LanguageContext } from '../contexts/LanguageContext.js';
@@ -12,6 +12,14 @@ import RetrowaveItem from '../components/RetrowaveItem.tsx';
 
 function Home() {
     const { language, translations } = useContext(LanguageContext);
+
+    const nextSectionRef = useRef(null);
+
+    const scrollToNextSection = () => {
+        if (nextSectionRef.current) {
+            nextSectionRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
 
     return (
         <main>
@@ -33,6 +41,7 @@ function Home() {
                     opacity={1}
                     responsiveWidth="90vw"
                     responsiveTranslateY="-44%"
+                    zIndex={0}
                 />
 
                 <RetrowaveItem
@@ -45,6 +54,7 @@ function Home() {
                     opacity={1}
                     responsiveWidth="250vw"
                     responsiveTranslateY="-34%"
+                    zIndex={0}
                 />
 
                 <img
@@ -56,40 +66,34 @@ function Home() {
                 <div className="overlayText">
                     <h2 className="fontMontserrat">
                         Welcome to Netherlands.
-                        <br />
-                        {translations[language].home.subtittle}
                     </h2>
-                    <button>{translations[language].home.welcomeButton}</button>
+                    <button onClick={scrollToNextSection}>{translations[language].home.welcomeButton}</button>
                 </div>
             </section>
 
             <WaveSeparator topColor="#090d29" bottomColor="#f8f8f8"></WaveSeparator>
 
-            <section className="sectionPaddingLeft spaceBetween colorBlack" style={{alignItems: "center"}}>
-                <RetrowaveItem
-                    src="/vectors/Retrowave7.png"
-                    alt="Screen Tours Logo"
-                    width="30vw"
-                    translateX="-211%"
-                    translateY="129%"
-                    filter="none"
-                    opacity={0.25}
-                />
-
-                <RetrowaveItem
-                    src="/vectors/Mill2.png"
-                    alt="Screen Tours Logo"
-                    width="30vw"
-                    translateX="-211%"
-                    translateY="200%"
-                    filter="drop-shadow(6px 6px 2px #ffffff) invert(27%) sepia(82%) saturate(420%) hue-rotate(173deg) brightness(94%) contrast(96%)"
-                    opacity={1}
-                />
-
+            <section ref={nextSectionRef} className="sectionPaddingLeft spaceBetween colorBlack" style={{ alignItems: "center" }}>
                 <div className="textContainer">
                     <h1 className="fontMontserrat">
                         {translations[language].home.firstTittle}
                     </h1>
+
+                    <RetrowaveItem
+                        src="/vectors/Retrowave11.png"
+                        alt="Screen Tours Logo"
+                        width="24vw"
+                        translateX="-240%"
+                        translateY="-50%"
+                        filter="none"
+                        opacity={1}
+                        zIndex={0}
+                        responsivePosition="static"
+                        responsiveWidth="60vw"
+                        responsiveTranslateX="10%"
+                        responsiveTranslateY="0%"
+                    />
+
                     <p>
                         {translations[language].home.firstText}
                     </p>
@@ -122,8 +126,18 @@ function Home() {
                         lugar="Ámsterdam"
                         precio="Free "
                         tipoDeTour="FreeTour"
-                        linkImagen="/images/Background3.jpg"
+                        linkImagen="/images/HistoryTour.jpg"
                         link="/ScreenFreeTour Histórico de Ámsterdam"
+                        linkAPI="">
+                    </TourButton>
+                    <TourButton
+                        nombre="ScreenTour Second World War"
+                        duracion="3 Hrs 30 Mins"
+                        lugar="Ámsterdam"
+                        precio={35}
+                        tipoDeTour="Tour"
+                        linkImagen="/images/HistoryTour3.jpg"
+                        link="/ScreenTour Second World War"
                         linkAPI="">
                     </TourButton>
                     <TourButton
@@ -132,8 +146,8 @@ function Home() {
                         lugar="Ámsterdam"
                         precio={35}
                         tipoDeTour="Tour"
-                        linkImagen="/images/Rembrant.jpg"
-                        link=""
+                        linkImagen="/images/Rembrandt/Rembrandt Estatue.jpg"
+                        link="/ScreenTour Amsterdam through Rembrandt"
                         linkAPI="">
                     </TourButton>
                 </div>
@@ -148,12 +162,12 @@ function Home() {
                 </div>
                 <div className="textContainer">
                     <h1 className="fontMontserrat">
-                        ¡Llega bien preparado para tu aventura!
+                        {translations[language].home.forthTittle}
                     </h1>
                     <p>
-                        Visita nuestras guías y descubre los tours imprescindibles para conectar aún mas con la rica historia de los Países Bajos.
+                        {translations[language].home.forthText}
                     </p>
-                    <button><Link to="/Tours">Ver Tours</Link></button>
+                    <Link to="/Tours"><button>{translations[language].home.seeTours}</button></Link>
                 </div>
             </section>
 

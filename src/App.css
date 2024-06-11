@@ -144,12 +144,14 @@ p {
 }
 
 .sectionPaddingLeft {
+  position: relative;
   text-align: center;
   padding: 2.5vw 0vw 2.5vw 10vw;
 }
 
 
 .sectionPaddingRight {
+  position: relative;
   text-align: center;
   padding: 2.5vw 10vw 2.5vw 0vw;
 }
@@ -230,8 +232,8 @@ button {
   width: 12.8vw;
   transition: 0.75s;
   box-shadow: -2px 3px 10px rgb(0 0 0 / 32%);
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
+  margin-block-start: 0.83em !important;
+  margin-block-end: 0.83em !important;
 }
 
 button:hover {
@@ -551,8 +553,10 @@ a {
   }
 
   button {
+    padding: 2vh;
     width: 100%;
     min-height: 55px;
+    height: fit-content;
     font-size: 16px;
   }
 
@@ -605,6 +609,10 @@ a {
   .imageContainer {
     width: 100%;
     height: 50vh;
+  }
+
+  .imageContainer video{
+    border-radius: 45px 0 0 45px;
   }
 
   .imageContainerLeft {

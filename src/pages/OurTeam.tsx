@@ -1,7 +1,8 @@
 import React from "react";
+import { Link } from 'react-router-dom';
+/*Components*/
 import NavBar from "../components/NavBar.tsx"
 import Footer from "../components/Footer.tsx"
-
 import RetrowaveItem from '../components/RetrowaveItem.tsx';
 import ImageTeam from "../components/ImageTeam.tsx"
 
@@ -10,7 +11,7 @@ function OurTeam() {
         <main>
             <NavBar></NavBar>
 
-            <section style={{ minHeight: "unset",height: "43vh", position: "relative", overflow: "hidden" }}>
+            <section style={{ minHeight: "unset", height: "43vh", position: "relative", overflow: "hidden" }}>
                 <div className="videoBackground">
                     <video autoPlay muted loop playsInline>
                         <source src="/videos/Skyline2.mp4" type="video/mp4" />
@@ -32,19 +33,19 @@ function OurTeam() {
             </section>
 
             <section className="sectionPaddingRight spaceBetween colorBlack">
-                <div className="imageContainerLeft" style={{backgroundImage: "url('../images/Team.jpg')"}}>
+                <div className="imageContainerLeft" style={{ backgroundImage: "url('../images/Team.jpg')" }}>
                 </div>
 
                 <div className="textContainer">
                     <h1 className="fontMontserrat">
-                        Somos un equipo, apúntate a la aventura
+                        Conoce a nuestro equipo
                     </h1>
                     <p>
-                        Organizamos visitas únicas, mediante un modelo de turismo respetuoso con cada una de los
-                        destinos a través de nuestros tours y excursiones con un equipo de guías turísticos que te mostrarán
-                        las particularidades de esta ciudad con la mayor profesionalidad, puntualidad y amabilidad.
+                        Familiarizate con nuestro equipo de profesionales. Aquí podrás conocer el background
+                        profesional y formación de los guías que te acompañarán durante tu tour, además de contar
+                        con una amplia experiencia y formación, te contagiarán su pasión por la ciudad y cultura
+                        holandesa.
                     </p>
-                    <button>Conoce nuestras <strong>excursiones en español</strong></button>
                 </div>
             </section>
 
@@ -66,7 +67,7 @@ function OurTeam() {
 
                     <ImageTeam
                         nombre="Patricia"
-                        puesto="Diseñadora Grafica"
+                        puesto="DiseÑadora Grafica"
                         testimonio="Me encanta compartir el día a día en esta ciudad y todas las experiencias que voy viviendo"
                         linkImagen="/team/Team3.jpg"
                     />
@@ -89,7 +90,7 @@ function OurTeam() {
 
                     <ImageTeam
                         nombre="Patricia"
-                        puesto="Diseñadora Grafica"
+                        puesto="DiseÑadora Grafica"
                         testimonio="La vida no está hecha para vivir en un solo lugar"
                         linkImagen="/team/Team2.jpg"
                     />
@@ -97,17 +98,16 @@ function OurTeam() {
             </section>
 
             <section className="sectionBorderRadius colorBlack">
-                <div className="imageContainer" style={{backgroundImage: "url('../images/Team.jpg')"}}>
+                <div className="imageContainer" style={{ backgroundImage: "url('../images/Tour(Mattia Sacco).jpg')" }}>
                 </div>
                 <div className="textContainer">
                     <h1 className="fontMontserrat">
-                        ¡Únete a nuestro equipo!
+                        ¿Listo para recorrer Netherlands?
                     </h1>
                     <p>
-                        Descarga nuestra guía y descubre los 20 lugares que no te puedes perder en tu primera visita a Ámsterdam
+                        ¡Ya conoces a nuestro equipo, es hora que conozcas Países Bajos!
                     </p>
-                    <button>Guía Bilingüe</button>
-                    <button>Guía Habla-hispana</button>
+                    <Link to="/Tours"><button>Conoce nuestras <strong>excursiones en español</strong></button></Link>
                 </div>
             </section>
 

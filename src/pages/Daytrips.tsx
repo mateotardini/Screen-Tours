@@ -33,23 +33,14 @@ function Daytrips() {
 
             <section className="sectionPaddingLeft spaceBetween colorBlack" style={{ paddingTop: "0" }}>
                 <RetrowaveItem
-                    src="/vectors/Retrowave7.png"
+                    src="/vectors/Retrowave10.png"
                     alt="Screen Tours Logo"
-                    width="30vw"
-                    translateX="15%"
-                    translateY="3%"
+                    width="25vw"
+                    translateX="25%"
+                    translateY="0%"
                     filter="none"
-                    opacity={0.25}
-                />
-
-                <RetrowaveItem
-                    src="/vectors/Mill2.png"
-                    alt="Screen Tours Logo"
-                    width="30vw"
-                    translateX="8%"
-                    translateY="28%"
-                    filter="drop-shadow(6px 6px 2px #ffffff) invert(27%) sepia(82%) saturate(420%) hue-rotate(173deg) brightness(94%) contrast(96%)"
                     opacity={1}
+                    zIndex={0}
                 />
 
                 <div className="textContainer">

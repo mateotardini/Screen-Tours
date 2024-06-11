@@ -29,7 +29,7 @@ function Footer() {
 
           <div className={styles.column}>
             <ul className={styles.links}>
-              <li><FaMapMarkerAlt className={styles.icon} />Meerhuzenstraat 10E 1078 TH, Amsterdam, Netherlands </li>
+              <li><FaMapMarkerAlt className={styles.icon} />Amsterdám, Netherlands </li>
               <li><FaClock className={styles.icon} />09:00h - 17:00h</li>
               <li><FaPhoneAlt className={styles.icon} />
                 <a href="https://wa.me/5491163733844" target='_blank' rel="noopener noreferrer">+31 629 123 242</a>
@@ -48,22 +48,23 @@ function Footer() {
               <li><Link to="/">Home</Link></li>
               <li><Link to="/OurTeam">Nuestro Equipo</Link></li>
               <li><Link to="/Tours">Tours</Link></li>
-              <li><Link to="/Daytrips">Daytrips</Link></li>
-              <li><Link to="/FreeTours">Free Tours</Link></li>
+              <li><Link to="/Contact">Contacto</Link></li>
+              {/*<li><Link to="/Daytrips">Daytrips</Link></li>
+              <li><Link to="/FreeTours">Free Tours</Link></li>*/}
             </ul>
           </div>
 
-          <div className={styles.column}>
+          {/*<div className={styles.column}>
             <ul className={styles.links}>
               <li><Link to="/Tours">Circuitos</Link></li>
               <li><Link to="/Museos">Museos</Link></li>
               <li><Link to="/Vlogs">Vlogs</Link></li>
               <li><Link to="/Contact">Contacto</Link></li>
             </ul>
-          </div>
+          </div>*/}
 
           <div className={styles.column}>
-            <button><Link to="/OurTeam">Conocé A Nuestros Guias</Link></button>
+            <Link to="/OurTeam"><button>Conocé A Nuestros Guias</button></Link>
           </div>
         </div>
       </div>

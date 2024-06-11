@@ -14,6 +14,7 @@ interface RetrowaveItemProps {
     responsiveTranslateY?: string;
     responsiveFilter?: string;
     responsiveOpacity?: number;
+    responsivePosition?: string;
 }
 
 const RetrowaveItem: React.FC<RetrowaveItemProps> = ({
@@ -29,7 +30,8 @@ const RetrowaveItem: React.FC<RetrowaveItemProps> = ({
     responsiveTranslateX,
     responsiveTranslateY,
     responsiveFilter,
-    responsiveOpacity
+    responsiveOpacity,
+    responsivePosition
 }) => {
     const isResponsive = window.innerWidth <= 768;
 
@@ -38,9 +40,9 @@ const RetrowaveItem: React.FC<RetrowaveItemProps> = ({
             src={src}
             alt={alt}
             style={{
-                position: "absolute",
+                position: isResponsive && responsivePosition ? responsivePosition : "absolute",
                 top: "50%",
-                left:"50%",
+                left: "50%",
                 width: isResponsive && responsiveWidth ? responsiveWidth : width,
                 transform: `translate(${isResponsive && responsiveTranslateX ? responsiveTranslateX : translateX}, ${isResponsive && responsiveTranslateY ? responsiveTranslateY : translateY})`,
                 filter: isResponsive && responsiveFilter ? responsiveFilter : filter,

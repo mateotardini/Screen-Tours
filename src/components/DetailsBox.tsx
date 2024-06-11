@@ -27,20 +27,20 @@ const DetailsBox: React.FC<DetailsBoxProps> = ({ duracion, tipoDeTour, puntoEncu
         <p><LuLanguages className={styles.icon} /><strong>{cancelacion}</strong></p>
       </div>
       <p className={styles.noMargin}><FaMapMarkerAlt className={styles.icon} /><strong>Punto de Encuentro: </strong>{puntoEncuentro}</p>
-      <p className={styles.noMargin}><FaMapMarkerAlt className={styles.icon} /><strong>¿Que veras?: </strong>{lugares}</p>
+      <p className={styles.noMargin}><FaMapMarkerAlt className={styles.icon} /><strong>¿Qué veras?: </strong>{lugares}</p>
 
       <RetrowaveItem
         src="/vectors/Retrowave6.png"
         alt="Screen Tours Logo"
         width="21vw"
         translateX="-200%"
-        translateY="45%"
+        translateY="-90%"
         filter="none"
         opacity={1}
         zIndex={-1}
         responsiveWidth="70vw"
         responsiveTranslateX="-50%"
-        responsiveTranslateY="185%"
+        responsiveTranslateY="-155%"
       />
     </div>
   );

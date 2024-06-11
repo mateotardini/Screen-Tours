@@ -32,30 +32,24 @@ function Tours() {
 
 
             <section className="sectionPaddingLeft spaceBetween colorBlack" style={{ paddingTop: "0" }}>
-                <RetrowaveItem
-                    src="/vectors/Retrowave7.png"
-                    alt="Screen Tours Logo"
-                    width="30vw"
-                    translateX="15%"
-                    translateY="3%"
-                    filter="none"
-                    opacity={0.25}
-                />
-
-                <RetrowaveItem
-                    src="/vectors/Mill2.png"
-                    alt="Screen Tours Logo"
-                    width="30vw"
-                    translateX="8%"
-                    translateY="28%"
-                    filter="drop-shadow(6px 6px 2px #ffffff) invert(27%) sepia(82%) saturate(420%) hue-rotate(173deg) brightness(94%) contrast(96%)"
-                    opacity={1}
-                />
-
                 <div className="textContainer">
                     <h1 className="fontMontserrat">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit
                     </h1>
+                    <RetrowaveItem
+                        src="/vectors/Retrowave10.png"
+                        alt="Screen Tours Logo"
+                        width="25vw"
+                        translateX="25%"
+                        translateY="-50%"
+                        filter="none"
+                        opacity={1}
+                        zIndex={0}
+                        responsivePosition="static"
+                        responsiveWidth="60vw"
+                        responsiveTranslateX="10%"
+                        responsiveTranslateY="0%"
+                    />
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam commodo viverra metus, mollis porta arcu tristique quis.
                         Nam sodales eros eu sem tempor finibus. Fusce ultrices mauris ac dolor mollis feugiat.
@@ -66,7 +60,7 @@ function Tours() {
 
             <section className="sectionPadding colorBlack">
                 <div className="row">
-                <TourButton
+                    <TourButton
                         nombre="ScreenTour Mokum, El Ámsterdam Judío"
                         duracion="4 Hrs"
                         lugar="Ámsterdam"
@@ -78,12 +72,22 @@ function Tours() {
                     </TourButton>
                     <TourButton
                         nombre="ScreenFreeTour Histórico de Ámsterdam"
-                        duracion="2 Hrs 30 Mins"
+                        duracion="4 Hrs"
                         lugar="Ámsterdam"
                         precio="Free "
                         tipoDeTour="FreeTour"
-                        linkImagen="/images/Background3.jpg"
+                        linkImagen="/images/HistoryTour.jpg"
                         link="/ScreenFreeTour Histórico de Ámsterdam"
+                        linkAPI="">
+                    </TourButton>
+                    <TourButton
+                        nombre="ScreenTour Second World War"
+                        duracion="3 Hrs 30 Mins"
+                        lugar="Ámsterdam"
+                        precio={35}
+                        tipoDeTour="Tour"
+                        linkImagen="/images/HistoryTour3.jpg"
+                        link="/ScreenTour Second World War"
                         linkAPI="">
                     </TourButton>
                     <TourButton
@@ -92,8 +96,8 @@ function Tours() {
                         lugar="Ámsterdam"
                         precio={35}
                         tipoDeTour="Tour"
-                        linkImagen="/images/Rembrant.jpg"
-                        link=""
+                        linkImagen="/images/Rembrandt/Rembrandt Estatue.jpg"
+                        link="/ScreenTour Amsterdam through Rembrandt"
                         linkAPI="">
                     </TourButton>
                 </div>

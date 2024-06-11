@@ -9,11 +9,27 @@ import Footer from "../components/Footer.tsx";
 import DetailsBox from '../components/DetailsBox.tsx';
 import WarningsBox from '../components/WarningsBox.tsx';
 /*Data*/
-import toursData from '../tours.json'; // Importa el archivo JSON de datos de tours
+import toursData from '../tours.json'; 
 
+interface Tour {
+    id: string;
+    titulo:string;
+    subtitulo: string;
+    introduccion: string;
+    duracion: string;
+    queVeras: string;
+    queHaras: string;
+    enDetalle: string;
+    incluye: string;
+    queLlevar:string;
+    noPermitido: string;
+    importante: string;
+    noIncluye: string;
+    puntoEncuentro: string;
+}
 
 function TourDetail() {
-    const [tour, setTour] = useState(null);
+    const [tour, setTour] = useState<Tour | null>(null);
     const { id } = useParams();
 
     useEffect(() => {
@@ -33,12 +49,13 @@ function TourDetail() {
     const places = tour.queVeras.split('\n');
     const queHaras = DOMPurify.sanitize(tour.queHaras);
     const enDetalle = DOMPurify.sanitize(tour.enDetalle);
+    const noIncluye =  DOMPurify.sanitize(tour.noIncluye);
 
     return (
         <main>
             <NavBar />
 
-            <section id="introduccion" className="sectionPaddingLeft spaceBetween colorBlack">
+            <section id="introduccion" className={`sectionPaddingLeft spaceBetween colorBlack ${styles.marginTop}`}>
                 <div className="textContainer">
                     <h1 className="fontMontserrat">
                         {tour.titulo}
@@ -49,26 +66,26 @@ function TourDetail() {
                 </div>
                 <div
                     className="imageContainer"
-                    style={{ backgroundImage: "url('../images/Mokun/CopyrightKeeHummel.jpg')" }}
+                    style={{ backgroundImage: `url(${tour.imagen1})` }}
                 >
                 </div>
             </section>
 
             <DetailsBox
-                duracion="4 horas"
+                duracion={tour.duracion}
                 tipoDeTour="Tour"
                 puntoEncuentro={tour.puntoEncuentro}
                 idioma="Guía ES/EN"
-                lugares="Museo Rembrandt, Waterlooplein, Museo Judío, Sinagoga Portuguesa, Monumento Nombres Holocausto, Hortus Amsterdam, Museo del Holocausto, Escultura de Anna Frank, Merwedeplein, Anne Frank Huis, Westerkerk, Homomonument"
+                lugares={queVeras}
                 cancelacion="Cancelación gratuita 48hrs."
             />
 
             <section className="sectionPaddingRight spaceBetween colorBlack" style={{ paddingTop: "0", paddingBottom: "0" }}>
-                <div className="imageContainerLeft" style={{ backgroundImage: "url('../images/Mokun/WesterkerkAnneFrank.jpg')" }}>
+                <div className="imageContainerLeft" style={{ backgroundImage: `url(${tour.imagen2})` }}>
                 </div>
 
                 <div className="textContainer">
-                    <h1 className="fontMontserrat">¿Que haras?</h1>
+                    <h1 className="fontMontserrat">¿Qué harás?</h1>
                     <p dangerouslySetInnerHTML={{ __html: queHaras }}></p>
                 </div>
             </section>
@@ -83,10 +100,24 @@ function TourDetail() {
 
             <section id="detalle" className="sectionPaddingLeft spaceBetween colorBlack" style={{ paddingTop: "0", paddingBottom: "0" }}>
                 <div className="textContainer">
-                    <h1 className="fontMontserrat">Detalle</h1>
+                    <h1 className="fontMontserrat">En Detalle</h1>
                     <p dangerouslySetInnerHTML={{ __html: enDetalle }}></p>
                 </div>
-                <div className="imageContainer" style={{ backgroundImage: "url('../images/Mokum.jpg')" }}>
+                <div className="imageContainer" style={{ backgroundImage: `url(${tour.imagen3})` }}>
+                </div>
+            </section>
+
+            <section className="sectionBorderRadius colorBlack">
+                <div className="imageContainer" style={{ backgroundImage: `url(${tour.imagen4})` }}>
+                </div>
+                <div className="textContainer">
+                    <h1 className="fontMontserrat">
+                        ¡Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam commodo viverra metus, mollis porta arcu tristique quis.
+                        Nam sodales eros eu sem tempor finibus. Fusce ultrices mauris ac dolor mollis feugiat.                   </p>
+                    <button><a href="">Reservar Tour</a></button>
                 </div>
             </section>
 

@@ -54,60 +54,34 @@
   margin-top: 1.5vh;
 }
 
+.contentMobile{
+  display: none;
+}
+
 @media (max-width: 768px) {
   .container {
     width: 90%;
-    margin: 15vh auto 10vh auto;
+    margin: 10vh auto;
+    border-radius: 0px;
   }
-
-  .tabs {
+  .container > .content{
     display: none;
   }
-
-  .slides {
-    display: flex;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    width: 100%;
-    scroll-behavior: smooth;
-  }
-
-  .slide {
-    min-width: 100%;
-    scroll-snap-align: center;
-    display: flex;
+  .tabs {
     flex-direction: column;
-    align-items: center;
-    padding: 1vh;
-    box-sizing: border-box;
-    height: auto; /* Allow height to adjust based on content */
-  }
-
-  .slide p {
-    margin: 0;
-  }
-
-  .controls {
-    display: flex;
-    justify-content: space-between;
     width: 100%;
+  }
+  .tabs button {
+    width: 100%;
+    margin-top: 1vh;
+    margin-bottom: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .contentMobile {
+    display: inline-block;
     padding: 10px;
-  }
-
-  .controlButton {
-    background-color: var(--secondary-color);
-    color: #f8f8f8;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-family: 'Montserrat' !important;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-
-  .controlButton:hover {
-    background-color: var(--secondary-color);
+    border-radius: 0 0 10px 10px;
   }
 }

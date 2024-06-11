@@ -137,7 +137,7 @@
 
   .durationBox{
     width: inherit;
-    padding: 5px;
+    padding: 1vh 2vh;
   }
 
   .durationBox p{

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import styles from "../css/WarningsBox.module.css";
 
 interface WarningsBoxProps {
@@ -11,15 +11,14 @@ interface WarningsBoxProps {
 
 const WarningsBox: React.FC<WarningsBoxProps> = ({ queIncluye, queLlevar, noPermitido, noIncluye, importante }) => {
   const [activeTab, setActiveTab] = useState('queIncluye');
-  const [isMobile, setIsMobile] = useState(false);
-  const containerRef = useRef<HTMLDivElement>(null);
+  const [openSections, setOpenSections] = useState<string[]>([]);
 
   const tabs = [
     { key: 'queIncluye', label: '¿Qué Incluye?', content: queIncluye },
     { key: 'queLlevar', label: '¿Qué Llevar?', content: queLlevar },
     { key: 'noPermitido', label: 'No Permitido', content: noPermitido },
     { key: 'noIncluye', label: 'No Incluye', content: noIncluye },
-    { key: 'importante', label: 'Importante', content: importante }
+    { key: 'importante', label: 'Información Importante', content: importante }
   ];
 
   const renderContent = () => {
@@ -27,57 +26,38 @@ const WarningsBox: React.FC<WarningsBoxProps> = ({ queIncluye, queLlevar, noPerm
     return activeTabContent || queIncluye; // Default to 'queIncluye' content if not found
   };
 
-  const handleResize = () => {
-    setIsMobile(window.innerWidth <= 768);
+  const toggleSection = (key: string) => {
+    setOpenSections(prevState =>
+      prevState.includes(key)
+        ? prevState.filter(section => section !== key)
+        : [...prevState, key]
+    );
   };
-
-  useEffect(() => {
-    handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
-  useEffect(() => {
-    if (isMobile && containerRef.current) {
-      containerRef.current.scrollTo({
-        left: containerRef.current.clientWidth * tabs.findIndex(tab => tab.key === activeTab),
-        behavior: 'smooth'
-      });
-    }
-  }, [activeTab, isMobile]);
 
   return (
     <div className={styles.container}>
       <div className={styles.tabs}>
         {tabs.map(tab => (
-          <button
-            key={tab.key}
-            className={activeTab === tab.key ? styles.activeTab : ''}
-            onClick={() => setActiveTab(tab.key)}
-          >
-            {tab.label}
-          </button>
+          <div key={tab.key} style={{ width: '100%' }}>
+            <button
+              className={activeTab === tab.key ? styles.activeTab : ''}
+              onClick={() => {
+                setActiveTab(tab.key);
+                toggleSection(tab.key);
+              }}
+            >
+              {tab.label}
+            </button>
+            {openSections.includes(tab.key) && (
+              <div className={styles.contentMobile}>
+                <p>{tab.content}</p>
+              </div>
+            )}
+          </div>
         ))}
       </div>
-      <div ref={containerRef} className={isMobile ? styles.slides : styles.content}>
-        {isMobile ? (
-          tabs.map(tab => (
-            <div key={tab.key} className={styles.slide}>
-              <button
-                key={tab.key}
-                className={activeTab === tab.key ? styles.activeTab : ''}
-                onClick={() => setActiveTab(tab.key)}
-              >
-                {tab.label}
-              </button>
-              <p>{tab.content}</p>
-            </div>
-          ))
-        ) : (
-          <p>{renderContent()}</p>
-        )}
+      <div className={styles.content}>
+        <p>{renderContent()}</p>
       </div>
     </div>
   );

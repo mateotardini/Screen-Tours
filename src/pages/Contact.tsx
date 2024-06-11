@@ -31,31 +31,11 @@ function Contact() {
                     opacity={0.85}
                     responsiveWidth="30vh"
                     responsiveTranslateY="-35%"
+                    zIndex={0}
                 />
             </section>
 
             <section className="sectionPaddingLeft row colorBlack" style={{ paddingTop: "0", justifyContent: "flex-start",  marginBottom:"-8%" }}>
-                <RetrowaveItem
-                    src="/vectors/Retrowave7.png"
-                    alt="Screen Tours Logo"
-                    width="20vw"
-                    translateX="170%"
-                    translateY="13%"
-                    filter="none"
-                    opacity={0.5}
-                />
-
-                <RetrowaveItem
-                    src="/vectors/Mill2.png"
-                    alt="Screen Tours Logo"
-                    width="23vw"
-                    translateX="138%"
-                    translateY="45%"
-                    filter="drop-shadow(6px 6px 2px #ffffff) invert(27%) sepia(82%) saturate(420%) hue-rotate(173deg) brightness(94%) contrast(96%)"
-                    opacity={1}
-                />
-
-
                 <div className="textContainer">
                     <h1 className="fontMontserrat">
                         ¿Te podemos ayudar?
@@ -65,7 +45,7 @@ function Contact() {
                     </p>
                     <div className={styles.column}>
                         <ul className={styles.links}>
-                            <li><FaMapMarkerAlt className={styles.icon} /> <strong>Meerhuzenstraat 10E 1078 TH, Amsterdam, Netherlands</strong></li>
+                            <li><FaMapMarkerAlt className={styles.icon} /> <strong>Amsterdám, Netherlands</strong></li>
                             <li><FaClock className={styles.icon} /><strong>09:00h - 17:00h</strong></li>
                             <li><FaPhoneAlt className={styles.icon} /><a href="https://wa.me/5491163733844" target="_blank" rel="noreferrer" ><strong>+31 629 123 242</strong> </a></li>
                             <li><FaWhatsapp className={styles.icon} /><a href="https://wa.me/5491163733844" target="_blank" rel="noreferrer" ><strong>+31 629 123 242</strong> </a></li>
