@@ -1,8 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+/*Context*/
+import { LanguageContext } from '../contexts/LanguageContext.js';
 /*CSS*/
 import styles from "../css/ContactForm.module.css";
 
 const ContactForm = () => {
+  const { language, translations } = useContext(LanguageContext);
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -30,7 +34,7 @@ const ContactForm = () => {
         name="name"
         type="text"
         id="name"
-        placeholder="Tu Nombre"
+        placeholder={translations[language].contact.name}
         value={formData.name}
         onChange={handleChange}
       />
@@ -39,7 +43,7 @@ const ContactForm = () => {
         name="email"
         type="text"
         id="email"
-        placeholder="Tu Email"
+        placeholder={translations[language].contact.email}
         value={formData.email}
         onChange={handleChange}
       />
@@ -48,7 +52,7 @@ const ContactForm = () => {
         name="subject"
         type="text"
         id="subject"
-        placeholder="Asunto"
+        placeholder={translations[language].contact.subject}
         value={formData.subject}
         onChange={handleChange}
       />
@@ -58,14 +62,14 @@ const ContactForm = () => {
         cols="40"
         rows="3"
         id="comments"
-        placeholder="Mensaje"
+        placeholder={translations[language].contact.comments}
         value={formData.comments}
         onChange={handleChange}
       ></textarea>
       <button
         type="submit"
         id="submit"
-        value="Enviar Mensaje"
+        value={translations[language].contact.send}
       >Enviar</button>
     </form>
   );

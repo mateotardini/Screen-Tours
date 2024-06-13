@@ -50,6 +50,17 @@
     margin-right: 6px;
 }
 
+.places{
+    margin: 0 3%;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 10%;
+    height: 100%;
+}
+
 @media (max-width: 768px) {
     .container{
         flex-direction: column;
@@ -64,5 +75,11 @@
 
     .icon{
         font-size: 24px;
+    }
+
+    .places{
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
     }
 }

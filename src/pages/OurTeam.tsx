@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from 'react-router-dom';
+/*Context*/
+import { LanguageContext } from '../contexts/LanguageContext.js';
 /*Components*/
 import NavBar from "../components/NavBar.tsx"
 import Footer from "../components/Footer.tsx"
@@ -7,6 +9,8 @@ import RetrowaveItem from '../components/RetrowaveItem.tsx';
 import ImageTeam from "../components/ImageTeam.tsx"
 
 function OurTeam() {
+    const { language, translations } = useContext(LanguageContext);
+
     return (
         <main>
             <NavBar></NavBar>
@@ -18,7 +22,7 @@ function OurTeam() {
                         Your browser does not support the video tag.
                     </video>
                 </div>
-                <h1 className="outTeamTextOverlay">Nuestro Equipo</h1>
+                <h1 className="outTeamTextOverlay">{translations[language].ourTeam.subtitle}</h1>
                 <RetrowaveItem
                     src="/vectors/Retrowave5.png"
                     alt="Screen Tours Logo"
@@ -38,19 +42,17 @@ function OurTeam() {
 
                 <div className="textContainer">
                     <h1 className="fontMontserrat">
-                        Conoce a nuestro equipo
+                        {translations[language].ourTeam.title}
                     </h1>
                     <p>
-                        Familiarizate con nuestro equipo de profesionales. Aquí podrás conocer el background
-                        profesional y formación de los guías que te acompañarán durante tu tour, además de contar
-                        con una amplia experiencia y formación, te contagiarán su pasión por la ciudad y cultura
-                        holandesa.
+                        {translations[language].ourTeam.text}
                     </p>
                 </div>
             </section>
 
             <section className="sectionPadding ourTeam">
-                <div className="spaceBetween">
+                <div className="spaceBetween" style={{ flexWrap: "wrap" }}>
+
                     <ImageTeam
                         nombre="Ana María"
                         puesto="Guia/Host"
@@ -66,43 +68,12 @@ function OurTeam() {
                     />
 
                     <ImageTeam
-                        nombre="Anabel"
+                        nombre="Gabi"
                         puesto="Guia/Host"
                         testimonio="Me encanta compartir el día a día en esta ciudad y todas las experiencias que voy viviendo"
-                        linkImagen="/team/Team3.jpg"
-                    />
-                </div>
-
-                <div className="spaceBetween">
-                    <ImageTeam
-                        nombre="Blas"
-                        puesto="Fundador"
-                        testimonio="La vida no está hecha para vivir en un solo lugar"
-                        linkImagen="/team/Team3.jpg"
+                        linkImagen="/team/Gabi.png"
                     />
 
-                    <ImageTeam
-                        nombre="Gaby"
-                        puesto="Guia/Host"
-                        testimonio="La vida no está hecha para vivir en un solo lugar"
-                        linkImagen="/team/Team1.jpeg"
-                    />
-
-                    <ImageTeam
-                        nombre="Juan"
-                        puesto="Guia/Host"
-                        testimonio="La vida no está hecha para vivir en un solo lugar"
-                        linkImagen="/team/Team2.jpg"
-                    />
-                </div>
-
-                <div>
-                    <ImageTeam
-                        nombre="Rafa"
-                        puesto="Guia/Host"
-                        testimonio="La vida no está hecha para vivir en un solo lugar"
-                        linkImagen="/team/Team2.jpg"
-                    />
                 </div>
             </section>
 
@@ -111,10 +82,10 @@ function OurTeam() {
                 </div>
                 <div className="textContainer">
                     <h1 className="fontMontserrat">
-                        ¿Listo para recorrer Netherlands?
+                        {translations[language].ourTeam.secondTitle}
                     </h1>
                     <p>
-                        ¡Ya conoces a nuestro equipo, es hora que conozcas Países Bajos!
+                        {translations[language].ourTeam.secondText}
                     </p>
                     <Link to="/Tours"><button>Conoce nuestras <strong>excursiones en español</strong></button></Link>
                 </div>

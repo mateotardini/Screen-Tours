@@ -23,7 +23,7 @@ const WarningsBox: React.FC<WarningsBoxProps> = ({ queIncluye, queLlevar, noPerm
 
   const renderContent = () => {
     const activeTabContent = tabs.find(tab => tab.key === activeTab)?.content;
-    return activeTabContent || queIncluye; // Default to 'queIncluye' content if not found
+    return activeTabContent || queIncluye; 
   };
 
   const toggleSection = (key: string) => {

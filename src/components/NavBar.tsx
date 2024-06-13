@@ -74,14 +74,14 @@ function NavBar() {
         <li className={styles.animatedItem} style={{ animationDelay: '0.45s' }}>
           <Link to="/Contact">
             <img className={styles.icon} src="icons/contact.png" alt="Logo Screen Tours" />
-            {translations[language].contact.subtittle}
+            {translations[language].contact.subtitle}
           </Link>
         </li>
 
         <li className={styles.animatedItem} style={{ animationDelay: '0.15s' }}>
           <Link to="/OurTeam">
             <img className={styles.icon} src="icons/team.png" alt="Logo Screen Tours" />
-            {translations[language].outTeam.subtittle}
+            {translations[language].ourTeam.subtitle}
           </Link>
         </li>
         <div className={styles.lenguajes}>

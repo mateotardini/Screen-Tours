@@ -1,13 +1,13 @@
 import React, {useContext} from 'react';
 import { Link } from 'react-router-dom';
+/*Context*/
+import { LanguageContext } from '../contexts/LanguageContext.js';
 /*Icons*/
 import { FaMapMarkerAlt, FaClock } from 'react-icons/fa';
 import { LuLanguages } from "react-icons/lu";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoInformationCircle } from "react-icons/io5";
-/*Context*/
-import { LanguageContext } from '../contexts/LanguageContext.js';
-
+/*CSS*/
 import styles from "../css/TourButton.module.css";
 
 interface TourButtonProps {

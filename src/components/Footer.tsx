@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+/*Context*/
+import { LanguageContext } from '../contexts/LanguageContext.js';
 /*CSS*/
 import styles from "../css/Footer.module.css";
 /*Iconos*/
@@ -7,6 +9,8 @@ import { FaTiktok, FaInstagram, FaGoogle, FaTripadvisor, FaWhatsapp } from 'reac
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock } from 'react-icons/fa';
 
 function Footer() {
+  const { language, translations } = useContext(LanguageContext);
+
   return (
     <footer className={styles.footer}>
       <div className={styles.imageBackground}>
@@ -45,10 +49,10 @@ function Footer() {
 
           <div className={styles.column}>
             <ul className={styles.links}>
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/OurTeam">Nuestro Equipo</Link></li>
+              <li><Link to="/">{translations[language].navbar.home}</Link></li>
               <li><Link to="/Tours">Tours</Link></li>
-              <li><Link to="/Contact">Contacto</Link></li>
+              <li><Link to="/Contact">{translations[language].contact.subtitle}</Link></li>
+              <li><Link to="/OurTeam">{translations[language].ourTeam.subtitle}</Link></li>
               {/*<li><Link to="/Daytrips">Daytrips</Link></li>
               <li><Link to="/FreeTours">Free Tours</Link></li>*/}
             </ul>
@@ -64,7 +68,7 @@ function Footer() {
           </div>*/}
 
           <div className={styles.column}>
-            <Link to="/OurTeam"><button>Conocé A Nuestros Guias</button></Link>
+            <Link to="/OurTeam"><button>{translations[language].ourTeam.button}</button></Link>
           </div>
         </div>
       </div>

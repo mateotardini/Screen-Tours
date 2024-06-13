@@ -1,4 +1,7 @@
 import React from "react";
+/*Context*/
+import { LanguageContext } from '../contexts/LanguageContext.js';
+/*Components*/
 import NavBar from "../components/NavBar.tsx"
 import Footer from "../components/Footer.tsx"
 import TourButton from "../components/TourButton.tsx";
@@ -60,7 +63,7 @@ function Tours() {
 
             <section className="sectionPadding colorBlack">
                 <div className="row">
-                    <TourButton
+                <TourButton
                         nombre="ScreenTour Mokum, El Ámsterdam Judío"
                         duracion="4 Hrs"
                         lugar="Ámsterdam"
@@ -84,7 +87,7 @@ function Tours() {
                         nombre="ScreenTour Second World War"
                         duracion="3 Hrs 30 Mins"
                         lugar="Ámsterdam"
-                        precio={35}
+                        precio={20}
                         tipoDeTour="Tour"
                         linkImagen="/images/HistoryTour3.jpg"
                         link="/ScreenTour Second World War"
@@ -94,9 +97,9 @@ function Tours() {
                         nombre="ScreenTour Amsterdam through Rembrandt"
                         duracion="3 Hrs 30 Mins"
                         lugar="Ámsterdam"
-                        precio={35}
+                        precio={40}
                         tipoDeTour="Tour"
-                        linkImagen="/images/Rembrandt/Rembrandt Estatue.jpg"
+                        linkImagen="/images/Rembrandt/RembrandtEstatue.jpg"
                         link="/ScreenTour Amsterdam through Rembrandt"
                         linkAPI="">
                     </TourButton>

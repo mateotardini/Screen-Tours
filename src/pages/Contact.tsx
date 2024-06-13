@@ -1,15 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
+/*Context*/
+import { LanguageContext } from '../contexts/LanguageContext.js';
+/*Components*/
 import NavBar from "../components/NavBar.tsx"
 import Footer from "../components/Footer.tsx"
 import RetrowaveItem from '../components/RetrowaveItem.tsx';
 import ContactForm from '../components/ContactForm.tsx';
 /*CSS*/
 import styles from "../css/Contact.module.css";
-/*Iconos*/
+/*Icons*/
 import { FaWhatsapp } from 'react-icons/fa';
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock } from 'react-icons/fa';
 
 function Contact() {
+    const { language, translations } = useContext(LanguageContext);
+
     return (
         <main>
             <NavBar />
@@ -35,13 +40,13 @@ function Contact() {
                 />
             </section>
 
-            <section className="sectionPaddingLeft row colorBlack" style={{ paddingTop: "0", justifyContent: "flex-start",  marginBottom:"-8%" }}>
+            <section className="sectionPaddingLeft row colorBlack" style={{ paddingTop: "0", justifyContent: "flex-start", marginBottom: "-8%" }}>
                 <div className="textContainer">
                     <h1 className="fontMontserrat">
-                        ¿Te podemos ayudar?
+                        {translations[language].contact.title}
                     </h1>
                     <p>
-                        Ya que estás por aquí, si tienes cualquier duda o pregunta que hacernos, aprovecha este magnífico formulario. ¡Te responderemos lo antes posible!
+                        {translations[language].contact.text}
                     </p>
                     <div className={styles.column}>
                         <ul className={styles.links}>
@@ -62,7 +67,7 @@ function Contact() {
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d77979.66565661412!2d4.8215604995263925!3d52.354741843979895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c63fb5949a7755%3A0x6600fd4cb7c0af8d!2sAmsterdam%2C%20Netherlands!5e0!3m2!1sen!2sar!4v1717436473704!5m2!1sen!2sar"
                 width="15%"
                 height="70%"
-                style={{ border: 0, position: "absolute", top: "50%", left: "50%", transform: "translate(-334%, 0%)", borderRadius: "0 45px 45px 0px"}}
+                style={{ border: 0, position: "absolute", top: "50%", left: "50%", transform: "translate(-334%, 0%)", borderRadius: "0 45px 45px 0px" }}
                 loading="lazy"
             ></iframe>
 

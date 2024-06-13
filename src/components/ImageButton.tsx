@@ -15,7 +15,7 @@ function ImageButton() {
         {/*<h2 className={`${styles.buttonText} fontTrueLies`}>DAYTRIPS</h2>*/}
         <h2 className={styles.buttonTextBottom}>
           Dam Square
-          <h4>Amsterdám</h4>
+          <h4>{translations[language].imageButton.amsterdam}</h4>
         </h2>
         <img src="/images/Mokum/DamSquare.jpg" alt='Screen Tours Tours Westerkerk y Anna Frank Huis' />
       </Link>
@@ -23,8 +23,8 @@ function ImageButton() {
       <Link to="/Museums" className={styles.imageButton}>
         {/*<h2 className={`${styles.buttonText} fontTrueLies`}>MUSEOS</h2>*/}
         <h2 className={styles.buttonTextBottom}>
-          Rijksmuseum 
-          <h4>Amsterdám</h4>
+          Rijksmuseum
+          <h4>{translations[language].imageButton.amsterdam}</h4>
         </h2>
         <img src="/images/Rembrant.jpg" alt='Screen Tours Tours Rembrant Square' />
       </Link>
@@ -32,8 +32,8 @@ function ImageButton() {
       <Link to="/Tours" className={styles.imageButton}>
         {/*<h2 className={`${styles.buttonText} fontTrueLies`}>TOURS</h2>*/}
         <h2 className={styles.buttonTextBottom}>
-          Nombres del Holocausto
-          <h4>Amsterdám</h4>
+          {translations[language].imageButton.thirdImage}
+          <h4>{translations[language].imageButton.amsterdam}</h4>
         </h2>
         <img src="/images/Mokum/CopyrightKeeHummel.jpg" alt='Screen Tours Tours Jewish Museum' />
       </Link>
@@ -41,8 +41,8 @@ function ImageButton() {
       <Link to="/Tours" className={styles.imageButton}>
         {/*<h2 className={`${styles.buttonText} fontTrueLies`}>FREE TOURS</h2>*/}
         <h2 className={styles.buttonTextBottom}>
-          Mercado de las Flores
-          <h4>Amsterdám</h4>
+          {translations[language].imageButton.fourthImage}
+          <h4>{translations[language].imageButton.amsterdam}</h4>
         </h2>
         <img src="/images/Bloemenmarkt2.jpg" alt='Screen Tours Tours Bloemenmarkt Mercado de las Flores' />
       </Link>

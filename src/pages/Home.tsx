@@ -64,10 +64,10 @@ function Home() {
                 </img>
 
                 <div className="overlayText">
-                    <h2 className="fontMontserrat">
-                        Welcome to Netherlands.
-                    </h2>
-                    <button onClick={scrollToNextSection}>{translations[language].home.welcomeButton}</button>
+                    <h1 className="fontMontserrat">
+                        Welcome to Netherlands
+                    </h1>
+                    {/*<button onClick={scrollToNextSection}>{translations[language].home.welcomeButton}</button>*/}
                 </div>
             </section>
 
@@ -76,7 +76,7 @@ function Home() {
             <section ref={nextSectionRef} className="sectionPaddingLeft spaceBetween colorBlack" style={{ alignItems: "center" }}>
                 <div className="textContainer">
                     <h1 className="fontMontserrat">
-                        {translations[language].home.firstTittle}
+                        {translations[language].home.firstTitle}
                     </h1>
 
                     <RetrowaveItem
@@ -108,7 +108,7 @@ function Home() {
             </section>
 
             <section className="sectionPadding colorBlack">
-                <h1 className="fontMontserrat">{translations[language].home.secondTittle}</h1>
+                <h1 className="fontMontserrat">{translations[language].home.secondTitle}</h1>
                 <div className="row">
                     <TourButton
                         nombre="ScreenTour Mokum, El Ámsterdam Judío"
@@ -134,7 +134,7 @@ function Home() {
                         nombre="ScreenTour Second World War"
                         duracion="3 Hrs 30 Mins"
                         lugar="Ámsterdam"
-                        precio={35}
+                        precio={20}
                         tipoDeTour="Tour"
                         linkImagen="/images/HistoryTour3.jpg"
                         link="/ScreenTour Second World War"
@@ -144,9 +144,9 @@ function Home() {
                         nombre="ScreenTour Amsterdam through Rembrandt"
                         duracion="3 Hrs 30 Mins"
                         lugar="Ámsterdam"
-                        precio={35}
+                        precio={40}
                         tipoDeTour="Tour"
-                        linkImagen="/images/Rembrandt/Rembrandt Estatue.jpg"
+                        linkImagen="/images/Rembrandt/RembrandtEstatue.jpg"
                         link="/ScreenTour Amsterdam through Rembrandt"
                         linkAPI="">
                     </TourButton>
@@ -162,10 +162,10 @@ function Home() {
                 </div>
                 <div className="textContainer">
                     <h1 className="fontMontserrat">
-                        {translations[language].home.forthTittle}
+                        {translations[language].home.fourthTitle}
                     </h1>
                     <p>
-                        {translations[language].home.forthText}
+                        {translations[language].home.fourthText}
                     </p>
                     <Link to="/Tours"><button>{translations[language].home.seeTours}</button></Link>
                 </div>
