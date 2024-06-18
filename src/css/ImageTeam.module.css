@@ -9,6 +9,7 @@
   margin: 0.5vw 0px;
   padding: 0;
   border-radius: 45px;
+  order: 2;
 }
 
 .imageButton:hover {
@@ -94,5 +95,9 @@
 
   .imageButton:hover .buttonText {
     transform: translate(-50%, calc(0% - var(--testimonio-height)));
+  }
+
+  .imageButton {
+    order: var(--order-responsive, 2); /* Default order is 1 */
   }
 }

@@ -71,6 +71,12 @@ function Footer() {
             <Link to="/OurTeam"><button>{translations[language].ourTeam.button}</button></Link>
           </div>
         </div>
+
+        <div className={styles.row}>
+          <p>
+            ©2024 - Todos los derechos reservados - Diseñado y desarrollado por <a href='https://www.linkedin.com/in/mateo-tardini-acu%C3%B1a-falc%C3%B3n-35064b195/'>Mateo Tardini Acuña.</a>
+          </p>
+        </div>
       </div>
     </footer>
   );

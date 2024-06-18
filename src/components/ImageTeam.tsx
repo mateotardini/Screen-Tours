@@ -6,9 +6,10 @@ interface ImageTeamProps {
   puesto: string;
   testimonio: string;
   linkImagen: string;
+  orderResponsive?: number;
 }
 
-const ImageTeam: React.FC<ImageTeamProps> = ({ nombre, puesto, testimonio, linkImagen }) => {
+const ImageTeam: React.FC<ImageTeamProps> = ({ nombre, puesto, testimonio, linkImagen, orderResponsive }) => {
   const testimonioRef = useRef<HTMLDivElement>(null);
   const [testimonioHeight, setTestimonioHeight] = useState(0);
 
@@ -21,7 +22,7 @@ const ImageTeam: React.FC<ImageTeamProps> = ({ nombre, puesto, testimonio, linkI
   return (
     <div
       className={styles.imageButton}
-      style={{ '--testimonio-height': `${testimonioHeight}px` } as React.CSSProperties}
+      style={{ '--testimonio-height': `${testimonioHeight}px`,  '--order-responsive': orderResponsive } as React.CSSProperties}
     >
       <div className={styles.buttonText}>
         <h2>{nombre}</h2>

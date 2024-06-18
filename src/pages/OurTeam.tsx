@@ -2,6 +2,8 @@ import React, { useContext } from "react";
 import { Link } from 'react-router-dom';
 /*Context*/
 import { LanguageContext } from '../contexts/LanguageContext.js';
+/*CSS */
+import styles from "../css/OurTeam.module.css";
 /*Components*/
 import NavBar from "../components/NavBar.tsx"
 import Footer from "../components/Footer.tsx"
@@ -65,6 +67,7 @@ function OurTeam() {
                         puesto="Fundadora Guia/Host"
                         testimonio="Una ciudad así debe ser muy bien explicada para llegar a comprenderla, y es una suerte dar con un guía que no sólo te sumerja desde el primer minuto, sino que también conozca los triunfos y las etapas más oscuras de su historia."
                         linkImagen="/team/Ana Blazquez.jpg"
+                        orderResponsive={1}
                     />
 
                     <ImageTeam
