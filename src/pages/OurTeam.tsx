@@ -57,23 +57,23 @@ function OurTeam() {
 
                     <ImageTeam
                         nombre="Ana María"
-                        puesto="Guia/Host"
-                        testimonio="Juntos, vamos a conocer todos los rincones de una ciudad que tiene un encanto especial, una capital europea que sin necesidad de monumentos mundialmente conocidos, ha sabido robarnos el corazón con canales de ensueño, casas bailarinas y bicicletas sin frenos."
+                        puesto={translations[language].ourTeam.guide}
+                        testimonio={translations[language].ourTeam.anaMaria}
                         linkImagen="/team/Ana María.png"
                     />
 
                     <ImageTeam
                         nombre="Ana"
-                        puesto="Fundadora Guia/Host"
-                        testimonio="Una ciudad así debe ser muy bien explicada para llegar a comprenderla, y es una suerte dar con un guía que no sólo te sumerja desde el primer minuto, sino que también conozca los triunfos y las etapas más oscuras de su historia."
+                        puesto={translations[language].ourTeam.ceo}
+                        testimonio={translations[language].ourTeam.ana}
                         linkImagen="/team/Ana Blazquez.jpg"
                         orderResponsive={1}
                     />
 
                     <ImageTeam
                         nombre="Gabi"
-                        puesto="Guia/Host"
-                        testimonio="Me encanta compartir el día a día en esta ciudad y todas las experiencias que voy viviendo"
+                        puesto={translations[language].ourTeam.guide}
+                        testimonio={translations[language].ourTeam.gabi}
                         linkImagen="/team/Gabi.png"
                     />
 

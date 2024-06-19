@@ -22,10 +22,15 @@ const translations = {
     ourTeam: {
       title: "Meet our team",
       subtitle: "Our Team",
-      text: "Get familiar with our team of professionals. Here you will be able to learn about the professional background and training of the guides who will accompany you during your tour. In addition to having extensive experience and training, they will instill in you their passion for the city and Dutch culture.",
+      text: "Get familiar with our team of professionals. Here you will be able to learn about the professional background and training of the guides who will accompany you during your tour. In addition to having extensive experience and training, they will instill in you their passion for the city and Dutch culture.\n\nOur guides will take you to explore every corner of Amsterdam and the Netherlands, revealing fascinating stories and hidden details every step of the way. With them, you will discover the city's best-kept secrets, from its medieval origins to its vibrant contemporary life. Each tour is an opportunity to immerse yourself in the rich history and culture of the region, transforming your visit into an experience of constant discovery and wonder.",
       secondTitle: "Ready to tour Netherlands?",
       secondText: "You already know our team, it's time for you to get to know the Netherlands!",
-      button: "Meet Our Guides"
+      button: "Meet Our Guides",
+      guide: "Guide",
+      ceo: "Founder / Guide",
+      anaMaria: "Together, we are going to discover all the corners of a city that has a special charm, a European capital that, without the need for world-famous monuments, has managed to steal our hearts with dream canals, dancing houses and bicycles without brakes.",
+      ana: "A city like this must be explained very well to understand it, and it is fortunate to find a guide who not only immerses you from the first minute, but also knows the triumphs and the darkest stages of its history.",
+      gabi: "I love sharing everyday life in this city and all the experiences I am having."
     },
     museums: {
       subtittle: "Museums"
@@ -40,13 +45,20 @@ const translations = {
       comments: "Comments",
       send: "Send"
     },
+    tours: {
+      firstTitle: "Explore our historical and immersive Tours",
+      firstText: "Each ScreenTours tour is an opportunity to see, hear and feel history in an interactive and immersive way. Our guides, with their deep knowledge and enthusiasm, will make you live every moment as if you were there.\n\nSelect the tour that interests you most and reserve your place in advance to ensure an unforgettable experience. With ScreenTours, you not only visit a place, but you also travel through time, living every moment of the history that has built Amsterdam and the Netherlands as we know it today."
+    },
     tour: {
       from: "From",
       more: "More",
       book: "Book Now",
       duration: "Duration",
       kindTour: "Kind Tour",
-      meetingPoint: "Meeting Point"
+      meetingPoint: "Meeting Point",
+      lastTitle: "Ready for Netherlands?",
+      lastText: "Don't miss the opportunity to discover wonderful places and create unique memories. Click the button below to secure your place on this incredible tour.",
+      lastButton: "Book Tour"
     },
     imageButton: {
       amsterdam: "Amsterdam",
@@ -72,10 +84,15 @@ const translations = {
     ourTeam: {
       title: "Conoce a nuestro equipo",
       subtitle: "Nuestro Equipo",
-      text: "Familiarizate con nuestro equipo de profesionales. Aquí podrás conocer el background profesional y formación de los guías que te acompañarán durante tu tour, además de contar con una amplia experiencia y formación, te contagiarán su pasión por la ciudad y cultura holandesa.",
+      text: "Familiarizate con nuestro equipo de profesionales. Aquí podrás conocer el background profesional y formación de los guías que te acompañarán durante tu tour, además de contar con una amplia experiencia y formación, te contagiarán su pasión por la ciudad y cultura holandesa.\n\nNuestros guías te llevarán a explorar cada rincón de Ámsterdam y los Países Bajos, revelando historias fascinantes y detalles ocultos en cada paso del camino. Con ellos, descubrirás los secretos mejor guardados de la ciudad, desde sus orígenes medievales hasta su vibrante vida contemporánea. Cada tour es una oportunidad para sumergirse en la rica historia y cultura de la región, transformando tu visita en una experiencia de descubrimiento y asombro constante.",
       secondTitle: "¿Listo para recorrer Netherlands?",
       secondText: "¡Ya conoces a nuestro equipo, es hora que conozcas Países Bajos!",
-      button: "Conocé A Nuestros Guias"
+      button: "Conocé A Nuestros Guias",
+      guide: "Guía",
+      ceo: "Fundadora / Guía",
+      anaMaria: "Juntos, vamos a conocer todos los rincones de una ciudad que tiene un encanto especial, una capital europea que sin necesidad de monumentos mundialmente conocidos, ha sabido robarnos el corazón con canales de ensueño, casas bailarinas y bicicletas sin frenos.",
+      ana: "Una ciudad así debe ser muy bien explicada para llegar a comprenderla, y es una suerte dar con un guía que no sólo te sumerja desde el primer minuto, sino que también conozca los triunfos y las etapas más oscuras de su historia.",
+      gabi: "Me encanta compartir el día a día en esta ciudad y todas las experiencias que voy viviendo."
     },
     museums: {
       subtittle: "Museos"
@@ -90,13 +107,20 @@ const translations = {
       comments: "Mensaje",
       send: "Enviar"
     },
+    tours: {
+      firstTitle: "Explora nuestros Tours históricos e inmersivos",
+      firstText: "Cada tour de ScreenTours es una oportunidad para ver, escuchar y sentir la historia de manera interactiva y envolvente. Nuestros guías, con su conocimiento profundo y entusiasmo, te harán vivir cada momento como si estuvieras allí.\n\nSelecciona el tour que más te interese y reserva tu plaza con anticipación para asegurar una experiencia inolvidable. Con ScreenTours, no solo visitas un lugar, sino que también viajas a través del tiempo, viviendo cada instante de la historia que ha construido Ámsterdam y los Países Bajos tal como los conocemos hoy."
+    },
     tour: {
       from: "Desde",
       more: "Saber Más",
       book: "Reservar Ahora",
       duration: "Duración",
       kindTour: "Tipo de Tour",
-      meetingPoint: "Punto de Encuentro"
+      meetingPoint: "Punto de Encuentro",
+      lastTitle: "¿Listo para Netherlands?",
+      lastText: "No pierdas la oportunidad de descubrir lugares maravillosos y crear recuerdos únicos.Haz clic en el botón de abajo para asegurar tu lugar en este increíble tour.",
+      lastButton: "Reservar Tour"
     },
     imageButton: {
       amsterdam: "Ámsterdam",

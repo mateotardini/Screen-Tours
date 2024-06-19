@@ -10,7 +10,7 @@ function ImageButton() {
 
   return (
     <div className={styles.row}>
-      <h1 className={`${styles.overlayText} fontTrueLies`}>{translations[language].home.thirdTittle}</h1>
+      <h1 className={`${styles.overlayText} fontTrueLies`}>{translations[language].home.thirdTitle}</h1>
       <Link to="/Tours" className={styles.imageButton}>
         {/*<h2 className={`${styles.buttonText} fontTrueLies`}>DAYTRIPS</h2>*/}
         <h2 className={styles.buttonTextBottom}>

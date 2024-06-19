@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 /*Context*/
 import { LanguageContext } from '../contexts/LanguageContext.js';
 /*Components*/
@@ -8,10 +8,11 @@ import TourButton from "../components/TourButton.tsx";
 import RetrowaveItem from '../components/RetrowaveItem.tsx';
 
 function Tours() {
+    const { language, translations } = useContext(LanguageContext);
+
     return (
         <main>
             <NavBar />
-
             <section style={{ minHeight: "unset", height: "43vh", position: "relative", overflow: "hidden" }}>
                 <div className="videoBackground">
                     <video autoPlay muted loop playsInline>
@@ -37,7 +38,7 @@ function Tours() {
             <section className="sectionPaddingLeft spaceBetween colorBlack" style={{ paddingTop: "0" }}>
                 <div className="textContainer">
                     <h1 className="fontMontserrat">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        {translations[language].tours.firstTitle}
                     </h1>
                     <RetrowaveItem
                         src="/vectors/Retrowave10.png"
@@ -54,16 +55,14 @@ function Tours() {
                         responsiveTranslateY="0%"
                     />
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam commodo viverra metus, mollis porta arcu tristique quis.
-                        Nam sodales eros eu sem tempor finibus. Fusce ultrices mauris ac dolor mollis feugiat.
-                        Aliquam sollicitudin id enim quis auctor. Mauris ut arcu nunc. Vestibulum sit amet tortor at eros ornare fringilla sed in libero.
+                        {translations[language].tours.firstText}
                     </p>
                 </div>
             </section>
 
             <section className="sectionPadding colorBlack">
                 <div className="row">
-                <TourButton
+                    <TourButton
                         nombre="ScreenTour Mokum, El Ámsterdam Judío"
                         duracion="4 Hrs"
                         lugar="Ámsterdam"

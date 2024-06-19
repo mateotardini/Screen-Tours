@@ -1,6 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { useParams } from "react-router-dom";
 import DOMPurify from 'dompurify';
+/*Context*/
+import { LanguageContext } from '../contexts/LanguageContext.js';
 /*CSS*/
 import styles from "../css/ToursDetails.module.css";
 /*Componentes*/
@@ -9,11 +11,11 @@ import Footer from "../components/Footer.tsx";
 import DetailsBox from '../components/DetailsBox.tsx';
 import WarningsBox from '../components/WarningsBox.tsx';
 /*Data*/
-import toursData from '../tours.json'; 
+import toursData from '../tours.json';
 
 interface Tour {
     id: string;
-    titulo:string;
+    titulo: string;
     subtitulo: string;
     introduccion: string;
     duracion: string;
@@ -21,7 +23,7 @@ interface Tour {
     queHaras: string;
     enDetalle: string;
     incluye: string;
-    queLlevar:string;
+    queLlevar: string;
     noPermitido: string;
     importante: string;
     noIncluye: string;
@@ -29,6 +31,8 @@ interface Tour {
 }
 
 function TourDetail() {
+    const { language, translations } = useContext(LanguageContext);
+
     const [tour, setTour] = useState<Tour | null>(null);
     const { id } = useParams();
 
@@ -49,7 +53,7 @@ function TourDetail() {
     const places = tour.queVeras.split('\n');
     const queHaras = DOMPurify.sanitize(tour.queHaras);
     const enDetalle = DOMPurify.sanitize(tour.enDetalle);
-    const noIncluye =  DOMPurify.sanitize(tour.noIncluye);
+    const noIncluye = DOMPurify.sanitize(tour.noIncluye);
 
     return (
         <main>
@@ -112,12 +116,12 @@ function TourDetail() {
                 </div>
                 <div className="textContainer">
                     <h1 className="fontMontserrat">
-                        ¡Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        {translations[language].tour.lastTitle}
                     </h1>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam commodo viverra metus, mollis porta arcu tristique quis.
-                        Nam sodales eros eu sem tempor finibus. Fusce ultrices mauris ac dolor mollis feugiat.                   </p>
-                    <button><a href="">Reservar Tour</a></button>
+                        {translations[language].tour.lastText}
+                    </p>
+                    <button><a href="">{translations[language].tour.lastButton}</a></button>
                 </div>
             </section>
 

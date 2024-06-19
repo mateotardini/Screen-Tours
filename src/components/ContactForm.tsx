@@ -1,12 +1,7 @@
-import React, { useState, useContext } from 'react';
-/*Context*/
-import { LanguageContext } from '../contexts/LanguageContext.js';
-/*CSS*/
+import React, { useState } from 'react';
 import styles from "../css/ContactForm.module.css";
 
 const ContactForm = () => {
-  const { language, translations } = useContext(LanguageContext);
-
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -22,9 +17,42 @@ const ContactForm = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form data submitted:', formData);
+
+    // Validar los datos antes de enviar al servidor (opcional)
+    if (!formData.name || !formData.email || !formData.subject || !formData.comments) {
+      alert('Por favor, complete todos los campos.');
+      return;
+    }
+
+    try {
+      // Enviar datos al servidor PHP utilizando fetch
+      const response = await fetch('./sendEmail.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error('Error al enviar el formulario.');
+      }
+
+      // Limpiar el formulario después de enviar
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        comments: ''
+      });
+
+      alert('Formulario enviado correctamente.');
+    } catch (error) {
+      console.error('Error:', error);
+      alert('Hubo un problema al enviar el formulario. Por favor, inténtalo de nuevo más tarde.');
+    }
   };
 
   return (
@@ -34,27 +62,30 @@ const ContactForm = () => {
         name="name"
         type="text"
         id="name"
-        placeholder={translations[language].contact.name}
+        placeholder="Nombre"
         value={formData.name}
         onChange={handleChange}
+        required
       />
       <input
         className={styles.input}
         name="email"
-        type="text"
+        type="email"
         id="email"
-        placeholder={translations[language].contact.email}
+        placeholder="Correo electrónico"
         value={formData.email}
         onChange={handleChange}
+        required
       />
       <input
         className={styles.input}
         name="subject"
         type="text"
         id="subject"
-        placeholder={translations[language].contact.subject}
+        placeholder="Asunto"
         value={formData.subject}
         onChange={handleChange}
+        required
       />
       <textarea
         className={styles.textArea}
@@ -62,14 +93,13 @@ const ContactForm = () => {
         cols="40"
         rows="3"
         id="comments"
-        placeholder={translations[language].contact.comments}
+        placeholder="Comentarios"
         value={formData.comments}
         onChange={handleChange}
+        required
       ></textarea>
       <button
         type="submit"
-        id="submit"
-        value={translations[language].contact.send}
       >Enviar</button>
     </form>
   );
