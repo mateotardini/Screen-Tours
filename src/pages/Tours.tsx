@@ -62,7 +62,7 @@ function Tours() {
 
             <section className="sectionPadding colorBlack">
                 <div className="row">
-                    <TourButton
+                <TourButton
                         nombre="ScreenTour Mokum, El Ámsterdam Judío"
                         duracion="4 Hrs"
                         lugar="Ámsterdam"
@@ -70,7 +70,7 @@ function Tours() {
                         tipoDeTour="Tour"
                         linkImagen="/images/Mokum.jpg"
                         link="/Mokum, el Ámsterdam Judío"
-                        linkAPI="">
+                        widgetId="">
                     </TourButton>
                     <TourButton
                         nombre="ScreenFreeTour Histórico de Ámsterdam"
@@ -80,7 +80,7 @@ function Tours() {
                         tipoDeTour="FreeTour"
                         linkImagen="/images/HistoryTour.jpg"
                         link="/ScreenFreeTour Histórico de Ámsterdam"
-                        linkAPI="">
+                        widgetId="b66447ad-9f69-4337-a22b-e758fdd18c19">
                     </TourButton>
                     <TourButton
                         nombre="ScreenTour Second World War"
@@ -90,7 +90,7 @@ function Tours() {
                         tipoDeTour="Tour"
                         linkImagen="/images/HistoryTour3.jpg"
                         link="/ScreenTour Second World War"
-                        linkAPI="">
+                        widgetId="">
                     </TourButton>
                     <TourButton
                         nombre="ScreenTour Amsterdam through Rembrandt"
@@ -100,7 +100,7 @@ function Tours() {
                         tipoDeTour="Tour"
                         linkImagen="/images/Rembrandt/RembrandtEstatue.jpg"
                         link="/ScreenTour Amsterdam through Rembrandt"
-                        linkAPI="">
+                        widgetId="">
                     </TourButton>
                 </div>
             </section>

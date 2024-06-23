@@ -118,7 +118,7 @@ function Home() {
                         tipoDeTour="Tour"
                         linkImagen="/images/Mokum.jpg"
                         link="/Mokum, el Ámsterdam Judío"
-                        linkAPI="">
+                        widgetId="">
                     </TourButton>
                     <TourButton
                         nombre="ScreenFreeTour Histórico de Ámsterdam"
@@ -128,7 +128,7 @@ function Home() {
                         tipoDeTour="FreeTour"
                         linkImagen="/images/HistoryTour.jpg"
                         link="/ScreenFreeTour Histórico de Ámsterdam"
-                        linkAPI="">
+                        widgetId="b66447ad-9f69-4337-a22b-e758fdd18c19">
                     </TourButton>
                     <TourButton
                         nombre="ScreenTour Second World War"
@@ -138,7 +138,7 @@ function Home() {
                         tipoDeTour="Tour"
                         linkImagen="/images/HistoryTour3.jpg"
                         link="/ScreenTour Second World War"
-                        linkAPI="">
+                        widgetId="">
                     </TourButton>
                     <TourButton
                         nombre="ScreenTour Amsterdam through Rembrandt"
@@ -148,7 +148,7 @@ function Home() {
                         tipoDeTour="Tour"
                         linkImagen="/images/Rembrandt/RembrandtEstatue.jpg"
                         link="/ScreenTour Amsterdam through Rembrandt"
-                        linkAPI="">
+                        widgetId="">
                     </TourButton>
                 </div>
             </section>

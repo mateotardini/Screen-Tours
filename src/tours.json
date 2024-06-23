@@ -17,7 +17,8 @@
         "imagen1": "../images/Mokum/WesterkerkAnneFrank.jpg",
         "imagen2": "../images/Mokum/CopyrightKeeHummel.jpg",
         "imagen3": "../images/Mokum/WesterkerkAnneFrank.jpg",
-        "imagen4": "../images/Mokum/CopyrightKeeHummel.jpg"
+        "imagen4": "../images/Mokum/CopyrightKeeHummel.jpg",
+        "widgetId": ""
     },
     {
         "id": "ScreenFreeTour Histórico de Ámsterdam",
@@ -37,7 +38,8 @@
         "imagen1": "../images/HistoryTour.jpg",
         "imagen2": "../images/Historico/Amsterdam5.jpg",
         "imagen3": "../images/Historico/Amsterdam3.jpg",
-        "imagen4": "../images/Historico/Opera.jpg"
+        "imagen4": "../images/Historico/Opera.jpg",
+        "widgetId": "b66447ad-9f69-4337-a22b-e758fdd18c19"
     },
     {
         "id": "ScreenTour Second World War",
@@ -57,7 +59,8 @@
         "imagen1": "../images/Mokum/WesterkerkAnneFrank.jpg",
         "imagen2": "../images/Mokum/CopyrightKeeHummel.jpg",
         "imagen3": "../images/Mokum/WesterkerkAnneFrank.jpg",
-        "imagen4": "../images/Mokum/CopyrightKeeHummel.jpg"
+        "imagen4": "../images/Mokum/CopyrightKeeHummel.jpg",
+        "widgetId": ""
     },
     {
         "id": "ScreenTour Amsterdam through Rembrandt",
@@ -76,7 +79,8 @@
         "imagen1": "../images/Rembrandt/RembrandtEstatue.jpg",
         "imagen2": "../images/Rembrandt/RijksmuseumInside.jpg",
         "imagen3": "../images/Rembrandt/Rijksmuseum.jpg",
-        "imagen4": "../images/Rembrandt/VanRijn2.jpg"
+        "imagen4": "../images/Rembrandt/VanRijn2.jpg",
+        "widgetId": ""
     },
     {
         "id": "",
@@ -95,6 +99,7 @@
         "imagen1": "../images/jpg",
         "imagen2": "../images/.jpg",
         "imagen3": "../images/.jpg",
-        "imagen4": "../images/.jpg"
+        "imagen4": "../images/.jpg",
+        "widgetId": ""
     }
 ]

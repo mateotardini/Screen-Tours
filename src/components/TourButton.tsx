@@ -1,35 +1,36 @@
-import React, {useContext} from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
-/*Context*/
+/*Contexts*/
 import { LanguageContext } from '../contexts/LanguageContext.js';
+/*Components*/
+import RegiondoWidgetPopup from './RegiondoWidgetPopup.tsx';
+/*CSS*/
+import styles from "../css/TourButton.module.css";
 /*Icons*/
 import { FaMapMarkerAlt, FaClock } from 'react-icons/fa';
 import { LuLanguages } from "react-icons/lu";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoInformationCircle } from "react-icons/io5";
-/*CSS*/
-import styles from "../css/TourButton.module.css";
 
-interface TourButtonProps {
-  nombre: string;
-  lugar: string;
-  precio: number;
-  duracion: string;
-  tipoDeTour: string;
-  linkImagen: string;
-  link: string;
-  linkAPI: string;
-}
-
-const TourButton: React.FC<TourButtonProps> = ({ nombre, lugar, precio, duracion, tipoDeTour, linkImagen, link, linkAPI }) => {
+const TourButton = ({ nombre, lugar, precio, duracion, tipoDeTour, linkImagen, link, widgetId }) => {
   const { language, translations } = useContext(LanguageContext);
+  const [showPopup, setShowPopup] = useState(false);
+
+  const handleButtonClick = (e) => {
+    e.preventDefault();
+    setShowPopup(true);
+  };
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
 
   return (
     <div className={styles.buttonContainer}>
       <Link to={link} className={styles.imageButton}>
         <div className={styles.captionBox}>
           <div className={styles.durationBox}>
-            <p><FaClock /> <strong></strong>{duracion}</p>
+            <p><FaClock /> <strong>{duracion}</strong></p>
             <p><IoInformationCircle /> <strong>{tipoDeTour}</strong></p>
             <p><LuLanguages /> <strong>ESP/EN</strong></p>
           </div>
@@ -48,11 +49,12 @@ const TourButton: React.FC<TourButtonProps> = ({ nombre, lugar, precio, duracion
             </div>
           </div>
 
-
-          <button><a href={linkAPI}>{translations[language].tour.book}</a></button>
+          <button onClick={handleButtonClick}>{translations[language].tour.book}</button>
         </div>
         <img src={linkImagen} alt='Screen Tours Tours' />
       </Link>
+
+      {showPopup && <RegiondoWidgetPopup widgetId={widgetId} onClose={handleClosePopup} />}
     </div>
   );
 }

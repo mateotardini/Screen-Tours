@@ -10,6 +10,7 @@ import NavBar from "../components/NavBar.tsx";
 import Footer from "../components/Footer.tsx";
 import DetailsBox from '../components/DetailsBox.tsx';
 import WarningsBox from '../components/WarningsBox.tsx';
+import RegiondoWidgetPopup from '../components/RegiondoWidgetPopup.tsx';
 /*Data*/
 import toursData from '../tours.json';
 
@@ -28,10 +29,13 @@ interface Tour {
     importante: string;
     noIncluye: string;
     puntoEncuentro: string;
+    widgetId: string;
 }
 
 function TourDetail() {
     const { language, translations } = useContext(LanguageContext);
+
+    const [showPopup, setShowPopup] = useState(false);
 
     const [tour, setTour] = useState<Tour | null>(null);
     const { id } = useParams();
@@ -55,6 +59,17 @@ function TourDetail() {
     const enDetalle = DOMPurify.sanitize(tour.enDetalle);
     const noIncluye = DOMPurify.sanitize(tour.noIncluye);
 
+    //Button
+    const handleButtonClick = (e) => {
+      e.preventDefault();
+      setShowPopup(true);
+    };
+  
+    const handleClosePopup = () => {
+      setShowPopup(false);
+    };
+    //End Button
+
     return (
         <main>
             <NavBar />
@@ -67,6 +82,7 @@ function TourDetail() {
                     </h1>
 
                     <p dangerouslySetInnerHTML={{ __html: instroduccion }}></p>
+                    <button onClick={handleButtonClick}>{translations[language].tour.lastButton}</button>
                 </div>
                 <div
                     className="imageContainer"
@@ -121,7 +137,10 @@ function TourDetail() {
                     <p>
                         {translations[language].tour.lastText}
                     </p>
-                    <button><a href="">{translations[language].tour.lastButton}</a></button>
+                    
+                    <button onClick={handleButtonClick}>{translations[language].tour.lastButton}</button>
+
+                    {showPopup && <RegiondoWidgetPopup widgetId={tour.widgetId} onClose={handleClosePopup} />}
                 </div>
             </section>
 
