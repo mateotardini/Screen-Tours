@@ -10,7 +10,7 @@ function SingleImageButton(props) {
       <h2 className={styles.buttonTextBottom}>
         {name}
       </h2>
-      <img src={src} alt='Screen Tours Tours' />
+      <img src={src} alt={'Screen Tours Tours Amsterdam '+ name } />
     </div>
   );
 }

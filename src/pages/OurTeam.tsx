@@ -39,7 +39,10 @@ function OurTeam() {
             </section>
 
             <section className="sectionPaddingRight spaceBetween colorBlack">
-                <div className="imageContainerLeft" style={{ backgroundImage: "url('../images/Team.jpg')" }}>
+                <div
+                    className="imageContainerLeft"
+                    style={{ backgroundImage: "url('../images/Team.jpg')" }}
+                    title="Screen Tours Europe Equipo Team">
                 </div>
 
                 <div className="textContainer">
@@ -81,7 +84,10 @@ function OurTeam() {
             </section>
 
             <section className="sectionBorderRadius colorBlack">
-                <div className="imageContainer" style={{ backgroundImage: "url('../images/Tour(Mattia Sacco).jpg')" }}>
+                <div
+                    className="imageContainer"
+                    style={{ backgroundImage: "url('../images/Tour(Mattia Sacco).jpg')" }}
+                    title="Screen Tours Europe Mattia Sacco">
                 </div>
                 <div className="textContainer">
                     <h1 className="fontMontserrat">

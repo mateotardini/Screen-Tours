@@ -7,6 +7,7 @@ import ScrollToTop from './components/ScrollToTop.tsx';
 import Home from './pages/Home.tsx';
 import OurTeam from './pages/OurTeam.tsx';
 import Tours from './pages/Tours.tsx';
+import ToursVIP from './pages/ToursVIP.tsx';
 import Daytrips from './pages/Daytrips.tsx';
 import FreeTours from './pages/FreeTours.tsx';
 import Museos from './pages/Museos.tsx';
@@ -26,6 +27,7 @@ function App() {
           <Route path="/OurTeam" element={<OurTeam />} />
           <Route path="/Daytrips" element={<Daytrips />} />
           <Route path="/Tours" element={<Tours />} />
+          <Route path="/ToursVIP" element={<ToursVIP />} />
           <Route path="/FreeTours" element={<FreeTours />} />
           <Route path="/Museos" element={<Museos />} />
           <Route path="/Vlogs" element={<Vlogs />} />

@@ -47,7 +47,9 @@ const translations = {
     },
     tours: {
       firstTitle: "Explore our historical and immersive Tours",
-      firstText: "Each ScreenTours tour is an opportunity to see, hear and feel history in an interactive and immersive way. Our guides, with their deep knowledge and enthusiasm, will make you live every moment as if you were there.\n\nSelect the tour that interests you most and reserve your place in advance to ensure an unforgettable experience. With ScreenTours, you not only visit a place, but you also travel through time, living every moment of the history that has built Amsterdam and the Netherlands as we know it today."
+      firstText: "Each ScreenTours tour is an opportunity to see, hear and feel history in an interactive and immersive way. Our guides, with their deep knowledge and enthusiasm, will make you live every moment as if you were there.\n\nSelect the tour that interests you most and reserve your place in advance to ensure an unforgettable experience. With ScreenTours, you not only visit a place, but you also travel through time, living every moment of the history that has built Amsterdam and the Netherlands as we know it today.",
+      vipFirstTitle: "Discover History at Your Own Pace",
+      vipFirstText: "Each private tour from ScreenTours is an opportunity to see, hear, and feel history in an interactive and immersive way. Our guides, with their deep knowledge and enthusiasm, will make you experience every moment as if you were there, but enjoying the exclusivity and personalized attention that only a private tour can offer.\n\nSelect the private tour that interests you the most and book your spot in advance to ensure an unforgettable experience. With ScreenTours, you don't just visit a place, but also travel through time, living each moment of the history that has shaped Amsterdam and the Netherlands as we know them today, in a unique and exclusive way."
     },
     tour: {
       from: "From",
@@ -109,7 +111,9 @@ const translations = {
     },
     tours: {
       firstTitle: "Explora nuestros Tours históricos e inmersivos",
-      firstText: "Cada tour de ScreenTours es una oportunidad para ver, escuchar y sentir la historia de manera interactiva y envolvente. Nuestros guías, con su conocimiento profundo y entusiasmo, te harán vivir cada momento como si estuvieras allí.\n\nSelecciona el tour que más te interese y reserva tu plaza con anticipación para asegurar una experiencia inolvidable. Con ScreenTours, no solo visitas un lugar, sino que también viajas a través del tiempo, viviendo cada instante de la historia que ha construido Ámsterdam y los Países Bajos tal como los conocemos hoy."
+      firstText: "Cada tour de ScreenTours es una oportunidad para ver, escuchar y sentir la historia de manera interactiva y envolvente. Nuestros guías, con su conocimiento profundo y entusiasmo, te harán vivir cada momento como si estuvieras allí.\n\nSelecciona el tour que más te interese y reserva tu plaza con anticipación para asegurar una experiencia inolvidable. Con ScreenTours, no solo visitas un lugar, sino que también viajas a través del tiempo, viviendo cada instante de la historia que ha construido Ámsterdam y los Países Bajos tal como los conocemos hoy.",
+      vipFirstTitle: "Descubre la historia a tu ritmo",
+      vipFirstText: "Cada tour privado de ScreenTours es una oportunidad para ver, escuchar y sentir la historia de manera interactiva y envolvente. Nuestros guías, con su conocimiento profundo y entusiasmo, te harán vivir cada momento como si estuvieras allí, pero disfrutando de la exclusividad y la atención personalizada que solo un tour privado puede ofrecer.\n\nSelecciona el tour privado que más te interese y reserva tu plaza con anticipación para asegurar una experiencia inolvidable. Con ScreenTours, no solo visitas un lugar, sino que también viajas a través del tiempo, viviendo cada instante de la historia que ha construido Ámsterdam y los Países Bajos tal como los conocemos hoy, de una manera única y exclusiva."
     },
     tour: {
       from: "Desde",

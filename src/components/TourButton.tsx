@@ -51,7 +51,7 @@ const TourButton = ({ nombre, lugar, precio, duracion, tipoDeTour, linkImagen, l
 
           <button onClick={handleButtonClick}>{translations[language].tour.book}</button>
         </div>
-        <img src={linkImagen} alt='Screen Tours Tours' />
+        <img src={linkImagen} alt={'Screen Tours '+ nombre} />
       </Link>
 
       {showPopup && <RegiondoWidgetPopup widgetId={widgetId} onClose={handleClosePopup} />}

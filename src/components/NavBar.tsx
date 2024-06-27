@@ -32,25 +32,52 @@ function NavBar() {
       <ul className={`${styles.flex} ${menuOpen ? styles.showMenu : ''}`}>
         <li className={styles.animatedItem} style={{ animationDelay: '0s' }}>
           <Link to="/">
-            <img className={styles.icon} src="icons/home.png" alt="Logo Screen Tours" />
+            <img className={styles.icon} src="icons/home.png" alt="Home Icon Screen Tours" />
             {translations[language].navbar.home}
           </Link>
         </li>
 
         <li className={styles.animatedItem} style={{ animationDelay: '0.3s' }}>
           <Link to="/Tours">
-            <img className={styles.icon} src="icons/tour.png" alt="Logo Screen Tours" />
+            <img className={styles.icon} src="icons/tour.png" alt="Tours Icon Screen Tours" />
             Tours
           </Link>
         </li>
+
+        <li className={styles.animatedItem} style={{ animationDelay: '0.3s' }}>
+          <Link to="/ToursVIP">
+            <img className={styles.icon} src="icons/vip.png" alt="Tours VIP Icon Screen Tours" />
+            Tours VIP
+          </Link>
+        </li>
+
+        <img className={`${styles.logo} ${menuOpen ? styles.open : ''}`} src="/vectors/Logo Blanco.png" alt="Logo Screen Tours" />
+
+        <li className={styles.animatedItem} style={{ animationDelay: '0.45s' }}>
+          <Link to="/Contact">
+            <img className={styles.icon} src="icons/contact.png" alt="Contact Icon Screen Tours" />
+            {translations[language].contact.subtitle}
+          </Link>
+        </li>
+
+        <li className={styles.animatedItem} style={{ animationDelay: '0.15s' }}>
+          <Link to="/OurTeam">
+            <img className={styles.icon} src="icons/team.png" alt="Team Icon Screen Tours" />
+            {translations[language].ourTeam.subtitle}
+          </Link>
+        </li>
+
+        <div className={styles.lenguajes}>
+          <button onClick={() => changeLanguage('en')}>En</button>
+          <button onClick={() => changeLanguage('es')}>Esp</button>
+        </div>
+
         {/*<li className={styles.animatedItem} style={{ animationDelay: '0.50s' }}>
           <Link to="/Daytrips">
             <img className={styles.icon} src="icons/compass.png" alt="Logo Screen Tours" />
             Daytrips
           </Link>
         </li>*/}
-
-        <img className={`${styles.logo} ${menuOpen ? styles.open : ''}`} src="/vectors/Logo Blanco.png" alt="Logo Screen Tours" />
 
         {/*<li className={styles.animatedItem} style={{ animationDelay: '1.0s' }}>
           <Link to="/FreeTours">
@@ -65,29 +92,13 @@ function NavBar() {
             {translations[language].museums.subtittle}
           </Link>
         </li>*/}
+
         {/*<li className={styles.animatedItem} style={{ animationDelay: '1.75s' }}>
           <Link to="/Vlogs">
             <img className={styles.icon} src="icons/camera.png" alt="Logo Screen Tours" />
             Vlogs
           </Link>
         </li>*/}
-        <li className={styles.animatedItem} style={{ animationDelay: '0.45s' }}>
-          <Link to="/Contact">
-            <img className={styles.icon} src="icons/contact.png" alt="Logo Screen Tours" />
-            {translations[language].contact.subtitle}
-          </Link>
-        </li>
-
-        <li className={styles.animatedItem} style={{ animationDelay: '0.15s' }}>
-          <Link to="/OurTeam">
-            <img className={styles.icon} src="icons/team.png" alt="Logo Screen Tours" />
-            {translations[language].ourTeam.subtitle}
-          </Link>
-        </li>
-        <div className={styles.lenguajes}>
-          <button onClick={() => changeLanguage('en')}>En</button>
-          <button onClick={() => changeLanguage('es')}>Esp</button>
-        </div>
       </ul>
     </div>
   );

@@ -20,7 +20,7 @@
 
 .tabs button {
   flex: 1 1;
-  padding: 10px;
+  margin: 0 !important;
   border-radius: 0;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;

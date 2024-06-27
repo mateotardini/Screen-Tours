@@ -47,7 +47,7 @@ const DetailsBox: React.FC<DetailsBoxProps> = ({ duracion, tipoDeTour, puntoEncu
 
       <RetrowaveItem
         src="/vectors/Retrowave6.png"
-        alt="Screen Tours Logo"
+        alt="Screen Tours Star Retrowave Item"
         width="21vw"
         translateX="-200%"
         translateY="-110%"

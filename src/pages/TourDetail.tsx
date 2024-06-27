@@ -61,12 +61,12 @@ function TourDetail() {
 
     //Button
     const handleButtonClick = (e) => {
-      e.preventDefault();
-      setShowPopup(true);
+        e.preventDefault();
+        setShowPopup(true);
     };
-  
+
     const handleClosePopup = () => {
-      setShowPopup(false);
+        setShowPopup(false);
     };
     //End Button
 
@@ -87,6 +87,7 @@ function TourDetail() {
                 <div
                     className="imageContainer"
                     style={{ backgroundImage: `url(${tour.imagen1})` }}
+                    title={"Screen Tours Europ " + tour.titulo}
                 >
                 </div>
             </section>
@@ -100,15 +101,20 @@ function TourDetail() {
                 cancelacion="Cancelación gratuita 48hrs."
             />
 
-            <section className="sectionPaddingRight spaceBetween colorBlack" style={{ paddingTop: "0", paddingBottom: "0" }}>
-                <div className="imageContainerLeft" style={{ backgroundImage: `url(${tour.imagen2})` }}>
-                </div>
+            {queHaras && (
+                <section className="sectionPaddingRight spaceBetween colorBlack" style={{ paddingTop: "0", paddingBottom: "0" }}>
+                    <div
+                        className="imageContainerLeft"
+                        style={{ backgroundImage: `url(${tour.imagen2})` }}
+                        title={"Screen Tours Europ " + tour.titulo}>
+                    </div>
 
-                <div className="textContainer">
-                    <h1 className="fontMontserrat">¿Qué harás?</h1>
-                    <p dangerouslySetInnerHTML={{ __html: queHaras }}></p>
-                </div>
-            </section>
+                    <div className="textContainer">
+                        <h1 className="fontMontserrat">¿Qué harás?</h1>
+                        <p dangerouslySetInnerHTML={{ __html: queHaras }}></p>
+                    </div>
+                </section>
+            )}
 
             <WarningsBox
                 queIncluye={tour.incluye}
@@ -118,17 +124,25 @@ function TourDetail() {
                 importante={tour.importante}
             />
 
-            <section id="detalle" className="sectionPaddingLeft spaceBetween colorBlack" style={{ paddingTop: "0", paddingBottom: "0" }}>
-                <div className="textContainer">
-                    <h1 className="fontMontserrat">En Detalle</h1>
-                    <p dangerouslySetInnerHTML={{ __html: enDetalle }}></p>
-                </div>
-                <div className="imageContainer" style={{ backgroundImage: `url(${tour.imagen3})` }}>
-                </div>
-            </section>
-
+            {enDetalle && (
+                <section id="detalle" className="sectionPaddingLeft spaceBetween colorBlack" style={{ paddingTop: "0", paddingBottom: "0" }}>
+                    <div className="textContainer">
+                        <h1 className="fontMontserrat">En Detalle</h1>
+                        <p dangerouslySetInnerHTML={{ __html: enDetalle }}></p>
+                    </div>
+                    <div
+                        className="imageContainer"
+                        style={{ backgroundImage: `url(${tour.imagen3})` }}
+                        title={"Screen Tours Europ " + tour.titulo}>
+                    </div>
+                </section>
+            )
+            }
             <section className="sectionBorderRadius colorBlack">
-                <div className="imageContainer" style={{ backgroundImage: `url(${tour.imagen4})` }}>
+                <div
+                    className="imageContainer"
+                    style={{ backgroundImage: `url(${tour.imagen4})` }}
+                    title={"Screen Tours Europ " + tour.titulo}>
                 </div>
                 <div className="textContainer">
                     <h1 className="fontMontserrat">
@@ -137,7 +151,7 @@ function TourDetail() {
                     <p>
                         {translations[language].tour.lastText}
                     </p>
-                    
+
                     <button onClick={handleButtonClick}>{translations[language].tour.lastButton}</button>
 
                     {showPopup && <RegiondoWidgetPopup widgetId={tour.widgetId} onClose={handleClosePopup} />}

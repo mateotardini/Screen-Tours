@@ -35,10 +35,10 @@ const ImageTeam: React.FC<ImageTeamProps> = ({ nombre, puesto, testimonio, linkI
       <img
         className={styles.retrowaveImage}
         src="/vectors/Retrowave6.png"
-        alt="Screen Tours Logo">
+        alt="Screen Tours Star Retrowave Item">
       </img>
 
-      <img className={styles.backgroundImage} src={linkImagen} alt='Screen Tours Tours' />
+      <img className={styles.backgroundImage} src={linkImagen} alt={'Screen Tours Equipo Team ' + nombre +' '+ puesto } />
     </div>
   );
 }

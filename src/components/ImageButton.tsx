@@ -17,7 +17,7 @@ function ImageButton() {
           Dam Square
           <h4>{translations[language].imageButton.amsterdam}</h4>
         </h2>
-        <img src="/images/Mokum/DamSquare.jpg" alt='Screen Tours Tours Westerkerk y Anna Frank Huis' />
+        <img src="/images/Mokum/DamSquare.jpg" alt='Screen Tours Dam Square' />
       </Link>
 
       <Link to="/Museums" className={styles.imageButton}>
@@ -26,7 +26,7 @@ function ImageButton() {
           Rijksmuseum
           <h4>{translations[language].imageButton.amsterdam}</h4>
         </h2>
-        <img src="/images/Rembrant.jpg" alt='Screen Tours Tours Rembrant Square' />
+        <img src="/images/Rembrant.jpg" alt='Screen Tours Rijksmuseum' />
       </Link>
 
       <Link to="/Tours" className={styles.imageButton}>
@@ -35,7 +35,7 @@ function ImageButton() {
           {translations[language].imageButton.thirdImage}
           <h4>{translations[language].imageButton.amsterdam}</h4>
         </h2>
-        <img src="/images/Mokum/CopyrightKeeHummel.jpg" alt='Screen Tours Tours Jewish Museum' />
+        <img src="/images/Mokum/CopyrightKeeHummel.jpg" alt='Screen Tours Copyright Kee Hummel' />
       </Link>
 
       <Link to="/Tours" className={styles.imageButton}>

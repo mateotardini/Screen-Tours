@@ -26,14 +26,14 @@ function Home() {
             <NavBar></NavBar>
 
             <section className="heroSection">
-                <video className="backgroundVideo" autoPlay loop muted>
+                <video className="backgroundVideo" autoPlay loop muted title='Screen Tours Europe, Amsterdam Skyline'>
                     <source src="/videos/Skyline3.mp4" type="video/mp4"></source>
                     Your browser does not support the video tag.
                 </video>
 
                 <RetrowaveItem
                     src="/vectors/Retrowave7.png"
-                    alt="Screen Tours Sun Item"
+                    alt="Screen Tours Sun Retrowave Item"
                     width="50vw"
                     translateX="-50%"
                     translateY="-43%"
@@ -81,7 +81,7 @@ function Home() {
 
                     <RetrowaveItem
                         src="/vectors/Retrowave11.png"
-                        alt="Screen Tours Logo"
+                        alt="Screen Tours Retrowave Item"
                         width="24vw"
                         translateX="-240%"
                         translateY="-50%"
@@ -100,7 +100,7 @@ function Home() {
                 </div>
 
                 <div className="imageContainer" style={{ overflow: "hidden" }}>
-                    <video autoPlay loop muted style={{ height: "-webkit-fill-available" }}>
+                    <video autoPlay loop muted style={{ height: "-webkit-fill-available" }} title='Screen Tours Europe, Amsterdam Presentation'>
                         <source src="/videos/SCREENTOURS.mp4" type="video/mp4"></source>
                         Your browser does not support the video tag.
                     </video>
@@ -118,7 +118,7 @@ function Home() {
                         tipoDeTour="Tour"
                         linkImagen="/images/Mokum.jpg"
                         link="/Mokum, el Ámsterdam Judío"
-                        widgetId="">
+                        widgetId="cb3092b5-1aab-4449-b720-5049bd81e7d7">
                     </TourButton>
                     <TourButton
                         nombre="ScreenFreeTour Histórico de Ámsterdam"
@@ -158,7 +158,7 @@ function Home() {
             </section>
 
             <section className="sectionBorderRadius colorBlack">
-                <div className="imageContainer" style={{ backgroundImage: "url('../images/Bike.jpg')" }}>
+                <div className="imageContainer" style={{ backgroundImage: "url('../images/Bike.jpg')" }} title='Screen Tours Europe, Amsterdam'>
                 </div>
                 <div className="textContainer">
                     <h1 className="fontMontserrat">

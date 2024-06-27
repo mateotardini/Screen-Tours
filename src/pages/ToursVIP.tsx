@@ -7,7 +7,7 @@ import Footer from "../components/Footer.tsx"
 import TourButton from "../components/TourButton.tsx";
 import RetrowaveItem from '../components/RetrowaveItem.tsx';
 
-function Tours() {
+function ToursVIP() {
     const { language, translations } = useContext(LanguageContext);
 
     return (
@@ -20,7 +20,7 @@ function Tours() {
                         Your browser does not support the video tag.
                     </video>
                 </div>
-                <h1 className="outTeamTextOverlay">Tours</h1>
+                <h1 className="outTeamTextOverlay">Tours VIP</h1>
                 <RetrowaveItem
                     src="/vectors/Retrowave5.png"
                     alt="Screen Tours Logo"
@@ -38,7 +38,7 @@ function Tours() {
             <section className="sectionPaddingLeft spaceBetween colorBlack" style={{ paddingTop: "0" }}>
                 <div className="textContainer">
                     <h1 className="fontMontserrat">
-                        {translations[language].tours.firstTitle}
+                        {translations[language].tours.vipFirstTitle}
                     </h1>
                     <RetrowaveItem
                         src="/vectors/Retrowave10.png"
@@ -55,7 +55,7 @@ function Tours() {
                         responsiveTranslateY="0%"
                     />
                     <p>
-                        {translations[language].tours.firstText}
+                        {translations[language].tours.vipFirstText}
                     </p>
                 </div>
             </section>
@@ -70,7 +70,7 @@ function Tours() {
                         tipoDeTour="Tour"
                         linkImagen="/images/Mokum.jpg"
                         link="/Mokum, el Ámsterdam Judío"
-                        widgetId="cb3092b5-1aab-4449-b720-5049bd81e7d7">
+                        widgetId="">
                     </TourButton>
                     <TourButton
                         nombre="ScreenFreeTour Histórico de Ámsterdam"
@@ -109,4 +109,4 @@ function Tours() {
         </main >
     );
 }
-export default Tours;
+export default ToursVIP;

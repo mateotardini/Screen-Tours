@@ -18,7 +18,7 @@
         "imagen2": "../images/Mokum/CopyrightKeeHummel.jpg",
         "imagen3": "../images/Mokum/WesterkerkAnneFrank.jpg",
         "imagen4": "../images/Mokum/CopyrightKeeHummel.jpg",
-        "widgetId": ""
+        "widgetId": "cb3092b5-1aab-4449-b720-5049bd81e7d7"
     },
     {
         "id": "ScreenFreeTour Histórico de Ámsterdam",
@@ -28,7 +28,7 @@
         "duracion": "4 horas",
         "queVeras": "• Noorderkerk\n• Tulip Museum\n• Anne Frank Huis\n• Westerkerk\n• Homomonument\n• 9 Streets\n• Dam\n• Royal Palace\n• National Monument\n• Begijnhof\n• Spui\n• Flower Market\n• Rembrandtplein",
         "queHaras": "Bienvenidos al <strong>FreeTour</strong> más completo de Ámsterdam, con el que vivirás la <strong>Edad de Oro Holandesa</strong> y los años más oscuros de la <strong>Segunda Guerra Mundial</strong>. Tampoco nos olvidaremos de la <strong>Revolución Social</strong> de los años <strong>'70</strong> que moldeará la personalidad de la ciudad hasta la actualidad.\n\nPasearemos por la <strong>Casa de Anna Frank</strong> y el famoso <strong>Barrio Judío del Jordan</strong>, donde te contaremos cómo fue la <strong>Ocupación Nazi</strong> y el <strong>Holocausto</strong> dentro de la ciudad. Te explicaremos los secretos de sus <strong>Casas Bailarinas</strong>, la construcción del <strong>Anillo de Canales</strong> y la importancia del Tulipán en todo el país.\n\nCaminando por el corazón de las <strong>9 Calles</strong>, nos dirigiremos a la <strong>Plaza Dam</strong> y su bullicioso entorno. Mientras, te mostramos el <strong>Palacio Real</strong> y el <strong>Monumento Nacional</strong> donde conocerás cómo se vivieron las primeras horas tras la <strong>Liberación Nazi</strong> y los cimientos de la Monarquía Holandesa durante la <strong>Guerra de los 80 años</strong>.\n\nA continuación visitaremos el <strong>Beguinario</strong>, hogar de las primeras enfermeras independientes de la Iglesia durante el s.XIII, y donde entre muchas leyendas se casó el famoso guitarrista Paco de Lucía.\n\nFinalizaremos nuestro <strong>FreeTour</strong> en el <strong>Mercado de las Flores</strong>, junto a la famosa <strong>Plaza de Rembrandt</strong>. Pero no sin antes informaros sobre los mejores planes que hacer en la ciudad, gastronomía, museos... Y sobretodo, con una <strong>degustación gratuita</strong> de los mejores quesos del país.\n\nNo olvides pedir nuestro <strong>mapa interactivo</strong> para seguir descubriendo el Ámsterdam más auténtico.",
-        "enDetalle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam commodo viverra metus, mollis porta arcu tristique quis. Nam sodales eros eu sem tempor finibus. Fusce ultrices mauris ac dolor mollis feugiat.",
+        "enDetalle": "",
         "incluye": "Guía ES/EN.\n\nTransporte privado con TV.\n\nVídeos y soportes multimedia.",
         "queLlevar": "Ropa y calzado cómodo.\n\nRopa impermeable, paraguas y abrigo según meteorología.",
         "noPermitido": "Mascotas, maletas o equipaje",
@@ -48,8 +48,8 @@
         "introduccion": "Bienvenido al tour más completo sobre la <strong>Ocupación Nazi</strong> de Ámsterdam, donde no sólo verás las consecuencias que tuvo la <strong>Solución Final</strong> para los judíos neerlandeses y refugiados alemanes, también comprenderás la dificultad de sobrevivir cinco años dentro de una ciudad controlada por las <strong>SS Neerlandesas</strong> y con una <strong>Resistencia Holandesa</strong> dispuesta a morir por la liberación de su país.\n\nLas palabras y el recuerdo de <strong>Anna Frank</strong> nos transportarán a los años más decisivos de Ámsterdam, la única ciudad que se levantó y se puso en pie de huelga contra la Ocupación Alemana y las <strong>deportaciones</strong> masivas.\n\nEsta etapa de la ciudad de Ámsterdam debe ser explicada desde varios ángulos para llegar a comprenderla en su totalidad. Es una suerte dar con un guía apasionado por la historia y que te sumerge desde el primer minuto gracias al material gráfico, además de conocer los triunfos y las etapas más oscuras durante éstos años tan cruciales para la vieja Europa.",
         "duracion": "3hrs 30min",
         "queVeras": "• Casa Museo de Rembrandt\n• Waterlooplain\n• Monumento de la Resistencia Judía\n• Museo Judío\n• Sinagoga Portuguesa\n• De Dokwerker\n• Monumento Nacional Nombres del Holocausto\n• Museo del Holocausto\n• Dam\n• Monumento Nacional\n• Homomonument\n• Casa Museo de Anna Frank",
-        "queHaras": " ",
-        "enDetalle": " ",
+        "queHaras": "",
+        "enDetalle": "",
         "incluye": "Guía ES/EN.\nTransporte.",
         "queLlevar": "Ropa y calzado cómodo.\nRopa impermeable, paraguas y abrigo según meteorología.\nSe recomienda comprobar meteorología.",
         "noPermitido": "Mascotas, maletas o equipaje",
