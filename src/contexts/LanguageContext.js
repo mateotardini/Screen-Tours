@@ -57,10 +57,21 @@ const translations = {
       book: "Book Now",
       duration: "Duration",
       kindTour: "Kind Tour",
+      languages: "Languages",
       meetingPoint: "Meeting Point",
       lastTitle: "Ready for Netherlands?",
       lastText: "Don't miss the opportunity to discover wonderful places and create unique memories. Click the button below to secure your place on this incredible tour.",
-      lastButton: "Book Tour"
+      lastButton: "Book Tour",
+      queVeras: "That you will see?",
+      queHaras: "What will you do?",
+      enDetalle: "In detail"
+    },
+    warnings: {
+      whatIncludes:"What Includes",
+      whatToBring: "What to Bring",
+      notAllowed: "Not Allowed",
+      important: "Important Information",
+      notInclude: "Does not Include"
     },
     imageButton: {
       amsterdam: "Amsterdam",
@@ -121,10 +132,22 @@ const translations = {
       book: "Reservar Ahora",
       duration: "Duración",
       kindTour: "Tipo de Tour",
+      languages: "Idiomas",
       meetingPoint: "Punto de Encuentro",
       lastTitle: "¿Listo para Netherlands?",
       lastText: "No pierdas la oportunidad de descubrir lugares maravillosos y crear recuerdos únicos.Haz clic en el botón de abajo para asegurar tu lugar en este increíble tour.",
-      lastButton: "Reservar Tour"
+      lastButton: "Reservar Tour",
+      information: "Información General",
+      queVeras: "¿Qué verás?",
+      queHaras: "¿Qué harás?",
+      enDetalle: "En Detalle"
+    },
+    warnings: {
+      whatIncludes:"¿Qué Incluye?",
+      whatToBring: "¿Qué Llevar?",
+      notAllowed: "No Permitido",
+      important: "Información Importante",
+      notInclude: "No Incluye"
     },
     imageButton: {
       amsterdam: "Ámsterdam",

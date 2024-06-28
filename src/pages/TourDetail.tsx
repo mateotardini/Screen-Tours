@@ -110,7 +110,7 @@ function TourDetail() {
                     </div>
 
                     <div className="textContainer">
-                        <h1 className="fontMontserrat">¿Qué harás?</h1>
+                        <h1 className="fontMontserrat">{translations[language].tour.queHaras}</h1>
                         <p dangerouslySetInnerHTML={{ __html: queHaras }}></p>
                     </div>
                 </section>
@@ -127,7 +127,7 @@ function TourDetail() {
             {enDetalle && (
                 <section id="detalle" className="sectionPaddingLeft spaceBetween colorBlack" style={{ paddingTop: "0", paddingBottom: "0" }}>
                     <div className="textContainer">
-                        <h1 className="fontMontserrat">En Detalle</h1>
+                        <h1 className="fontMontserrat">{translations[language].tour.enDetalle}</h1>
                         <p dangerouslySetInnerHTML={{ __html: enDetalle }}></p>
                     </div>
                     <div
