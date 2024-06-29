@@ -52,12 +52,11 @@ function TourDetail() {
         return <div>Cargando...</div>;
     }
 
-    const instroduccion = DOMPurify.sanitize(tour.introduccion);
-    const queVeras = DOMPurify.sanitize(tour.queVeras);
-    const places = tour.queVeras.split('\n');
-    const queHaras = DOMPurify.sanitize(tour.queHaras);
-    const enDetalle = DOMPurify.sanitize(tour.enDetalle);
-    const noIncluye = DOMPurify.sanitize(tour.noIncluye);
+    const instroduccion = DOMPurify.sanitize(tour.introduccion[language]);
+    const queVeras = DOMPurify.sanitize(tour.queVeras[language]);
+    const queHaras = DOMPurify.sanitize(tour.queHaras[language]);
+    const enDetalle = DOMPurify.sanitize(tour.enDetalle[language]);
+    const noIncluye = DOMPurify.sanitize(tour.noIncluye[language]);
 
     //Button
     const handleButtonClick = (e) => {
@@ -77,8 +76,8 @@ function TourDetail() {
             <section id="introduccion" className={`sectionPaddingLeft spaceBetween colorBlack ${styles.marginTop}`}>
                 <div className="textContainer">
                     <h1 className="fontMontserrat">
-                        {tour.titulo}
-                        <h3 className="fontMontserrat">{tour.subtitulo}</h3>
+                        {tour.titulo[language]}
+                        <h3 className="fontMontserrat">{tour.subtitulo[language]}</h3>
                     </h1>
 
                     <p dangerouslySetInnerHTML={{ __html: instroduccion }}></p>
@@ -87,18 +86,19 @@ function TourDetail() {
                 <div
                     className="imageContainer"
                     style={{ backgroundImage: `url(${tour.imagen1})` }}
-                    title={"Screen Tours Europ " + tour.titulo}
+                    title={"Screen Tours Europ " + tour.titulo[language]}
                 >
                 </div>
             </section>
 
             <DetailsBox
-                duracion={tour.duracion}
+                duracion={tour.duracion[language]}
                 tipoDeTour="Tour"
-                puntoEncuentro={tour.puntoEncuentro}
-                idioma="Guía ES/EN"
+                puntoEncuentro={tour.puntoEncuentro[language]}
+                puntoEncuentroLink={tour.puntoEncuentroLink}
+                idioma={translations[language].tour.guides}
                 lugares={queVeras}
-                cancelacion="Cancelación gratuita 48hrs."
+                cancelacion={translations[language].tour.cancelation}
             />
 
             {queHaras && (
@@ -106,7 +106,7 @@ function TourDetail() {
                     <div
                         className="imageContainerLeft"
                         style={{ backgroundImage: `url(${tour.imagen2})` }}
-                        title={"Screen Tours Europ " + tour.titulo}>
+                        title={"Screen Tours Europ " + tour.titulo[language]}>
                     </div>
 
                     <div className="textContainer">
@@ -117,11 +117,11 @@ function TourDetail() {
             )}
 
             <WarningsBox
-                queIncluye={tour.incluye}
-                queLlevar={tour.queLlevar}
-                noPermitido={tour.noPermitido}
-                noIncluye={tour.noIncluye}
-                importante={tour.importante}
+                queIncluye={tour.incluye[language]}
+                queLlevar={tour.queLlevar[language]}
+                noPermitido={tour.noPermitido[language]}
+                noIncluye={tour.noIncluye[language]}
+                importante={tour.importante[language]}
             />
 
             {enDetalle && (
@@ -133,7 +133,7 @@ function TourDetail() {
                     <div
                         className="imageContainer"
                         style={{ backgroundImage: `url(${tour.imagen3})` }}
-                        title={"Screen Tours Europ " + tour.titulo}>
+                        title={"Screen Tours Europ " + tour.titulo[language]}>
                     </div>
                 </section>
             )
@@ -142,7 +142,7 @@ function TourDetail() {
                 <div
                     className="imageContainer"
                     style={{ backgroundImage: `url(${tour.imagen4})` }}
-                    title={"Screen Tours Europ " + tour.titulo}>
+                    title={"Screen Tours Europe " + tour.titulo[language]}>
                 </div>
                 <div className="textContainer">
                     <h1 className="fontMontserrat">

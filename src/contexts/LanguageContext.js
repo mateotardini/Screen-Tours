@@ -17,7 +17,8 @@ const translations = {
       seeTours: "See Tours"
     },
     navbar: {
-      home: "Home"
+      home: "Home",
+      credits: "©2024 - All rights reserved - Designed and developed by "
     },
     ourTeam: {
       title: "Meet our team",
@@ -58,7 +59,9 @@ const translations = {
       duration: "Duration",
       kindTour: "Kind Tour",
       languages: "Languages",
+      guides: "ES/EN Guide",
       meetingPoint: "Meeting Point",
+      cancelation: "Free cancellation 48 hours.",
       lastTitle: "Ready for Netherlands?",
       lastText: "Don't miss the opportunity to discover wonderful places and create unique memories. Click the button below to secure your place on this incredible tour.",
       lastButton: "Book Tour",
@@ -92,7 +95,8 @@ const translations = {
       seeTours: "Ver Tours"
     },
     navbar: {
-      home: "Inicio"
+      home: "Inicio",
+      credits: "©2024 - Todos los derechos reservados - Diseñado y desarrollado por "
     },
     ourTeam: {
       title: "Conoce a nuestro equipo",
@@ -133,7 +137,9 @@ const translations = {
       duration: "Duración",
       kindTour: "Tipo de Tour",
       languages: "Idiomas",
+      guides: "Guía ES/EN",
       meetingPoint: "Punto de Encuentro",
+      cancelation: "Cancelación gratuita 48hrs.",
       lastTitle: "¿Listo para Netherlands?",
       lastText: "No pierdas la oportunidad de descubrir lugares maravillosos y crear recuerdos únicos.Haz clic en el botón de abajo para asegurar tu lugar en este increíble tour.",
       lastButton: "Reservar Tour",

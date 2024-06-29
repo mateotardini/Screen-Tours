@@ -1,7 +1,5 @@
-import React, { useState, useContext } from 'react';
+import React, { useState } from 'react';
 import styles from "../css/WarningsBox.module.css";
-/*Context*/
-import { LanguageContext } from '../contexts/LanguageContext.js';
 
 interface WarningsBoxProps {
   queIncluye: string;
@@ -12,7 +10,6 @@ interface WarningsBoxProps {
 }
 
 const WarningsBox: React.FC<WarningsBoxProps> = ({ queIncluye, queLlevar, noPermitido, noIncluye, importante }) => {
-  const { language, translations } = useContext(LanguageContext);
 
   const [activeTab, setActiveTab] = useState('queIncluye');
   const [openSections, setOpenSections] = useState<string[]>([]);

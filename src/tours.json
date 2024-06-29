@@ -1,19 +1,59 @@
 [
     {
         "id": "Mokum, el Ámsterdam Judío",
-        "titulo": "Mokum,",
-        "subtitulo": "El Ámsterdam Judío",
-        "introduccion": "Explora la historia del <strong>Ámsterdam Judío</strong> paseando por sus calles más icónicas, desde la llegada de los primeros <strong>Judíos Sefardíes</strong>, su influencia en la capital Neerlandesa, y la terrible <strong>Ocupación Nazi</strong> sufrida durante la <strong>II Guerra Mundial</strong>.\n\n Recorrerás en autobús privado el camino de huída de Anna Frank desde su casa real en <strong>Merwedeplain 37</strong>, al escondite construido en la fábrica familiar conocida actualmente como Anne Frank Huis o <strong>Museo de Anna Frank</strong>.",
-        "duracion": "4 horas",
-        "queVeras": "• Museo Rembrandt\n• Waterlooplein\n• Museo Judío\n• Sinagoga Portuguesa\n• Monumento Nombres Holocausto\n• Hortus Ámsterdam\n• Museo del Holocausto\n• Escultura de Anna Frank\n• Merwedeplein\n• Anne Frank Huis\n• Westerkerk\n• Homomonument",
-        "queHaras": "Sumérgete con nosotros en <strong>Mokum</strong>, el Ámsterdam Judío, donde serás testigo del impacto de esta comunidad en la capital neerlandesa.\n\n Verás de primera mano el resultado de la <strong>Ocupación Nazi</strong>, la segunda más cruel durante la II Guerra Mundial, visitando y comprendiendo el significado de los monumentos más icónicos, como el famoso <strong>Monumento al Holocausto</strong>.\n\n Por las calles del <strong>Barrio Judío</strong> que vieron el triunfo de <strong>Rembrandt</strong>, te adentrarás en la <strong>Comunidad Sefardí</strong>, judíos de origen español y portugués como el filósofo <strong>Espinoza</strong>.\n\n Frente al recién restaurado <strong>Museo del Holocausto</strong> conocerás los años más oscuros durante la ocupación y las deportaciones de <strong>1942</strong> y <strong>1943</strong>.\n\n Finalmente, visitarás la <strong>casa real</strong> y el barrio dónde creció <strong>Anna Frank</strong>, desde donde recorreremos en Minibús el camino de huída de la Familia Frank hasta su famoso escondite dentro de la antigua factoría familiar, conocida actualmente como el <strong>Museo de Anna Frank</strong> o Anne Frank Huis.",
-        "enDetalle": "Desde la <strong>Casa de Rembrandt</strong> comenzamos un apasionante viaje a través del <strong>Ámsterdam Judío</strong>.\n\nNuestras primeras paradas se centrarán en la llegada de la <strong>Comunidad Sefardí</strong> y la transformación sufrida por el <strong>Barrio Judío</strong> y la plaza de <strong>Waterlooplein</strong>, punto de reunión para las protestas de la <strong>Resistencia Holandesa</strong>.\n\nConoceremos al filósofo judío <strong>Espinosa</strong> y su separación de poderes que guiaría la política holandesa.\n\nNos meteremos de lleno en la <strong>Ocupación Nazi</strong> visitando los principales monumentos que rinden homenaje a las víctimas del Holocausto, como el <strong>Monumento de los Nombres del Holocausto</strong>, donde tendremos unos minutos de reflexión.\n\nPasearemos junto a la <strong>Sinagoga Portuguesa</strong> y el <strong>Museo Judío</strong>, donde aprenderemos de la arquitectura, la religión hebrea y su influencia posterior en Ámsterdam.\n\nEn el <strong>Museo del Holocausto</strong>, lugar de detención y primera parada durante las deportaciones nazis, nos recogerá un autobús privado que nos acercará al barrio de <strong>Anna Frank</strong>.\n\nVisitarás la <strong>auténtica casa</strong> donde residía la Familia Frank en <strong>Merwedeplein</strong>, y verás las Stolpersteine (o Piedras del Tropiezo) pertenecientes a los cuatro miembros de la <strong>Familia Frank</strong>.\n\nPor último, el autobús nos llevará por el mismo recorrido que realizó Anna desde su casa hasta el escondite preparado por <strong>Otto Frank</strong>, el famoso <strong>Museo de Anna Frank</strong>.",
-        "incluye": "Guía ES/EN.\n\nTransporte privado con TV.\n\nVídeos y soportes multimedia.",
-        "queLlevar": "Ropa y calzado cómodo.\n\nRopa impermeable, paraguas y abrigo según meteorología.",
-        "noPermitido": "Mascotas, maletas o equipaje.",
-        "importante": "El tour incluye el traslado hasta la casa de Anne Frank y el traslado de vuelta al Museo de Anne Frank.\n\nSe recomienda consultar meteorología antes del tour.\n\nLos Tours de ScreenTour trabajan según las alertas meteorológicas nacionales, informando a nuestros clientes inmediatamente en el caso de que se produzcan alertas que puedan influir al tour reservado.\n\nPor el bien de compañeros y clientes, los tours deberán ser cancelados en caso de Alerta Roja Meteorológica.",
-        "noIncluye": "Entradas a Museos. Para visitar el Museo de Anne Frank se recomienda comprar las entradas con al menos <strong>6 semanas de antelación</strong>.",
-        "puntoEncuentro": "Museo Casa de Rembrandt, Jodenbreestraat 4, 1011 NK Ámsterdam",
+        "titulo": {
+            "en": "Mokum, ",
+            "es": "Mokum, "
+        },
+        "subtitulo": {
+            "en": "The Jewish Amsterdam",
+            "es": "El Ámsterdam Judío"
+        },
+        "introduccion": {
+            "en": "Explore the history of <strong>Jewish Amsterdam</strong> by walking through its most iconic streets, from the arrival of the first <strong>Sephardic Jews</strong>, their influence on the Dutch capital, and the terrible <strong>Nazi Occupation</strong> suffered during <strong>World War II</strong>.\n\n You will travel by private bus the escape route of Anne Frank from her real home at <strong>Merwedeplein 37</strong> to the hideout built in the family factory known today as the Anne Frank House or <strong>Anne Frank Museum</strong>.",
+            "es": "Explora la historia del <strong>Ámsterdam Judío</strong> paseando por sus calles más icónicas, desde la llegada de los primeros <strong>Judíos Sefardíes</strong>, su influencia en la capital Neerlandesa, y la terrible <strong>Ocupación Nazi</strong> sufrida durante la <strong>II Guerra Mundial</strong>.\n\n Recorrerás en autobús privado el camino de huída de Anna Frank desde su casa real en <strong>Merwedeplain 37</strong>, al escondite construido en la fábrica familiar conocida actualmente como Anne Frank Huis o <strong>Museo de Anna Frank</strong>."
+        },
+        "duracion": {
+            "en": "4 hours",
+            "es": "4 horas"
+        },
+        "queVeras": {
+            "en": "• Holocaust Names Monument\n• Portuguese Synagogue\n• Jewish Museum\n• Jewish Quarter of Jewish neighborhood\n• Jewish Resistance Monument\n• Spinoza sculpture\n• Waterlooplein\n• Anne Frank sculpture\n• Merwedeplein Anne Frank House\n• Homomonument\n• Anne Frank House\n• Westerkerk",
+            "es": "• Museo Rembrandt\n• Waterlooplein\n• Museo Judío\n• Sinagoga Portuguesa\n• Monumento Nombres Holocausto\n• Hortus Ámsterdam\n• Museo del Holocausto\n• Escultura de Anna Frank\n• Merwedeplein\n• Anne Frank Huis\n• Westerkerk\n• Homomonument"
+        },
+        "queHaras": {
+            "en": "Immerse yourself with us in <strong>Mokum, The Jewish Amsterdam</strong>, where you will witness the impact of this community in the Dutch capital. \n\nYou will see first-hand the result of the <strong>Nazi occupation</strong>, the second cruelest during the <strong>Second World War</strong>, visiting and understanding the meaning of the most iconic monuments, such as our meeting point, the famous <strong>National Holocaust Names Monument of Amsterdam</strong>.\n\nIn front of the <strong>Portuguese Synagogue</strong> and the <strong>Jewish Museum</strong> we will delve into the Jewish culture, religion and economy that nourished the city of Amsterdam. On our way to the <strong>Rembrandt House Museum</strong> you will know the darkest years during the occupation and deportations of 1942 and 1943.\n\nThrough the old <strong>Jodenbuurt Jewish Quarter</strong>, where many Jews resided from the late 16th century until the deportations during World War II, you will enter the streets that saw the triumph of Rembrandt and the <strong>Sephardic Community</strong>, Jews from Spain and Portugal origins, like the philosopher <strong>Spinoza</strong>. \n\nIn our last stop, you will visit the real house and the beautiful neighborhood where Anne Frank spent her childhood and from where we will follow the Frank Family's escape route to their famous hideout in the old family factory, currently known as the Anne Frank Museum or Anne Frank House.",
+            "es": "Sumérgete con nosotros en <strong>Mokum</strong>, el Ámsterdam Judío, donde serás testigo del impacto de esta comunidad en la capital neerlandesa.\n\n Verás de primera mano el resultado de la <strong>Ocupación Nazi</strong>, la segunda más cruel durante la II Guerra Mundial, visitando y comprendiendo el significado de los monumentos más icónicos, como el famoso <strong>Monumento al Holocausto</strong>.\n\n Por las calles del <strong>Barrio Judío</strong> que vieron el triunfo de <strong>Rembrandt</strong>, te adentrarás en la <strong>Comunidad Sefardí</strong>, judíos de origen español y portugués como el filósofo <strong>Espinoza</strong>.\n\n Frente al recién restaurado <strong>Museo del Holocausto</strong> conocerás los años más oscuros durante la ocupación y las deportaciones de <strong>1942</strong> y <strong>1943</strong>.\n\n Finalmente, visitarás la <strong>casa real</strong> y el barrio dónde creció <strong>Anna Frank</strong>, desde donde recorreremos en Minibús el camino de huída de la Familia Frank hasta su famoso escondite dentro de la antigua factoría familiar, conocida actualmente como el <strong>Museo de Anna Frank</strong> o Anne Frank Huis."
+        },
+        "enDetalle": {
+            "en": "From the <strong>Holocaust Names Monument</strong> we will begin an exciting journey through <strong>Mokum, The Amsterdam Jewish</strong>. We will begin our journey from one of the most important highlights of the city, the National Holocaust Names Monument of Amsterdam. From this breath taken memorial, we will share a brief explanation and awareness of our next journey, what better start than in this overwhelming corner famous throughout the country.\n\nOur first stops are focused on the arrival of the <strong>Sephardic Community</strong> to Amsterdam during the 15th century. Next to the Portuguese Synagogue and the Jewish Museum, where we will learn about architecture, the Hebrew religion and its later influence in Amsterdam.\n\nWe will analyse in depth the <strong>Nazi Occupation</strong> walking through the scars caused by the deportations, leaving neighbourhoods desolate in less than two years, wiping out more than 80% of the country’s total Jewish population.\n\nSince the 16th century, the <strong>Waterlooplein Square</strong> which would once be the home of thousands of different European Jewish communities. Here they would hold markets and build the most important synagogues in the city. We will take the opportunity to meet the famous Jewish philosopher <strong>Spinoza</strong>, and his political ideology that would guide the future Dutch policies.\n\nWe will feel the transformation suffered by the <strong>Jodenbuurt Jewish Quarter</strong> who witnessed the mastery of Rembrandt, becoming a meeting point for the members of the <strong>Dutch Resistance</strong> during World War II. In the famous cinema of Abraham Tuschinski we get to know the stories of all those citizens who decided to act in favour of their Hebrew neighbours.\n\nFrom the <strong>Rembrandt Square</strong> we will move by tram to the neighbourhood where <strong>Anne Frank</strong> will live until the moment of her escape. By visiting the authentic house of the Frank Family in <strong>Merwedeplein</strong>, you will see the <strong>Stolperstein</strong> (or Stumbling Blocks) belonging to the four members of the Frank family.\n\nFinally, the tram will take us to the Westerkerk along the same route that Anna took from her house to the hiding place prepared by <strong>Otto Frank</strong>, the famous <strong>Anne Frank Museum</strong>.",
+            "es": "Desde la <strong>Casa de Rembrandt</strong> comenzamos un apasionante viaje a través del <strong>Ámsterdam Judío</strong>.\n\nNuestras primeras paradas se centrarán en la llegada de la <strong>Comunidad Sefardí</strong> y la transformación sufrida por el <strong>Barrio Judío</strong> y la plaza de <strong>Waterlooplein</strong>, punto de reunión para las protestas de la <strong>Resistencia Holandesa</strong>.\n\nConoceremos al filósofo judío <strong>Espinosa</strong> y su separación de poderes que guiaría la política holandesa.\n\nNos meteremos de lleno en la <strong>Ocupación Nazi</strong> visitando los principales monumentos que rinden homenaje a las víctimas del Holocausto, como el <strong>Monumento de los Nombres del Holocausto</strong>, donde tendremos unos minutos de reflexión.\n\nPasearemos junto a la <strong>Sinagoga Portuguesa</strong> y el <strong>Museo Judío</strong>, donde aprenderemos de la arquitectura, la religión hebrea y su influencia posterior en Ámsterdam.\n\nEn el <strong>Museo del Holocausto</strong>, lugar de detención y primera parada durante las deportaciones nazis, nos recogerá un autobús privado que nos acercará al barrio de <strong>Anna Frank</strong>.\n\nVisitarás la <strong>auténtica casa</strong> donde residía la Familia Frank en <strong>Merwedeplein</strong>, y verás las Stolpersteine (o Piedras del Tropiezo) pertenecientes a los cuatro miembros de la <strong>Familia Frank</strong>.\n\nPor último, el autobús nos llevará por el mismo recorrido que realizó Anna desde su casa hasta el escondite preparado por <strong>Otto Frank</strong>, el famoso <strong>Museo de Anna Frank</strong>."
+        },
+        "incluye": {
+            "en": "EN Guide.\nTram tickets.\nStock footage and photos.\nMultimedia tools.",
+            "es": "Guía ES/EN.\nTransporte privado con TV.\nVídeos y soportes multimedia."
+        },
+        "queLlevar": {
+            "en": "Ropa y calzado cómodo.\nRopa impermeable, paraguas y abrigo según meteorología.",
+            "es": "Comfortable clothing and footwear.\nWeather-appropriate clothing.\nWaterproof clothing, ubrella and coat."
+        },
+        "noPermitido": {
+            "en": "Pets, Suitcases or luggage.",
+            "es": "Mascotas, maletas o equipaje."
+        },
+        "importante": {
+            "en": "Tour includes transportation to the Anne Frank House and return transportation to the Anne Frank Museum.\nIt is recommended to check the weather before the tour.\nScreenTour Tours work according to national weather alerts, informing our clients immediately in the event of alerts that may influence the booked tour.\nFor the good of colleagues and clients, tours must be canceled in case of Red Meteorological Alert.",
+            "es": "El tour incluye el traslado hasta la casa de Anne Frank y el traslado de vuelta al Museo de Anne Frank.\nSe recomienda consultar meteorología antes del tour.\nLos Tours de ScreenTour trabajan según las alertas meteorológicas nacionales, informando a nuestros clientes inmediatamente en el caso de que se produzcan alertas que puedan influir al tour reservado.\nPor el bien de compañeros y clientes, los tours deberán ser cancelados en caso de Alerta Roja Meteorológica."
+        },
+        "noIncluye": {
+            "en": "Tickets to Museums. To visit the Anne Frank Museum It is recommended to purchase tickets at least 6 weeks in advance.",
+            "es": "Entradas a Museos. Para visitar el Museo de Anne Frank se recomienda comprar las entradas con al menos <strong>6 semanas de antelación</strong>."
+        },
+        "puntoEncuentro": {
+            "en": "Monument Holocaust National, 1018 DN, Amsterdam",
+            "es": "Museo Casa de Rembrandt, Jodenbreestraat 4, 1011 NK Ámsterdam"
+        },
+        "puntoEncuentroLink": "https://www.google.com/maps/d/u/2/viewer?mid=1HOQVrtpgxolS6CsKO73BkxTRCtRQ9GE&ll=52.35956778377001%2C4.89287499999997&z=14",
         "imagen1": "../images/Mokum/WesterkerkAnneFrank.jpg",
         "imagen2": "../images/Mokum/CopyrightKeeHummel.jpg",
         "imagen3": "../images/Mokum/WesterkerkAnneFrank.jpg",
@@ -21,40 +61,121 @@
         "widgetId": "cb3092b5-1aab-4449-b720-5049bd81e7d7"
     },
     {
-        "id": "Mokum, The Jewish Amsterdam",
-        "titulo": "Mokum,",
-        "subtitulo": "The Jewish Amsterdam",
-        "introduccion": "Explore the history of <strong>Amsterdam Jewish</strong> strolling through its most iconic streets, since the arrival of the first <strong>Sephardic Jews</strong>, its influence in the Dutch capital, and the terrible Nazi occupation suffered during World War II. Take a private bus along the escape route of <strong>Anne Frank</strong> from the real house in <strong>Merwedeplein 37</strong>, to the hideout built in the family factory now known as Anne Frank Huis or <strong>Anne Frank Museum</strong>.",
-        "duracion": "4 hours",
-        "queVeras": "• Holocaust Names Monument\n• Portuguese Synagogue\n• Jewish Museum\n• Jewish Quarter of Jewish neighborhood\n• Jewish Resistance Monument\n• Spinoza sculpture\n• Waterlooplein\n• Anne Frank sculpture\n• Merwedeplein Anne Frank House\n• Homomonument\n• Anne Frank House\n• Westerkerk",
-        "queHaras": "Immerse yourself with us in Mokum, The Jewish Amsterdam, where you will witness the impact of this community in the Dutch capital. \n\nYou will see first-hand the result of the Nazi occupation, the second cruelest during the Second World War, visiting and understanding the meaning of the most iconic monuments, such as our meeting point, the famous National Holocaust Names Monument of Amsterdam.\n\nIn front of the Portuguese Synagogue and the Jewish Museum we will delve into the Jewish culture, religion and economy that nourished the city of Amsterdam. On our way to the Rembrandt House Museum you will know the darkest years during the occupation and deportations of 1942 and 1943.\n\nThrough the old Jodenbuurt Jewish Quarter, where many Jews resided from the late 16th century until the deportations during World War II, you will enter the streets that saw the triumph of Rembrandt and the Sephardic Community, Jews from Spain and Portugal origins, like the philosopher Spinoza. \n\nIn our last stop, you will visit the real house and the beautiful neighborhood where Anne Frank spent her childhood and from where we will follow the Frank Family's escape route to their famous hideout in the old family factory, currently known as the Anne Frank Museum or Anne Frank House.",
-        "incluye": "EN Guide.\n\nTram tickets.\n\nStock footage and photos.\n\nMultimedia tools.",
-        "queLlevar": "Comfortable clothing and footwear.\n\nWeather-appropriate clothing.\n\nWaterproof clothing, ubrella and coat.",
-        "noPermitido": "Pets, Suitcases or luggage",
-        "importante": "Tour includes transportation to the Anne Frank House and return transportation to the Anne Frank Museum\n\nIt is recommended to check the weather before the tour\n\nScreenTour Tours work according to national weather alerts, informing our clients immediately in the event of alerts that may influence the booked tour.\n\nFor the good of colleagues and clients, tours must be canceled in case of Red Meteorological Alert",
-        "noIncluye": "Tickets to Museums. To visit the Anne Frank Museum It is recommended to purchase tickets at least 6 weeks in advance.",
-        "puntoEncuentro": "Monument Holocaust National, 1018 DN, Amsterdam",
-        "imagen1": "../images/Mokum/WesterkerkAnneFrank.jpg",
-        "imagen2": "../images/Mokum/CopyrightKeeHummel.jpg",
-        "imagen3": "../images/Mokum/WesterkerkAnneFrank.jpg",
-        "imagen4": "../images/Mokum/CopyrightKeeHummel.jpg",
-        "widgetId": "cb3092b5-1aab-4449-b720-5049bd81e7d7"
+        "id": "ScreenTour Second World War",
+        "titulo": {
+            "en": "ScreenTour Second World War,",
+            "es": "ScreenTour Second World War,"
+        },
+        "subtitulo": {
+            "en": "The Liberation of Amsterdam",
+            "es": "La Liberación de Ámsterdam"
+        },
+        "introduccion": {
+            "en": "Welcome to the most complete tour about the <strong>Nazi Occupation of Amsterdam</strong>, where you will not only learn about the struggle of the <strong>Dutch Resistance</strong> willing to die for the liberation of their country, but you will also understand the difficulty of surviving five years inside a city controlled by the <strong>Dutch SS</strong> and the consequences that the <strong>Final Solution</strong> and the deportations had for the <strong>Jewish Community</strong> inside the city.\n\nGet to know Amsterdam through its history during <strong>World War II</strong>. This country would suffer the second-harshest <strong>Nazi Occupation</strong> in Europe and would be the last country to be liberated, after Germany.\n\n<strong>Amsterdam</strong> must be explained very well to understand it, and it is fortunate to find a guide who knows the triumphs and the darkest stages of its history. In addition, thanks to our <strong>archive images</strong> and <strong>13-inch tablets</strong>, you will immerse yourself in the Dutch capital from the first minute.",
+            "es": "Bienvenido al tour más completo sobre la <strong>Ocupación Nazi</strong> de Ámsterdam, donde no sólo verás las consecuencias que tuvo la <strong>Solución Final</strong> para los judíos neerlandeses y refugiados alemanes, también comprenderás la dificultad de sobrevivir cinco años dentro de una ciudad controlada por las <strong>SS Neerlandesas</strong> y con una <strong>Resistencia Holandesa</strong> dispuesta a morir por la liberación de su país.\n\nLas palabras y el recuerdo de <strong>Anna Frank</strong> nos transportarán a los años más decisivos de Ámsterdam, la única ciudad que se levantó y se puso en pie de huelga contra la Ocupación Alemana y las <strong>deportaciones</strong> masivas.\n\nEsta etapa de la ciudad de Ámsterdam debe ser explicada desde varios ángulos para llegar a comprenderla en su totalidad. Es una suerte dar con un guía apasionado por la historia y que te sumerge desde el primer minuto gracias al material gráfico, además de conocer los triunfos y las etapas más oscuras durante éstos años tan cruciales para la vieja Europa."
+        },
+        "duracion": {
+            "en": "3hrs 30min",
+            "es": "3hrs 30min"
+        },
+        "queVeras": {
+            "en": "• Rembrandt House Museum\n• Waterlooplein\n• Jewish Quarter Jodenbuurt\n• Monument to Jewish Resistance\n• Jewish Museum\n• Portuguese Synagogue\n• Dokwerker\n• Holocaust Names Monument\n• Auschwitz Victims Memorial\n• Dutch Resistance Museum\n• Holocaust Museum\n• Dam Square\n• Royal Palace\n• National Monument\n• Jordaan\n• Homomonument\n• Anne Frank House Museum",
+            "es": "• Casa Museo de Rembrandt\n• Waterlooplain\n• Monumento de la Resistencia Judía\n• Museo Judío\n• Sinagoga Portuguesa\n• De Dokwerker\n• Monumento Nacional Nombres del Holocausto\n• Museo del Holocausto\n• Dam\n• Monumento Nacional\n• Homomonument\n• Casa Museo de Anna Frank"
+        },
+        "queHaras": {
+            "en": "The ScreenTour WWII: <strong>The Amsterdam Liberation</strong> has been specially prepared for you to witness an incredible story of resistance against the advance of Nazi repression and its complex liberation by Allied troops and inhabitants of the city.\n\nWe will travel through time thanks to our videos, archive images and 13-inch tablets, experiencing in situ the moments that will define modern Amsterdam, such as the numerous protests against deportations, the shooting in Dam Square, or the terrible Hunger Winter.\n\nWalking through the <strong>Old Jewish Quarter of Jodenbuurt</strong> you will learn about the history of the Hebrew Community in the city. Walking through the <strong>Jewish Museum</strong> neighborhood, you will see and know the impact that the deportations had, in addition to understanding monuments such as the <strong>Auschwitz Victim's Memorial</strong> and the recently inaugurated <strong>Holocaust Museum</strong>.\n\nAmsterdam will welcome you with an inspiring story, written thanks to one of the most important resistance movements in occupied Europe. The <strong>Dutch Resistance</strong> would fight against Nazi oppression with its numerous protests and strikes during the war, they would save and hide thousands of Jews and people adverse to Hitler's regime.\n\nOur trip will end in front of the <strong>Anne Frank House Museum</strong> in the famous <strong>Jordaan</strong> neighborhood, where, in addition to learning the story of the most famous girl in the world, we will have a place to reflect on the effects of the Second World War on the current Amsterdam city.",
+            "es": "El ScreenTour de la <strong>Liberacion de Amsterdam</strong> se ha preparado especialmente para que seas testigo de una increíble <strong>historia de resistencia</strong> frente al avance de la represión nazi y su compleja liberación por parte de tropas Aliadas y habitantes de la ciudad.\n\nViajaremos a través del tiempo gracias a nuestros vídeos, imágenes de archivo y tablets de 13 pulgadas, viviendo <em>in situ</em> los momentos que definirán el Amsterdam moderno, como las numerosas protestas contra las deportaciones, el tiroteo en <strong>Plaza Dam</strong> o el terrible <strong>Invierno del Hambre</strong>.\n\nRecorriendo el <strong>Barrio Judío de Jodenbuurt</strong> conocerás la historia de la Comunidad Hebrea en la ciudad. Paseando por el <strong>Museo Judío</strong> y la <strong>Sinagoga Portuguesa</strong> veras y sabras el impacto que tuvieron las deportaciones, ademas de comprender monumentos como el <strong>Memorial Victimas de Auschwitz</strong> y el recién inaugurado <strong>Museo del Holocausto</strong>.\n\nAmsterdam te recibirá con una historia inspiradora, escrita gracias a una de las Resistencias más importantes de la Europa ocupada. La <strong>Resistencia Holandesa</strong> luchara ante la opresion nazi con sus numerosas protestas y huelgas durante la guerra, salvarían y esconderían miles de judíos y personas adversas al regimen de Hitler.\n\nNuestro viaje terminará frente a la <strong>Casa Museo de Anna Frank</strong>, en el famoso barrio del <strong>Jordaan</strong>, donde además de conocer la historia de la niña más famosa del mundo, tendremos un lugar a la reflexión sobre los efectos de la Segunda Guerra Mundial en la actual ciudad de Amsterdam."
+        },
+        "enDetalle": {
+            "en": "",
+            "es": ""
+        },
+        "incluye": {
+            "en": "EN Guide.\nTram tickets.\nStock footage and photos.\nMultimedia tools.",
+            "es": "Guía ES/EN.\nTransporte."
+        },
+        "queLlevar": {
+            "en": "Comfortable clothing and footwear.\nWeather-appropriate clothing.\nWaterproof clothing, an umbrella and a coat.",
+            "es": "Ropa y calzado cómodo.\nRopa impermeable, paraguas y abrigo según meteorología.\nSe recomienda comprobar meteorología."
+        },
+        "noPermitido": {
+            "en": "Pets, suitcases or luggage.",
+            "es": "Mascotas, maletas o equipaje."
+        },
+        "importante": {
+            "en": "Tour includes transportation to the Anne Frank House and return transportation to the Anne Frank Museum.\nIt is recommended to check the weather before the tour.\nScreenTour Tours work according to national weather alerts, informing our clients immediately in the event of alerts that may influence the booked tour.\nFor the good of colleagues and clients, tours must be canceled in case of Red Meteorological Alert.",
+            "es": "El tour incluye el traslado hasta la casa de Anne Frank y el traslado de vuelta al Museo de Anne Frank.\nNo incluye la entrada al Museo de Anne Frank. Si quieres visitarlo por tu cuenta después del tour, se recomienda comprar las entradas con al menos 6 semanas de antelación."
+        },
+        "noIncluye": {
+            "en": "Does not include admission to the Anne Frank Museum.\nIf you want to visit after the tour, it is recommended to purchase tickets at least 6 weeks in advance. The rest of the museums have availability for less than 24 hours.",
+            "es": "No incluye entrada a los Museos.\nSi quieres visitarlo por tu cuenta después del tour, se recomienda comprar las entradas con al menos <strong>6 semanas de antelación</strong>."
+        },
+        "puntoEncuentro": {
+            "en": "Rembrandt House Museum, Jodenbreestraat 4, 1011 NK Ámsterdam",
+            "es": "Museo Casa de Rembrandt, Jodenbreestraat 4, 1011 NK Ámsterdam"
+        },
+        "puntoEncuentroLink": "https://maps.app.goo.gl/2btWWRPmWXFZhXLm8",
+        "imagen1": "../images/IIWW/Amsterdam.jpg",
+        "imagen2": "../images/IIWW/De-Dokwerker-Mari-Andriessen.jpg",
+        "imagen3": "../images/",
+        "imagen4": "../images/IIWW/De-Dokwerker.jpg",
+        "widgetId": "3db2b990-6b95-4738-9fa1-43730e792668"
     },
     {
         "id": "ScreenFreeTour Histórico de Ámsterdam",
-        "titulo": "ScreenFreeTour Histórico de Ámsterdam",
-        "subtitulo": "Siglo de Oro Holandés, Anna Frank,Segunda Guerra Mundial y Años '70",
-        "introduccion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam commodo viverra metus, mollis porta arcu tristique quis. Nam sodales eros eu sem tempor finibus. Fusce ultrices mauris ac dolor mollis feugiat.",
-        "duracion": "4 horas",
-        "queVeras": "• Noorderkerk\n• Tulip Museum\n• Anne Frank Huis\n• Westerkerk\n• Homomonument\n• 9 Streets\n• Dam\n• Royal Palace\n• National Monument\n• Begijnhof\n• Spui\n• Flower Market\n• Rembrandtplein",
-        "queHaras": "Bienvenidos al <strong>FreeTour</strong> más completo de Ámsterdam, con el que vivirás la <strong>Edad de Oro Holandesa</strong> y los años más oscuros de la <strong>Segunda Guerra Mundial</strong>. Tampoco nos olvidaremos de la <strong>Revolución Social</strong> de los años <strong>'70</strong> que moldeará la personalidad de la ciudad hasta la actualidad.\n\nPasearemos por la <strong>Casa de Anna Frank</strong> y el famoso <strong>Barrio Judío del Jordan</strong>, donde te contaremos cómo fue la <strong>Ocupación Nazi</strong> y el <strong>Holocausto</strong> dentro de la ciudad. Te explicaremos los secretos de sus <strong>Casas Bailarinas</strong>, la construcción del <strong>Anillo de Canales</strong> y la importancia del Tulipán en todo el país.\n\nCaminando por el corazón de las <strong>9 Calles</strong>, nos dirigiremos a la <strong>Plaza Dam</strong> y su bullicioso entorno. Mientras, te mostramos el <strong>Palacio Real</strong> y el <strong>Monumento Nacional</strong> donde conocerás cómo se vivieron las primeras horas tras la <strong>Liberación Nazi</strong> y los cimientos de la Monarquía Holandesa durante la <strong>Guerra de los 80 años</strong>.\n\nA continuación visitaremos el <strong>Beguinario</strong>, hogar de las primeras enfermeras independientes de la Iglesia durante el s.XIII, y donde entre muchas leyendas se casó el famoso guitarrista Paco de Lucía.\n\nFinalizaremos nuestro <strong>FreeTour</strong> en el <strong>Mercado de las Flores</strong>, junto a la famosa <strong>Plaza de Rembrandt</strong>. Pero no sin antes informaros sobre los mejores planes que hacer en la ciudad, gastronomía, museos... Y sobretodo, con una <strong>degustación gratuita</strong> de los mejores quesos del país.\n\nNo olvides pedir nuestro <strong>mapa interactivo</strong> para seguir descubriendo el Ámsterdam más auténtico.",
-        "enDetalle": "",
-        "incluye": "Guía ES/EN.\n\nTransporte privado con TV.\n\nVídeos y soportes multimedia.",
-        "queLlevar": "Ropa y calzado cómodo.\n\nRopa impermeable, paraguas y abrigo según meteorología.",
-        "noPermitido": "Mascotas, maletas o equipaje",
-        "importante": "Se recomienda consultar meteorología antes del tour.\nLos Tours de ScreenTour trabajan según las alertas meteorológicas nacionales, informando a nuestros clientes inmediatamente en el caso de que se produzcan alertas que puedan influir al tour reservado\nPor el bien de compañeros y clientes, los tours deberán ser cancelados en caso de Alerta Roja Meteorológica",
-        "noIncluye": "Entradas a Museos.\n\nPara visitar el Museo de Anne Frank se recomienda comprar las entradas con al menos <strong>6 semanas de antelación</strong>.",
-        "puntoEncuentro": "Noordermarkt 44, 1015 NA Amsterdam, Netherlands",
+        "titulo": {
+            "en": "ScreenFreeTour Historical Amsterdam,",
+            "es": "ScreenFreeTour Histórico de Ámsterdam,"
+        },
+        "subtitulo": {
+            "en": "Dutch Golden Age, Anne Frank, World War II and the 1970s",
+            "es": "Siglo de Oro Holandés, Anna Frank,Segunda Guerra Mundial y Años '70"
+        },
+        "introduccion": {
+            "en": "Welcome to FreeTour most complete in Amsterdam, with which you will live the <strong>Dutch Golden Age</strong> and the darkest years of the <strong>Second World War</strong>. Nor do we will forget of the Social Revolution of the <strong>years '70</strong> that will shape the personality of the city to this day.\n\nWe will walk through the <strong>Anne Frank House</strong> and the famous <strong>Jordan Jewish Quarter</strong>, where we will tell you how the <strong>Nazi Occupation</strong> and <strong>Holocaust</strong> inside the city. We will explain to you the secrets of their <strong>Dancing Houses</strong>, the construction of <strong>Ring of Channels</strong> and the importance of the Tulip throughout the country.",
+            "es": "Bienvenidos al <strong>FreeTour</strong> más completo de Ámsterdam, con el que vivirás la <strong>Edad de Oro Holandesa</strong> y los años más oscuros de la <strong>Segunda Guerra Mundial</strong>. Tampoco nos olvidaremos de la <strong>Revolución Social</strong> de los años <strong>'70</strong> que moldeará la personalidad de la ciudad hasta la actualidad.\n\nPasearemos por la <strong>Casa de Anna Frank</strong> y el famoso <strong>Barrio Judío del Jordan</strong>, donde te contaremos cómo fue la <strong>Ocupación Nazi</strong> y el <strong>Holocausto</strong> dentro de la ciudad. Te explicaremos los secretos de sus <strong>Casas Bailarinas</strong>, la construcción del <strong>Anillo de Canales</strong> y la importancia del Tulipán en todo el país."
+        },
+        "duracion": {
+            "en": "4 hours",
+            "es": "4 horas"
+        },
+        "queVeras": {
+            "en": "• Noorderkerk\n• Tulip Museum\n• Anne Frank House\n• Westerkerk\n• Homomonument\n• 9 Streets\n• Dam\n• Royal Palace\n• National Monument\n• Begijnhof\n• Spui\n• Flower Market\n• Rembrandtplein",
+            "es": "• Noorderkerk\n• Tulip Museum\n• Anne Frank House\n• Westerkerk\n• Homomonument\n• 9 Streets\n• Dam\n• Royal Palace\n• National Monument\n• Begijnhof\n• Spui\n• Flower Market\n• Rembrandtplein"
+        },
+        "queHaras": {
+            "en": "Welcome to FreeTour most complete in Amsterdam, with which you will live the <strong>Dutch Golden Age</strong> and the darkest years of the <strong>Second World War</strong>. Nor do we will forget of the Social Revolution of the <strong>years '70</strong> that will shape the personality of the city to this day.\n\nWe will walk through the <strong>Anne Frank House</strong> and the famous <strong>Jordan Jewish Quarter</strong>, where we will tell you how the <strong>Nazi Occupation</strong> and <strong>Holocaust</strong> inside the city. We will explain to you the secrets of their <strong>Dancing Houses</strong>, the construction of <strong>Ring of Channels</strong> and the importance of the Tulip throughout the country.\n\nWalking through the heart of the <strong>9 Streets</strong>, we will go to the <strong>Plaza Dam</strong> and its bustling surroundings. Meanwhile, we show you the <strong>Royal Palace</strong> and the <strong>National Monument</strong> where you will learn how the first hours were lived after the <strong>Nazi liberation</strong> and the foundations of the Dutch Monarchy during the <strong>80 years war</strong>.\n\nNext we will visit the <strong>Beguinary</strong>, home of the first independent nurses of the Church during the 13th century, and where among many legends the famous guitarist Paco de Lucía got married.\n\nWe will end our FreeTour in the <strong>Flower market</strong>, next to the famous <strong>Rembrandt Square</strong>. But not before informing you about the best plans to do in the city, gastronomy, museums... And above all, with a <strong>free tasting</strong> of the best cheeses in the country.\n\nDon't forget to order our <strong>interactive map</strong> to continue discovering the most authentic Amsterdam.",
+            "es": "Bienvenidos al <strong>FreeTour</strong> más completo de Ámsterdam, con el que vivirás la <strong>Edad de Oro Holandesa</strong> y los años más oscuros de la <strong>Segunda Guerra Mundial</strong>. Tampoco nos olvidaremos de la <strong>Revolución Social</strong> de los años <strong>'70</strong> que moldeará la personalidad de la ciudad hasta la actualidad.\n\nPasearemos por la <strong>Casa de Anna Frank</strong> y el famoso <strong>Barrio Judío del Jordan</strong>, donde te contaremos cómo fue la <strong>Ocupación Nazi</strong> y el <strong>Holocausto</strong> dentro de la ciudad. Te explicaremos los secretos de sus <strong>Casas Bailarinas</strong>, la construcción del <strong>Anillo de Canales</strong> y la importancia del Tulipán en todo el país.\n\nCaminando por el corazón de las <strong>9 Calles</strong>, nos dirigiremos a la <strong>Plaza Dam</strong> y su bullicioso entorno. Mientras, te mostramos el <strong>Palacio Real</strong> y el <strong>Monumento Nacional</strong> donde conocerás cómo se vivieron las primeras horas tras la <strong>Liberación Nazi</strong> y los cimientos de la Monarquía Holandesa durante la <strong>Guerra de los 80 años</strong>.\n\nA continuación visitaremos el <strong>Beguinario</strong>, hogar de las primeras enfermeras independientes de la Iglesia durante el s.XIII, y donde entre muchas leyendas se casó el famoso guitarrista Paco de Lucía.\n\nFinalizaremos nuestro <strong>FreeTour</strong> en el <strong>Mercado de las Flores</strong>, junto a la famosa <strong>Plaza de Rembrandt</strong>. Pero no sin antes informaros sobre los mejores planes que hacer en la ciudad, gastronomía, museos... Y sobretodo, con una <strong>degustación gratuita</strong> de los mejores quesos del país.\n\nNo olvides pedir nuestro <strong>mapa interactivo</strong> para seguir descubriendo el Ámsterdam más auténtico."
+        },
+        "enDetalle": {
+            "en": "",
+            "es": ""
+        },
+        "incluye": {
+            "en": "EN Guide.\nTram tickets.\nStock footage and photos.\nMultimedia tools.",
+            "es": "Guía ES/EN.\nTransporte privado con TV.\nVídeos y soportes multimedia."
+        },
+        "queLlevar": {
+            "en": "Comfortable clothing and footwear.\nWeather-appropriate clothing.\nWaterproof clothing, an umbrella and a coat.",
+            "es": "Ropa y calzado cómodo.\nRopa impermeable, paraguas y abrigo según meteorología.\nSe recomienda comprobar meteorología."
+        },
+        "noPermitido": {
+            "en": "Pets, suitcases or luggage.",
+            "es": "Mascotas, maletas o equipaje."
+        },
+        "importante": {
+            "en": "",
+            "es": ""
+        },
+        "noIncluye": {
+            "en": "Does not include admission to the Anne Frank Museum.\nIf you want to visit after the tour, it is recommended to purchase tickets at least 6 weeks in advance. The rest of the museums have availability for less than 24 hours.",
+            "es": "No incluye entrada a los Museos.\nSi quieres visitarlo por tu cuenta después del tour, se recomienda comprar las entradas con al menos <strong>6 semanas de antelación</strong>."
+        },
+        "puntoEncuentro": {
+            "en": "Noorderkerk, 1015 NA Amsterdam, Netherlands",
+            "es": "Noorderkerk, 1015 NA Amsterdam, Netherlands"
+        },
+        "puntoEncuentroLink": "https://maps.app.goo.gl/ckNUxxTwCvHzgfJk7 ",
         "imagen1": "../images/HistoryTour.jpg",
         "imagen2": "../images/Historico/Amsterdam5.jpg",
         "imagen3": "../images/Historico/Amsterdam3.jpg",
@@ -62,40 +183,56 @@
         "widgetId": "b66447ad-9f69-4337-a22b-e758fdd18c19"
     },
     {
-        "id": "ScreenTour Second World War",
-        "titulo": "ScreenTour Second World War,",
-        "subtitulo": "La Liberación de Ámsterdam",
-        "introduccion": "Bienvenido al tour más completo sobre la <strong>Ocupación Nazi</strong> de Ámsterdam, donde no sólo verás las consecuencias que tuvo la <strong>Solución Final</strong> para los judíos neerlandeses y refugiados alemanes, también comprenderás la dificultad de sobrevivir cinco años dentro de una ciudad controlada por las <strong>SS Neerlandesas</strong> y con una <strong>Resistencia Holandesa</strong> dispuesta a morir por la liberación de su país.\n\nLas palabras y el recuerdo de <strong>Anna Frank</strong> nos transportarán a los años más decisivos de Ámsterdam, la única ciudad que se levantó y se puso en pie de huelga contra la Ocupación Alemana y las <strong>deportaciones</strong> masivas.\n\nEsta etapa de la ciudad de Ámsterdam debe ser explicada desde varios ángulos para llegar a comprenderla en su totalidad. Es una suerte dar con un guía apasionado por la historia y que te sumerge desde el primer minuto gracias al material gráfico, además de conocer los triunfos y las etapas más oscuras durante éstos años tan cruciales para la vieja Europa.",
-        "duracion": "3hrs 30min",
-        "queVeras": "• Casa Museo de Rembrandt\n• Waterlooplain\n• Monumento de la Resistencia Judía\n• Museo Judío\n• Sinagoga Portuguesa\n• De Dokwerker\n• Monumento Nacional Nombres del Holocausto\n• Museo del Holocausto\n• Dam\n• Monumento Nacional\n• Homomonument\n• Casa Museo de Anna Frank",
-        "queHaras": "",
-        "enDetalle": "",
-        "incluye": "Guía ES/EN.\nTransporte.",
-        "queLlevar": "Ropa y calzado cómodo.\nRopa impermeable, paraguas y abrigo según meteorología.\nSe recomienda comprobar meteorología.",
-        "noPermitido": "Mascotas, maletas o equipaje",
-        "importante": "El tour incluye el traslado hasta la casa de Anne Frank y el traslado de vuelta al Museo de Anne Frank.\nNo incluye la entrada al Museo de Anne Frank. Si quieres visitarlo por tu cuenta después del tour, se recomienda comprar las entradas con al menos 6 semanas de antelación.",
-        "noIncluye": "No incluye entrada a los Museos.\n\nSi quieres visitarlo por tu cuenta después del tour, se recomienda comprar las entradas con al menos <strong>6 semanas de antelación</strong>.",
-        "puntoEncuentro": "Museo Casa de Rembrandt, Jodenbreestraat 4, 1011 NK Ámsterdam",
-        "imagen1": "../images/Mokum/WesterkerkAnneFrank.jpg",
-        "imagen2": "../images/Mokum/CopyrightKeeHummel.jpg",
-        "imagen3": "../images/Mokum/WesterkerkAnneFrank.jpg",
-        "imagen4": "../images/Mokum/CopyrightKeeHummel.jpg",
-        "widgetId": ""
-    },
-    {
         "id": "ScreenTour Amsterdam through Rembrandt",
-        "titulo": "ScreenTour Amsterdam through Rembrandt,",
-        "subtitulo": "A Walking Tour and Rijksmuseum Guided",
-        "introduccion": "Conoce el Amsterdam del Siglo de Oro a través de los ojos de <strong>Rembrandt</strong> paseando por las calles que marcaron la carrera del artista y recorriendo el <strong>Rijksmuseum</strong> dentro de una misma visita guiada. Comenzando desde la Casa Museo de <strong>Rembrandt</strong>, y gracias a nuestras tablets, comprenderás las obras del artista dentro del entorno en el que se concibieron, la novedad de la pintura de <strong>Rembrandt</strong> que irrumpió en una ciudad en pleno desarrollo y crecimiento.\n\nDéjate llevar por el profundo amor que sintió por su esposa Saskia en una floreciente <strong>Crisis del Tulipán</strong>, su personal representación de la aristocracia que creó los pilares del capitalismo y su relación con la cada vez más influyente <strong>Comunidad Judía</strong>.\n\nFinalmente, tras haberte familiarizado con la imponente <strong>Arquitectura Neorrenacentista</strong> del Museo Nacional <strong>Rijksmuseum</strong>, disfrutaras de una visitada guiada por las obras de <strong>Rembrandt</strong> y los artistas nacionales más influyentes como Johannes Vermeer, pintor de La Lechera y La Muchacha de la Perla.",
-        "duracion": "3hrs 30min",
-        "queVeras": "• Museo Rembrandt\n• Waterlooplein\n• Barrio Judío\n• Rembrandtplein\n• Mercado de las Flores\n• Anillo de Canales o Grachtengordel\n• Museumplein\n• Rijksmuseum",
-        "queHaras": "Con el <strong>Museo de Rembrandt</strong> como punto de partida, comenzaremos a conocer en profundidad la vida de <strong>Rembrandt</strong> y el paralelismo de su crecimiento personal junto a la revolución que traería su técnica al <strong>Siglo de Oro Holandés</strong>.\n\nPaseando por el <strong>Barrio Judío</strong> veras la inmersión que hizo el artista dentro de la <strong>Comunidad Sefardi</strong> gracias a sus retratos y dramatismo en su arte religioso. Los gremios y las familias más importantes de la ciudad quedarán inmortalizados por el pincel de <strong>Rembrandt</strong>, y comprenderás en el <strong>Mercado de las Flores</strong> la mortalidad y fugacidad de la belleza representada en los retratos de su amada Saskia.\n\nPor Los <strong>Anillos de Canales</strong> concebirás el crecimiento colosal de la ciudad Amsterdam en menos de un siglo y el desarrollo exponencial de la medicina representada en obras como La Lección de Anatomía o Vista de Ámsterdam.\n\nTras reconocer las huellas de <strong>Rembrandt</strong> en maestros de la pintura como Van Gogh o Picasso, descubrirás los secretos de la simbólica arquitectura <strong>Neorrenacentista</strong> del <strong>Rijksmuseum</strong>. Finalmente, disfrutarás de las obras de nuestro protagonista y artistas como Veermer durante la visita guiada de 2 horas dentro del Museo Nacional.",
-        "incluye": "Guía ES/EN\nEntrada Rijksmuseum\nVídeos y soportes multimedia",
-        "queLlevar": "Ropa y calzado cómodo\nRopa impermeable, paraguas y abrigo según meteorología",
-        "noPermitido": "Mascotas, maletas o equipaje",
-        "importante": "Se recomienda consultar meteorología antes del tour\nLos Tours de ScreenTour trabajan según las alertas meteorológicas nacionales, informando a nuestros clientes inmediatamente en el caso de que se produzcan alertas que puedan influir al tour reservado\nPor el bien de compañeros y clientes, los tours deberán ser cancelados en caso de Alerta Roja Meteorológica",
-        "noIncluye": "Entradas al Museo Rembrandt.\nPara visitar el Museo de Rembrandt se recomienda comprar las entradas con al menos 24 horas de antelación.",
-        "puntoEncuentro": "Museo Casa de Rembrandt, Jodenbreestraat 4, 1011 NK Ámsterdam",
+        "titulo": {
+            "en": "asd",
+            "es": "ScreenTour Amsterdam through Rembrandt,"
+        },
+        "subtitulo": {
+            "en": "asd",
+            "es": "A Walking Tour and Rijksmuseum Guided"
+        },
+        "introduccion": {
+            "en": "asd",
+            "es": "Conoce el Amsterdam del Siglo de Oro a través de los ojos de <strong>Rembrandt</strong> paseando por las calles que marcaron la carrera del artista y recorriendo el <strong>Rijksmuseum</strong> dentro de una misma visita guiada. Comenzando desde la Casa Museo de <strong>Rembrandt</strong>, y gracias a nuestras tablets, comprenderás las obras del artista dentro del entorno en el que se concibieron, la novedad de la pintura de <strong>Rembrandt</strong> que irrumpió en una ciudad en pleno desarrollo y crecimiento.\n\nDéjate llevar por el profundo amor que sintió por su esposa Saskia en una floreciente <strong>Crisis del Tulipán</strong>, su personal representación de la aristocracia que creó los pilares del capitalismo y su relación con la cada vez más influyente <strong>Comunidad Judía</strong>.\n\nFinalmente, tras haberte familiarizado con la imponente <strong>Arquitectura Neorrenacentista</strong> del Museo Nacional <strong>Rijksmuseum</strong>, disfrutaras de una visitada guiada por las obras de <strong>Rembrandt</strong> y los artistas nacionales más influyentes como Johannes Vermeer, pintor de La Lechera y La Muchacha de la Perla."
+        },
+        "duracion": {
+            "en": "asd",
+            "es": "3hrs 30min"
+        },
+        "queVeras": {
+            "en": "asd",
+            "es": "• Museo Rembrandt\n• Waterlooplein\n• Barrio Judío\n• Rembrandtplein\n• Mercado de las Flores\n• Anillo de Canales o Grachtengordel\n• Museumplein\n• Rijksmuseum"
+        },
+        "queHaras": {
+            "en": "asd",
+            "es": "Con el <strong>Museo de Rembrandt</strong> como punto de partida, comenzaremos a conocer en profundidad la vida de <strong>Rembrandt</strong> y el paralelismo de su crecimiento personal junto a la revolución que traería su técnica al <strong>Siglo de Oro Holandés</strong>.\n\nPaseando por el <strong>Barrio Judío</strong> veras la inmersión que hizo el artista dentro de la <strong>Comunidad Sefardi</strong> gracias a sus retratos y dramatismo en su arte religioso. Los gremios y las familias más importantes de la ciudad quedarán inmortalizados por el pincel de <strong>Rembrandt</strong>, y comprenderás en el <strong>Mercado de las Flores</strong> la mortalidad y fugacidad de la belleza representada en los retratos de su amada Saskia.\n\nPor Los <strong>Anillos de Canales</strong> concebirás el crecimiento colosal de la ciudad Amsterdam en menos de un siglo y el desarrollo exponencial de la medicina representada en obras como La Lección de Anatomía o Vista de Ámsterdam.\n\nTras reconocer las huellas de <strong>Rembrandt</strong> en maestros de la pintura como Van Gogh o Picasso, descubrirás los secretos de la simbólica arquitectura <strong>Neorrenacentista</strong> del <strong>Rijksmuseum</strong>. Finalmente, disfrutarás de las obras de nuestro protagonista y artistas como Veermer durante la visita guiada de 2 horas dentro del Museo Nacional."
+        },
+        "incluye": {
+            "en": "EN Guide.\nTram tickets.\nStock footage and photos.\nMultimedia tools.",
+            "es": "Guía ES/EN\nEntrada Rijksmuseum\nVídeos y soportes multimedia"
+        },
+        "queLlevar": {
+            "en": "Comfortable clothing and footwear.\nWeather-appropriate clothing.\nWaterproof clothing, an umbrella and a coat.",
+            "es": "Ropa y calzado cómodo\nRopa impermeable, paraguas y abrigo según meteorología"
+        },
+        "noPermitido": {
+            "en": "Pets, suitcases or luggage.",
+            "es": "Mascotas, maletas o equipaje."
+        },
+        "importante": {
+            "en": "It is recommended to check the weather before the tour.\nScreenTour Tours work according to national weather alerts, informing our clients immediately in the event of alerts that may influence the booked tour.\nFor the good of colleagues and clients, tours must be canceled in case of Red Meteorological Alert.",
+            "es": "Se recomienda consultar meteorología antes del tour\nLos Tours de ScreenTour trabajan según las alertas meteorológicas nacionales, informando a nuestros clientes inmediatamente en el caso de que se produzcan alertas que puedan influir al tour reservado\nPor el bien de compañeros y clientes, los tours deberán ser cancelados en caso de Alerta Roja Meteorológica."
+        },
+        "noIncluye": {
+            "en": "Does not include admission to the Anne Frank Museum. If you want to visit after the tour, it is recommended to purchase tickets at least 6 weeks in advance. The rest of the museums have availability for less than 24 hours.",
+            "es": "Entradas al Museo Rembrandt.\nPara visitar el Museo de Rembrandt se recomienda comprar las entradas con al menos 24 horas de antelación."
+        },
+        "puntoEncuentro": {
+            "en": "Rembrandt House Museum, Jodenbreestraat 4, 1011 NK Ámsterdam",
+            "es": "Museo Casa de Rembrandt, Jodenbreestraat 4, 1011 NK Ámsterdam"
+        },
+        "puntoEncuentroLink": "https://maps.app.goo.gl/2btWWRPmWXFZhXLm8",
         "imagen1": "../images/Rembrandt/RembrandtEstatue.jpg",
         "imagen2": "../images/Rembrandt/RijksmuseumInside.jpg",
         "imagen3": "../images/Rembrandt/Rijksmuseum.jpg",
@@ -104,22 +241,63 @@
     },
     {
         "id": "",
-        "titulo": "",
-        "subtitulo": "",
-        "introduccion": "",
-        "duracion": "",
-        "queVeras": "",
-        "queHaras": "",
-        "incluye": "",
-        "queLlevar": "",
-        "noPermitido": "",
-        "importante": "",
-        "noIncluye": "",
-        "puntoEncuentro": "",
-        "imagen1": "../images/jpg",
-        "imagen2": "../images/.jpg",
-        "imagen3": "../images/.jpg",
-        "imagen4": "../images/.jpg",
+        "titulo": {
+            "en": "",
+            "es": ""
+        },
+        "subtitulo": {
+            "en": "",
+            "es": ""
+        },
+        "introduccion": {
+            "en": "",
+            "es": ""
+        },
+        "duracion": {
+            "en": "",
+            "es": ""
+        },
+        "queVeras": {
+            "en": "",
+            "es": ""
+        },
+        "queHaras": {
+            "en": "",
+            "es": ""
+        },
+        "enDetalle": {
+            "en": "",
+            "es": ""
+        },
+        "incluye": {
+            "en": "",
+            "es": ""
+        },
+        "queLlevar": {
+            "en": "",
+            "es": ""
+        },
+        "noPermitido": {
+            "en": "",
+            "es": ""
+        },
+        "importante": {
+            "en": "",
+            "es": ""
+        },
+        "noIncluye": {
+            "en": "",
+            "es": ""
+        },
+        "puntoEncuentro": {
+            "en": "",
+            "es": ""
+        },
+        "puntoEncuentroLink": "",
+        "imagen1": "../images/",
+        "imagen2": "../images/",
+        "imagen3": "../images/",
+        "imagen4": "../images/",
         "widgetId": ""
     }
 ]

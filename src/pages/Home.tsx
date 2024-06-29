@@ -15,12 +15,6 @@ function Home() {
 
     const nextSectionRef = useRef(null);
 
-    const scrollToNextSection = () => {
-        if (nextSectionRef.current) {
-            nextSectionRef.current.scrollIntoView({ behavior: 'smooth' });
-        }
-    };
-
     return (
         <main>
             <NavBar></NavBar>
@@ -134,11 +128,11 @@ function Home() {
                         nombre="ScreenTour Second World War"
                         duracion="3 Hrs 30 Mins"
                         lugar="Ámsterdam"
-                        precio={20}
+                        precio={25}
                         tipoDeTour="Tour"
                         linkImagen="/images/HistoryTour3.jpg"
                         link="/ScreenTour Second World War"
-                        widgetId="">
+                        widgetId="3db2b990-6b95-4738-9fa1-43730e792668">
                     </TourButton>
                     <TourButton
                         nombre="ScreenTour Amsterdam through Rembrandt"

@@ -14,12 +14,13 @@ interface DetailsBoxProps {
   duracion: string;
   tipoDeTour: string;
   puntoEncuentro: string;
+  puntoEncuentroLink: string;
   idioma: string;
   cancelacion: string;
   lugares: string;
 }
 
-const DetailsBox: React.FC<DetailsBoxProps> = ({ duracion, tipoDeTour, puntoEncuentro, idioma, cancelacion, lugares }) => {
+const DetailsBox: React.FC<DetailsBoxProps> = ({ duracion, tipoDeTour, puntoEncuentro, puntoEncuentroLink, idioma, cancelacion, lugares }) => {
 
   const { language, translations } = useContext(LanguageContext);
 
@@ -29,12 +30,12 @@ const DetailsBox: React.FC<DetailsBoxProps> = ({ duracion, tipoDeTour, puntoEncu
       <div className={styles.durationBox}>
         <p><FaClock className={styles.icon} /><strong>{translations[language].tour.duration}: </strong>{duracion}</p>
         <p><FaClock className={styles.icon} /><strong>{translations[language].tour.kindTour}: </strong>{tipoDeTour}</p>
-        <p><LuLanguages className={styles.icon} /><strong>Idiomas: </strong>{idioma}</p>
+        <p><LuLanguages className={styles.icon} /><strong>{translations[language].tour.languages}: </strong>{idioma}</p>
         <p><LuLanguages className={styles.icon} /><strong>{cancelacion}</strong></p>
       </div>
       <p className={styles.noMargin}>
         <FaMapMarkerAlt className={styles.icon} /><strong>{translations[language].tour.meetingPoint}: </strong>{puntoEncuentro}
-        <a href=''> <strong>{translations[language].tour.more}</strong> <IoIosArrowForward className={styles.icon2} /></a>
+        <a href={puntoEncuentroLink} target='_blank' rel="noreferrer"> <strong>{translations[language].tour.more}</strong> <IoIosArrowForward className={styles.icon2} /></a>
       </p>
       <p className={styles.noMargin}>
         <p>

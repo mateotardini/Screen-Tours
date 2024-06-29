@@ -57,7 +57,7 @@
     column-count: 3;
     -webkit-column-gap: 20px;
     -moz-column-gap: 20px;
-    column-gap: 10%;
+    column-gap: 5%;
     height: 100%;
 }
 

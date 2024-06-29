@@ -24,10 +24,10 @@ function Footer() {
               alt='Screen Tours Logo'
             />
             <ul className="row">
-              <li><a href="https://www.instagram.com/screentours/"><FaGoogle className={styles.bigIcon} /></a></li>
-              <li><a href="https://www.instagram.com/screentours/"><FaTripadvisor className={styles.bigIcon} /></a></li>
-              <li><a href="https://www.instagram.com/screentours/"><FaTiktok className={styles.bigIcon} /></a></li>
-              <li><a href="https://www.instagram.com/screentours/"><FaInstagram className={styles.bigIcon} /></a></li>
+              <li><a href="https://www.instagram.com/screentours/" target='_blank' rel="noreferrer"><FaGoogle className={styles.bigIcon} /></a></li>
+              <li><a href="https://www.instagram.com/screentours/" target='_blank' rel="noreferrer"><FaTripadvisor className={styles.bigIcon} /></a></li>
+              <li><a href="https://www.instagram.com/screentours/" target='_blank' rel="noreferrer"><FaTiktok className={styles.bigIcon} /></a></li>
+              <li><a href="https://www.instagram.com/screentours/" target='_blank' rel="noreferrer"><FaInstagram className={styles.bigIcon} /></a></li>
             </ul>
           </div>
 
@@ -51,6 +51,7 @@ function Footer() {
             <ul className={styles.links}>
               <li><Link to="/">{translations[language].navbar.home}</Link></li>
               <li><Link to="/Tours">Tours</Link></li>
+              <li><Link to="/ToursVIP">Tours VIP</Link></li>
               <li><Link to="/Contact">{translations[language].contact.subtitle}</Link></li>
               <li><Link to="/OurTeam">{translations[language].ourTeam.subtitle}</Link></li>
               {/*<li><Link to="/Daytrips">Daytrips</Link></li>
@@ -74,7 +75,7 @@ function Footer() {
 
         <div className={styles.row}>
           <p>
-            ©2024 - Todos los derechos reservados - Diseñado y desarrollado por <a href='https://www.linkedin.com/in/mateo-tardini-acu%C3%B1a-falc%C3%B3n-35064b195/'>Mateo Tardini Acuña.</a>
+            {translations[language].navbar.credits} <a href='https://www.linkedin.com/in/mateo-tardini-acu%C3%B1a-falc%C3%B3n-35064b195/'>Mateo Tardini Acuña.</a>
           </p>
         </div>
       </div>
