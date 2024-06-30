@@ -78,7 +78,7 @@ function TourDetail() {
                     </h1>
 
                     <p dangerouslySetInnerHTML={{ __html: instroduccion }}></p>
-                    <button onClick={handleButtonClick}>{translations[language].tour.lastButton}</button>
+                    <button onClick={handleButtonClick} disabled={!tour.widgetId}>{tour.widgetId ? translations[language].tour.lastButton : translations[language].tour.coomingSoon}</button>
                 </div>
                 <div
                     className="imageContainer"
@@ -149,7 +149,7 @@ function TourDetail() {
                         {translations[language].tour.lastText}
                     </p>
 
-                    <button onClick={handleButtonClick}>{translations[language].tour.lastButton}</button>
+                    <button onClick={handleButtonClick} disabled={!tour.widgetId}>{tour.widgetId ? translations[language].tour.lastButton : translations[language].tour.coomingSoon}</button>
 
                     {showPopup && <RegiondoWidgetPopup widgetId={tour.widgetId} onClose={handleClosePopup} />}
                 </div>

@@ -8,11 +8,16 @@ import TourButton from "../components/TourButton.tsx";
 import ImageButton from "../components/ImageButton.tsx";
 import WaveSeparator from '../components/WaveSeparator.tsx';
 import RetrowaveItem from '../components/RetrowaveItem.tsx';
+/*Data*/
+import toursData from '../tours.json';
 
 function Home() {
     const { language, translations } = useContext(LanguageContext);
 
-    const nextSectionRef = useRef(null);
+    const tour0 = toursData[0];
+    const tour1 = toursData[1];
+    const tour2 = toursData[2];
+    const tour3 = toursData[3];
 
     return (
         <main>
@@ -66,7 +71,7 @@ function Home() {
 
             <WaveSeparator topColor="#090d29" bottomColor="#f8f8f8"></WaveSeparator>
 
-            <section ref={nextSectionRef} className="sectionPaddingLeft spaceBetween colorBlack" style={{ alignItems: "center" }}>
+            <section className="sectionPaddingLeft spaceBetween colorBlack" style={{ alignItems: "center" }}>
                 <div className="textContainer">
                     <h1 className="fontMontserrat">
                         {translations[language].home.firstTitle}
@@ -104,17 +109,8 @@ function Home() {
                 <h1 className="fontMontserrat">{translations[language].home.secondTitle}</h1>
                 <div className="row">
                     <TourButton
-                        nombre="ScreenTour Mokum, El Ámsterdam Judío"
-                        duracion="4 Hrs"
-                        lugar="Ámsterdam"
-                        precio={30}
-                        tipoDeTour="Tour"
-                        linkImagen="/images/Mokum.jpg"
-                        link="/Mokum, el Ámsterdam Judío"
-                        widgetId="cb3092b5-1aab-4449-b720-5049bd81e7d7">
-                    </TourButton>
-                    <TourButton
-                        nombre="ScreenFreeTour Histórico de Ámsterdam"
+                        nombre={tour2.titulo[language]}
+                        subtitulo="Del Siglo de Oro Holandés a los Años ´70"
                         duracion="4 Hrs"
                         lugar="Ámsterdam"
                         precio="Free "
@@ -124,17 +120,32 @@ function Home() {
                         widgetId="b66447ad-9f69-4337-a22b-e758fdd18c19">
                     </TourButton>
                     <TourButton
-                        nombre="ScreenTour Second World War"
+                        nombre={tour0.titulo[language]}
+                        subtitulo={tour0.subtitulo[language]}
+                        duracion="4 Hrs"
+                        lugar="Ámsterdam"
+                        precio={30}
+                        precioDescuento={25}
+                        tipoDeTour="Tour"
+                        linkImagen="/images/Mokum.jpg"
+                        link="/Mokum, el Ámsterdam Judío"
+                        widgetId="cb3092b5-1aab-4449-b720-5049bd81e7d7">
+                    </TourButton>
+                    <TourButton
+                        nombre={tour1.titulo[language]}
+                        subtitulo={tour1.subtitulo[language]}
                         duracion="3 Hrs 30 Mins"
                         lugar="Ámsterdam"
-                        precio={25}
+                        precio={30}
+                        precioDescuento={25}
                         tipoDeTour="Tour"
                         linkImagen="/images/HistoryTour3.jpg"
                         link="/ScreenTour Second World War"
                         widgetId="3db2b990-6b95-4738-9fa1-43730e792668">
                     </TourButton>
                     <TourButton
-                        nombre="ScreenTour Amsterdam through Rembrandt"
+                        nombre={tour3.titulo[language]}
+                        subtitulo={tour3.subtitulo[language]}
                         duracion="3 Hrs 30 Mins"
                         lugar="Ámsterdam"
                         precio={40}

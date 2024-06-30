@@ -241,6 +241,15 @@ button:hover {
   background-color: var(--primary-color);
 }
 
+button:disabled {
+  background-color: var(--primary-color);
+  cursor: default;
+}
+
+button:disabled:hover {
+  transform: none;
+}
+
 .button-borderline {
   background-color: transparent;
   color: var(--black-color);

@@ -12,7 +12,7 @@ import { LuLanguages } from "react-icons/lu";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoInformationCircle } from "react-icons/io5";
 
-const TourButton = ({ nombre, lugar, precio, duracion, tipoDeTour, linkImagen, link, widgetId }) => {
+const TourButton = ({ nombre, subtitulo, lugar, precio, precioDescuento, duracion, tipoDeTour, linkImagen, link, widgetId }) => {
   const { language, translations } = useContext(LanguageContext);
   const [showPopup, setShowPopup] = useState(false);
 
@@ -35,7 +35,10 @@ const TourButton = ({ nombre, lugar, precio, duracion, tipoDeTour, linkImagen, l
             <p><LuLanguages /> <strong>ESP/EN</strong></p>
           </div>
 
-          <h3 className={`${styles.buttonText} fontMontserrat`}>{nombre}</h3>
+          <div className={styles.tittle}>
+            <h3 className={`${styles.buttonText} fontMontserrat`}>{nombre}</h3>
+            <p className={`${styles.buttonText} fontMontserrat`}>{subtitulo}</p>
+          </div>
 
           <div className={styles.infoBox}>
             <p className={styles.captionText}><FaMapMarkerAlt className={styles.icon} /> {lugar}</p>
@@ -45,13 +48,20 @@ const TourButton = ({ nombre, lugar, precio, duracion, tipoDeTour, linkImagen, l
           <div className='row'>
             <div className='column'>
               <p>{translations[language].tour.from}</p>
-              <h2>{precio}€</h2>
+              {precioDescuento ? (
+                <div className={styles.priceContainer}>
+                  <h2 className={styles.discountedPrice}>{precioDescuento}€</h2>
+                  <p className={styles.originalPrice}>{precio}€</p>
+                </div>
+              ) : (
+                <h2>{precio}€</h2>
+              )}
             </div>
           </div>
 
-          <button onClick={handleButtonClick}>{translations[language].tour.book}</button>
+          <button onClick={handleButtonClick} disabled={!widgetId}>{widgetId ? translations[language].tour.book : translations[language].tour.coomingSoon}</button>
         </div>
-        <img src={linkImagen} alt={'Screen Tours '+ nombre} />
+        <img src={linkImagen} alt={'Screen Tours ' + nombre} />
       </Link>
 
       {showPopup && <RegiondoWidgetPopup widgetId={widgetId} onClose={handleClosePopup} />}
