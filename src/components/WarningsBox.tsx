@@ -1,4 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+/*Contexts*/
+import { LanguageContext } from '../contexts/LanguageContext.js';
+/*CSS */
 import styles from "../css/WarningsBox.module.css";
 
 interface WarningsBoxProps {
@@ -10,16 +13,17 @@ interface WarningsBoxProps {
 }
 
 const WarningsBox: React.FC<WarningsBoxProps> = ({ queIncluye, queLlevar, noPermitido, noIncluye, importante }) => {
+  const { language, translations } = useContext(LanguageContext);
 
   const [activeTab, setActiveTab] = useState('queIncluye');
   const [openSections, setOpenSections] = useState<string[]>([]);
 
   const tabs = [
-    { key: 'queIncluye', label: '¿Qué Incluye?', content: queIncluye },
-    { key: 'queLlevar', label: '¿Qué Llevar?', content: queLlevar },
-    { key: 'noPermitido', label: 'No Permitido', content: noPermitido },
-    { key: 'noIncluye', label: 'No Incluye', content: noIncluye },
-    { key: 'importante', label: 'Información Importante', content: importante }
+    { key: 'queIncluye', label: translations[language].warnings.whatIncludes , content: queIncluye },
+    { key: 'queLlevar', label: translations[language].warnings.whatToBring , content: queLlevar },
+    { key: 'noPermitido', label: translations[language].warnings.notAllowed , content: noPermitido },
+    { key: 'noIncluye', label: translations[language].warnings.notInclude , content: noIncluye },
+    { key: 'importante', label: translations[language].warnings.important , content: importante }
   ];
 
   const renderContent = () => {

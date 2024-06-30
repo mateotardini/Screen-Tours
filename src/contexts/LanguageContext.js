@@ -73,8 +73,8 @@ const translations = {
       whatIncludes:"What Includes",
       whatToBring: "What to Bring",
       notAllowed: "Not Allowed",
-      important: "Important Information",
-      notInclude: "Does not Include"
+      notInclude: "Does not Include",
+      important: "Important Information"
     },
     imageButton: {
       amsterdam: "Amsterdam",
