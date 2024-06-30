@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 /*Context*/
 import { LanguageContext } from '../contexts/LanguageContext.js';
 /*Components*/
-import NavBar from "../components/NavBar.tsx"
 import Footer from "../components/Footer.tsx"
 import RetrowaveItem from '../components/RetrowaveItem.tsx';
 import ContactForm from '../components/ContactForm.tsx';
@@ -17,7 +16,6 @@ function Contact() {
 
     return (
         <main>
-            <NavBar />
             <section style={{ minHeight: "unset", height: "43vh", position: "relative", overflow: "hidden" }}>
                 <div className="videoBackground">
                     <video autoPlay muted loop playsInline>

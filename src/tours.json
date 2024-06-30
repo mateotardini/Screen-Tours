@@ -185,31 +185,35 @@
     {
         "id": "ScreenTour Amsterdam through Rembrandt",
         "titulo": {
-            "en": "asd",
+            "en": "ScreenTour Ámsterdam a través de Rembrandt,",
             "es": "ScreenTour Amsterdam through Rembrandt,"
         },
         "subtitulo": {
-            "en": "asd",
+            "en": "Un recorrido guiado por el Rijksmuseum",
             "es": "A Walking Tour and Rijksmuseum Guided"
         },
         "introduccion": {
-            "en": "asd",
+            "en": "Discover Golden Age Amsterdam through the eyes of <strong>Rembrandt</strong> as you walk the streets that shaped the artist's career and tour the <strong>Rijksmuseum</strong> in a single guided visit. Starting from the Rembrandt House Museum, and with the aid of our tablets, you will understand the artist's works within the context in which they were conceived, and the novelty of <strong>Rembrandt</strong>'s painting that burst into a city undergoing rapid development and growth.\n\nBe swept away by the deep love he felt for his wife Saskia during a flourishing <strong>Tulip Crisis</strong>, his personal depiction of the aristocracy that laid the foundations of capitalism, and his relationship with the increasingly influential <strong>Jewish Community</strong>.\n\nFinally, after becoming familiar with the impressive <strong>Neorenaissance Architecture</strong> of the National Museum <strong>Rijksmuseum</strong>, you will enjoy a guided tour of the works of <strong>Rembrandt</strong> and other influential national artists such as Johannes Vermeer, painter of The Milkmaid and The Girl with a Pearl Earring.",
             "es": "Conoce el Amsterdam del Siglo de Oro a través de los ojos de <strong>Rembrandt</strong> paseando por las calles que marcaron la carrera del artista y recorriendo el <strong>Rijksmuseum</strong> dentro de una misma visita guiada. Comenzando desde la Casa Museo de <strong>Rembrandt</strong>, y gracias a nuestras tablets, comprenderás las obras del artista dentro del entorno en el que se concibieron, la novedad de la pintura de <strong>Rembrandt</strong> que irrumpió en una ciudad en pleno desarrollo y crecimiento.\n\nDéjate llevar por el profundo amor que sintió por su esposa Saskia en una floreciente <strong>Crisis del Tulipán</strong>, su personal representación de la aristocracia que creó los pilares del capitalismo y su relación con la cada vez más influyente <strong>Comunidad Judía</strong>.\n\nFinalmente, tras haberte familiarizado con la imponente <strong>Arquitectura Neorrenacentista</strong> del Museo Nacional <strong>Rijksmuseum</strong>, disfrutaras de una visitada guiada por las obras de <strong>Rembrandt</strong> y los artistas nacionales más influyentes como Johannes Vermeer, pintor de La Lechera y La Muchacha de la Perla."
         },
         "duracion": {
-            "en": "asd",
+            "en": "3hrs 30min",
             "es": "3hrs 30min"
         },
         "queVeras": {
-            "en": "asd",
+            "en": "• Rembrandt Museum\n• Waterlooplein\n• Jewish Quarter\n• Rembrandtplein\n• Flower Market\n• Canal Ring or Grachtengordel\n• Museumplein\n• Rijksmuseum",
             "es": "• Museo Rembrandt\n• Waterlooplein\n• Barrio Judío\n• Rembrandtplein\n• Mercado de las Flores\n• Anillo de Canales o Grachtengordel\n• Museumplein\n• Rijksmuseum"
         },
         "queHaras": {
-            "en": "asd",
+            "en": "With the <strong>Rembrandt Museum</strong> as our starting point, we will delve deeply into the life of <strong>Rembrandt</strong> and the parallel of his personal growth alongside the revolution his technique brought to the <strong>Dutch Golden Age</strong>.\n\nStrolling through the <strong>Jewish Quarter</strong>, you'll witness the artist's immersion in the <strong>Sephardic Community</strong> through his portraits and dramatic religious art. The city's most important guilds and families will be immortalized by <strong>Rembrandt</strong>'s brush, and at the <strong>Flower Market</strong>, you'll understand the mortality and transience of beauty portrayed in his beloved Saskia's portraits.\n\nThrough the <strong>Canal Rings or Grachtengordel</strong>, you'll grasp Amsterdam's colossal growth in less than a century and the exponential development of medicine depicted in works like The Anatomy Lesson or View of Amsterdam.\n\nAfter recognizing <strong>Rembrandt</strong>'s influence on painting masters like Van Gogh or Picasso, you'll uncover the secrets of the symbolic <strong>Neorenaissance Architecture</strong> of the <strong>Rijksmuseum</strong>. Finally, you'll enjoy the works of our protagonist and artists like Vermeer during the 2-hour guided tour inside the National Museum.",
             "es": "Con el <strong>Museo de Rembrandt</strong> como punto de partida, comenzaremos a conocer en profundidad la vida de <strong>Rembrandt</strong> y el paralelismo de su crecimiento personal junto a la revolución que traería su técnica al <strong>Siglo de Oro Holandés</strong>.\n\nPaseando por el <strong>Barrio Judío</strong> veras la inmersión que hizo el artista dentro de la <strong>Comunidad Sefardi</strong> gracias a sus retratos y dramatismo en su arte religioso. Los gremios y las familias más importantes de la ciudad quedarán inmortalizados por el pincel de <strong>Rembrandt</strong>, y comprenderás en el <strong>Mercado de las Flores</strong> la mortalidad y fugacidad de la belleza representada en los retratos de su amada Saskia.\n\nPor Los <strong>Anillos de Canales</strong> concebirás el crecimiento colosal de la ciudad Amsterdam en menos de un siglo y el desarrollo exponencial de la medicina representada en obras como La Lección de Anatomía o Vista de Ámsterdam.\n\nTras reconocer las huellas de <strong>Rembrandt</strong> en maestros de la pintura como Van Gogh o Picasso, descubrirás los secretos de la simbólica arquitectura <strong>Neorrenacentista</strong> del <strong>Rijksmuseum</strong>. Finalmente, disfrutarás de las obras de nuestro protagonista y artistas como Veermer durante la visita guiada de 2 horas dentro del Museo Nacional."
         },
+        "enDetalle": {
+            "en": "", 
+            "es": ""
+        },
         "incluye": {
-            "en": "EN Guide.\nTram tickets.\nStock footage and photos.\nMultimedia tools.",
+            "en": "EN Guide.\nRijksmuseum tickets.\nStock footage and photos.\nMultimedia tools.",
             "es": "Guía ES/EN\nEntrada Rijksmuseum\nVídeos y soportes multimedia"
         },
         "queLlevar": {

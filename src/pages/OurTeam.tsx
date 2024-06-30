@@ -5,7 +5,6 @@ import { LanguageContext } from '../contexts/LanguageContext.js';
 /*CSS */
 import styles from "../css/OurTeam.module.css";
 /*Components*/
-import NavBar from "../components/NavBar.tsx"
 import Footer from "../components/Footer.tsx"
 import RetrowaveItem from '../components/RetrowaveItem.tsx';
 import ImageTeam from "../components/ImageTeam.tsx"
@@ -15,8 +14,6 @@ function OurTeam() {
 
     return (
         <main>
-            <NavBar></NavBar>
-
             <section style={{ minHeight: "unset", height: "43vh", position: "relative", overflow: "hidden" }}>
                 <div className="videoBackground">
                     <video autoPlay muted loop playsInline>

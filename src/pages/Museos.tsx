@@ -1,8 +1,7 @@
 import React, { useContext } from 'react';
-
+/*Contexts */
 import { LanguageContext } from '../contexts/LanguageContext.js';
-
-import NavBar from "../components/NavBar.tsx"
+/*Components */
 import Footer from "../components/Footer.tsx"
 import TourButton from "../components/TourButton.tsx";
 import RetrowaveItem from '../components/RetrowaveItem.tsx';
@@ -12,8 +11,6 @@ function Museos() {
 
     return (
         <main>
-            <NavBar />
-
             <section style={{ minHeight: "unset", height: "43vh", position: "relative", overflow: "hidden" }}>
                 <div className="videoBackground">
                     <video autoPlay muted loop playsInline>

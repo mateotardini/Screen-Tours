@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 /*Contextos*/
 import { LanguageProvider } from './contexts/LanguageContext.js';
 /*Componentes*/
+import NavBar from './components/NavBar.tsx';
 import ScrollToTop from './components/ScrollToTop.tsx';
 /*Paginas*/
 import Home from './pages/Home.tsx';
@@ -11,6 +12,7 @@ import ToursVIP from './pages/ToursVIP.tsx';
 import Daytrips from './pages/Daytrips.tsx';
 import FreeTours from './pages/FreeTours.tsx';
 import Museos from './pages/Museos.tsx';
+import Giftcards from './pages/Giftcards.tsx';
 import Vlogs from './pages/Vlogs.tsx';
 import Contact from './pages/Contact.tsx';
 import TourDetail from './pages/TourDetail.tsx';
@@ -21,6 +23,7 @@ function App() {
   return (
     <div className="App">
       <LanguageProvider>
+      <NavBar></NavBar>
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -30,6 +33,7 @@ function App() {
           <Route path="/ToursVIP" element={<ToursVIP />} />
           <Route path="/FreeTours" element={<FreeTours />} />
           <Route path="/Museos" element={<Museos />} />
+          <Route path="/Giftcards" element={<Giftcards />} />
           <Route path="/Vlogs" element={<Vlogs />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/:id" element={<TourDetail />} />

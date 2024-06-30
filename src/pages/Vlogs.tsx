@@ -1,13 +1,11 @@
 import React from "react";
-import NavBar from "../components/NavBar.tsx"
+/*Components */
 import Footer from "../components/Footer.tsx"
 import RetrowaveItem from '../components/RetrowaveItem.tsx';
 
 function Vlogs() {
     return (
         <main>
-            <NavBar />
-
             <section style={{ minHeight: "unset", height: "43vh", position: "relative", overflow: "hidden" }}>
                 <div className="videoBackground">
                     <video autoPlay muted loop playsInline>

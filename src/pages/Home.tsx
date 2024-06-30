@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 /*Context*/
 import { LanguageContext } from '../contexts/LanguageContext.js';
 /*Components*/
-import NavBar from "../components/NavBar.tsx"
 import Footer from "../components/Footer.tsx"
 import TourButton from "../components/TourButton.tsx";
 import ImageButton from "../components/ImageButton.tsx";
@@ -17,7 +16,7 @@ function Home() {
 
     return (
         <main>
-            <NavBar></NavBar>
+            
 
             <section className="heroSection">
                 <video className="backgroundVideo" autoPlay loop muted title='Screen Tours Europe, Amsterdam Skyline'>

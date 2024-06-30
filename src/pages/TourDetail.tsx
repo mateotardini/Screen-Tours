@@ -6,7 +6,6 @@ import { LanguageContext } from '../contexts/LanguageContext.js';
 /*CSS*/
 import styles from "../css/ToursDetails.module.css";
 /*Componentes*/
-import NavBar from "../components/NavBar.tsx";
 import Footer from "../components/Footer.tsx";
 import DetailsBox from '../components/DetailsBox.tsx';
 import WarningsBox from '../components/WarningsBox.tsx';
@@ -71,8 +70,6 @@ function TourDetail() {
 
     return (
         <main>
-            <NavBar />
-
             <section id="introduccion" className={`sectionPaddingLeft spaceBetween colorBlack ${styles.marginTop}`}>
                 <div className="textContainer">
                     <h1 className="fontMontserrat">

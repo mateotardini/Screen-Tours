@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from "../components/NavBar.tsx"
+/*Components */
 import Footer from "../components/Footer.tsx"
 import TourButton from "../components/TourButton.tsx";
 import RetrowaveItem from '../components/RetrowaveItem.tsx';
@@ -7,8 +7,6 @@ import RetrowaveItem from '../components/RetrowaveItem.tsx';
 function FreeTours() {
     return (
         <main>
-            <NavBar />
-
             <section style={{ minHeight: "unset", height: "43vh", position: "relative", overflow: "hidden" }}>
                 <div className="videoBackground">
                     <video autoPlay muted loop playsInline>
